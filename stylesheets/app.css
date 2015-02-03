@@ -84,6 +84,9 @@ a {
 h1, h2, h3, p, .i-b {
 	margin: 0 0 15px;
 }
+.product-details .i-b {
+	margin-bottom: 5px;
+}
 h1, h2, h3 {
 	color: #040407;
 	font-weight: normal;
@@ -92,9 +95,9 @@ h1, h2, h3 {
 .no-bot {
 	margin-bottom: 0;
 }
-/*.mar-top {
-	margin-top: 1em;
-}*/
+.mar-top {
+	margin-top: 2em;
+}
 .hide {
 	display: none;
 }
@@ -268,7 +271,7 @@ nav a {
 	width: 25%;
 }
 .tabs a {
-	padding: .5em;
+	padding: .35em;
 	text-align: center;
 	width: 100%;
 }
@@ -284,7 +287,7 @@ nav a {
 .tabs img {
 	border-radius: 100%;
 	display: block;
-	margin: .25em auto;
+	margin: .15em auto;
 	width: 30px;
 }
 
@@ -375,7 +378,7 @@ nav a {
 	max-width: 100%;
 }
 .product-image small {
-	display: block;
+	/*display: block;*/
 	margin-bottom: 2em;
 }
 .product-thumbs img {
@@ -391,10 +394,23 @@ nav a {
 }
 .product-gallery {
 	position: static;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 .thumbs-row {
 	display: inline;
+}
+.dots span {
+	background: #111;
+	border-radius: 100%;
+	display: inline-block;
+	height: .75em;
+	width: .75em;
+}
+.dots .active {
+	opacity: .25;
+}
+.dots span + span {
+	margin-left: .25em;
 }
 .fixed {
 	position: fixed;
@@ -592,6 +608,16 @@ nav {
 }
 .product-thumbs img {
 	max-width: 40px;
+}
+h1 {
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+h2 .i-b {
+	font-size: 100%;
+}
+h2 .del {
+	font-size: .75em;
 }
 
 }
