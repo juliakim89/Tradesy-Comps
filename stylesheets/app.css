@@ -11,8 +11,7 @@
     content: " "; /* 1 */
     display: table; /* 2 */
 }
-
-.cf:after {
+.cf:after, .clr {
     clear: both;
 }
 
@@ -41,6 +40,21 @@ a {
 	position: relative;
 	text-decoration: none;
 }
+.btn:after {
+	background: rgba(0,0,0,0.05);
+	border-radius: 2px;
+	content: "";
+	display: block;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 94%;
+	margin: 0 3%;
+}
+.btn:active:after {
+	display: none;
+}
 .main {
 	background: #ee7873;
 	color: white;
@@ -53,9 +67,18 @@ a {
 .btn.none {
 	margin-left: .5em;
 }
+.btn.none:after {
+	display: none;
+}
 .btn.none:active {
 	background: #efefef;
 	box-shadow: 0 0 2px rgba(0,0,0,0.15) inset;
+}
+.grey {
+	background: #efefef;
+}
+.grey:active {
+	background: #ccc;
 }
 
 h1, h2, h3, p, .i-b {
@@ -69,6 +92,9 @@ h1, h2, h3 {
 .no-bot {
 	margin-bottom: 0;
 }
+/*.mar-top {
+	margin-top: 1em;
+}*/
 .hide {
 	display: none;
 }
@@ -82,9 +108,9 @@ p strong {
 	color: #040407;
 }
 
-.mar-top {
+/*.mar-top {
 	margin-top: 1em;
-}
+}*/
 
 small {
 	display: block;
@@ -126,6 +152,7 @@ header {
 .search fieldset {
 	border: 0;
 	max-width: 40em;
+	margin-right: 3em;
 	padding: .5em .5em .5em 2em;
 	position: relative;
 	top: 1px;
@@ -153,6 +180,31 @@ header {
 .search .btn:active {
 	opacity: .5;
 	outline: 1px dotted #ee7873;
+}
+
+.bag {
+	background: url(/images/bag.png) no-repeat center center;
+	background-size: 34px;
+	height: 2em;
+	position: absolute;
+	right: 1em;
+	top: 1.05em;
+	width: 2em;
+}
+.bag-items {
+	background: #ee7873;
+	border-radius: 100%;
+	color: white;
+	display: inline-block;
+	font-size: 13px;
+	height: 20px;
+	left: -4px;
+	line-height: 1;
+	padding-top: 4px;
+	position: relative;
+	text-align: center;
+	top: -4px;
+	width: 20px;
 }
 
 .user {
@@ -216,16 +268,23 @@ nav a {
 	width: 25%;
 }
 .tabs a {
-	padding: 1em;
+	padding: .5em;
 	text-align: center;
 	width: 100%;
 }
 .tabs span + span a {
 	box-shadow: -1px 0 0 #ddd;
 }
+.tabs a:active {
+	background: #efefef;
+}
+.tabs a:active img {
+	opacity: .5;
+}
 .tabs img {
+	border-radius: 100%;
 	display: block;
-	margin: auto auto .5em;
+	margin: .25em auto;
 	width: 30px;
 }
 
@@ -306,8 +365,8 @@ nav a {
 }
 
 .product-actions {
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-top: 0;
+	margin-bottom: 1em;
 }
 
 .product-image > img {
@@ -410,6 +469,9 @@ nav a {
 .t {
 	display: block;
 }
+.width {
+	padding-bottom: 0;
+}
 .search fieldset {
 	margin-right: 4em;
 }
@@ -420,6 +482,10 @@ nav a {
 .right {
 	float: right;
 	width: 55%;
+}
+.product-actions {
+	margin-top: 1em;
+	margin-bottom: 2em;
 }
 .product-image > img {
 	margin: 2em auto .5em;
