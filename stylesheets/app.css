@@ -36,7 +36,7 @@ a {
 	font-size: 1.25em;
 	line-height: 1;
 	outline: none;
-	padding: .75em .75em .55em;
+	padding: .75em;
 	position: relative;
 	text-decoration: none;
 }
@@ -101,6 +101,9 @@ h1, h2, h3 {
 .hide {
 	display: none;
 }
+.no-pad {
+	padding: 0 !important;
+}
 h3 {
 	margin-bottom: 5px;
 }
@@ -163,6 +166,8 @@ header {
 .search input[type=search] {
 	background: white;
 	border: 0;
+	-webkit-appearance: none;
+	-moz-border-radius: 2px;
 	border-radius: 2px;
 	box-shadow: 0 2px 0 #ddd inset;
 	padding: .5em;
@@ -242,11 +247,18 @@ nav a {
 	text-transform: none;
 }
 .links-wrap {
-	overflow-x: hidden;
+	margin: auto;
+	max-width: 1000px;
 }
-.links {
+.links-wrap a {
+	padding: 0 .75em;
+}
+.fr {
+	float: right;
+}
+/*.links {
 	width: 1000px;
-}
+}*/
 .scroll {
 	background: white;
 	border-left: 1px solid #ddd;
@@ -291,6 +303,10 @@ nav a {
 	width: 30px;
 }
 
+nav.open {
+	display: block;
+}
+
 .i-b {
 	display: inline-block;
 	font-size: .75em;
@@ -305,7 +321,7 @@ nav a {
 .width {
 	max-width: 1000px;
 	margin: auto;
-	padding: 2em;
+	padding: 1em;
 }
 
 .del {
@@ -365,6 +381,12 @@ nav a {
 .none {
 	background: white;
 	color: #666;
+}
+h2 .i-b {
+	font-size: 100%;
+}
+h2 .del {
+	font-size: .75em;
 }
 
 .product-actions {
@@ -517,6 +539,9 @@ nav a {
 .width {
 	max-width: 1100px;
 }
+.links-wrap {
+	max-width: 1080px;
+}
 .right {
 	width: 57%;
 }
@@ -591,7 +616,7 @@ nav a {
 	width: 100%;
 	z-index: 10;
 }*/
-nav {
+.tabs {
 	border-top: 1px solid rgba(0,0,0,0.1);
 	box-shadow: 0 -1px 0 rgba(0,0,0,0.05), 0 -1px 2px rgba(0,0,0,0.025);
 	position: fixed;
@@ -612,12 +637,6 @@ nav {
 h1 {
 	font-size: 1.5em;
 	margin-bottom: 0;
-}
-h2 .i-b {
-	font-size: 100%;
-}
-h2 .del {
-	font-size: .75em;
 }
 
 }

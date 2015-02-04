@@ -1,4 +1,16 @@
 $(function(){
+	// var view_all = $('.view-all');
+	// var menu = $('#menu');
+	// view_all.on('click',function(e){
+	// 	e.preventDefault();
+	// 	e.stopPropagation();
+	// 	var $this = $(this);
+	// 	if(menu.hasClass('open')){
+	// 		menu.removeClass('open');
+	// 	}else{
+	// 		menu.addClass('open');
+	// 	}
+	// });
 	// var win = $(window);
 	// var product_gallery = $('#product-gallery');
 	// var product_gallery_top = product_gallery.offset().top;
