@@ -29,4 +29,22 @@ $(function(){
 	// 		product_gallery.removeClass('fixed');
 	// 	}
 	// });
+	var a = $('a');
+	a.on('click',function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		var $this = $(this),
+			par = $this.parent().parent(),
+			src = $this.attr('href');
+		// alert(src);
+		setTimeout(function(){
+			$this.addClass('spinner');
+		}, 10);
+		setTimeout(function(){
+			par.addClass('done');
+		}, 250);
+		setTimeout(function(){
+			location.href = src;
+		}, 150);
+	})
 });
