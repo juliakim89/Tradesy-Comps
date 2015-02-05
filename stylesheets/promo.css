@@ -64,7 +64,7 @@ header {
 	display: table;
 	overflow: hidden;
 	position: relative;
-	height: 200px;
+	height: 250px;
 	width: 100%;
 }
 .promo > div {
@@ -79,14 +79,14 @@ header {
 .promo h1 {
 	/*font-family: 'calluna-regular', serif;*/
 	/*letter-spacing: 2.5px;*/
-	margin: 0 0 .25em;
+	margin: 0 0 .5em;
 	position: relative;
 	/*text-transform: uppercase;*/
 	z-index: 2;
 }
 .promo img {
 	left: 0;
-	min-height: 200px;
+	min-height: 250px;
 	max-width: 100%;
 	opacity: .5;
 	position: absolute;
@@ -118,6 +118,12 @@ header {
 }
 .item:hover {
 	box-shadow: 0 0 0 3px #efefef;
+}
+.item:active {
+	box-shadow: 0 0 0 3px #ccc, 0 1px 3px rgba(0,0,0,0.125) inset;
+}
+.item:active img {
+	opacity: .75;
 }
 .item a {
 	color: #040407;
@@ -191,6 +197,9 @@ hr {
 
 .promo h1 {
 	font-size: 1.5em;
+}
+.item {
+	width: 100%;
 }
 
 }
