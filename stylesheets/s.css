@@ -76,6 +76,7 @@ h1 {
 }
 .playlist a {
 	border: 0;
+	box-shadow: none;
 	color: #040407;
 	display: table-cell;
 	padding: 0 2em;
@@ -132,9 +133,15 @@ h1 {
 .playlist.done {
 	opacity: 0;
 }
+.playlist .no-b {
+	box-shadow: none;
+}
 .playlist:active a {
 	/*transition: all 0 ease-in-out;*/
-	transform: scale(1);
+	transform: scale(.95);
+}
+.playlist:active:after {
+	display: none;
 }
 .playlist:active > div {
 	box-shadow: none;

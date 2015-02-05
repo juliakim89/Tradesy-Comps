@@ -1,3 +1,8 @@
+function openInNewTab(url) {
+	var win = window.open(url, '_blank');
+	win.focus();
+}
+
 $(function(){
 	// var view_all = $('.view-all');
 	// var menu = $('#menu');
@@ -39,12 +44,15 @@ $(function(){
 		// alert(src);
 		setTimeout(function(){
 			$this.addClass('spinner');
+			par.find('div').addClass('no-b');
 		}, 10);
 		setTimeout(function(){
-			par.addClass('done');
+			// par.addClass('done');
+			$this.removeClass('spinner');
+			par.find('div').removeClass('no-b');
 		}, 250);
 		setTimeout(function(){
-			location.href = src;
+			openInNewTab(src);
 		}, 150);
 	})
 });
