@@ -79,6 +79,7 @@ h1 {
 	box-shadow: none;
 	color: #040407;
 	display: table-cell;
+	overflow: hidden;
 	padding: 0 2em;
 	position: relative;
 	/*transition: all .125s ease-in-out;*/
@@ -115,6 +116,18 @@ h1 {
 	width: 80%;
 	margin: 0 10%;
 }*/
+.playlist a * {
+	position: relative;
+	z-index: 2;
+}
+.playlist a img {
+	opacity: .25;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 300px;
+	z-index: 1;
+}
 .playlist p {
 	color: #999;
 	margin: 1em 0 0;
@@ -124,6 +137,9 @@ h1 {
 	position: absolute;
 	bottom: 1.5em;
 	right: 1.5em;
+}
+.playlist:hover a {
+	border-radius: 5px;
 }
 .playlist:hover a, .playlist.done a {
 	background: #040407;
