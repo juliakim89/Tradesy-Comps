@@ -499,6 +499,48 @@ h2 .del {
 	margin: 0;
 }
 
+.menu {
+	padding: 0 0 5em;
+}
+.menu span {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.menu a {
+	display: block;
+	padding: .5em 1.5em;
+	position: relative;
+	z-index: 1;
+}
+.menu span + span a {
+	box-shadow: 0 1px 0 #efefef inset;
+}
+.menu em {
+	cursor: pointer;
+	display: block;
+	height: 2.75em;
+	font-size: .85em;
+	font-style: normal;
+	overflow: hidden;
+	padding-top: .65em;
+	position: absolute;
+	top: .5em;
+	right: 0;
+	text-align: center;
+	width: 3em;
+	z-index: 2;
+}
+.menu em:active {
+	background: #efefef;
+}
+.menu em:after {
+	content: "\25BC";
+}
+.sub-nav {
+	display: none;
+}
+
 .t, .d, .sm-m {
 	display: none;
 }
