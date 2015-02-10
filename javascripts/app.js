@@ -2,7 +2,9 @@ function openInNewTab(url) {
 	var win = window.open(url, '_blank');
 	win.focus();
 }
-
+// function changeAttr(el,attr,attrNew){
+// 	$(el).attr(attr,attrNew);
+// }
 $(function(){
 	// var view_all = $('.view-all');
 	// var menu = $('#menu');
@@ -34,25 +36,41 @@ $(function(){
 	// 		product_gallery.removeClass('fixed');
 	// 	}
 	// });
-	var a = $('a');
-	a.on('click',function(e){
-		e.preventDefault();
-		e.stopPropagation();
-		var $this = $(this),
-			par = $this.parent().parent(),
-			src = $this.attr('href');
-		// alert(src);
-		setTimeout(function(){
-			$this.addClass('spinner');
-			par.find('div').addClass('no-b');
-		}, 10);
-		setTimeout(function(){
-			// par.addClass('done');
-			$this.removeClass('spinner');
-			par.find('div').removeClass('no-b');
-		}, 250);
-		setTimeout(function(){
-			openInNewTab(src);
-		}, 150);
-	})
+
+	if($(window).width()>750){
+		// changeAttr('#modal-img','data-src','src');
+		//console.log(changeAttr('#modal-img','data-src','src'));
+		// alert($('#modal-img').attr('src'));
+		$('#modal-img').attr('src',$('#modal-img').data('src'));
+	}
+
+	$(window).resize(function(){
+		if($(window).width()>750){
+			// changeAttr('#modal-img','data-src','src');
+			//console.log(changeAttr('#modal-img','data-src','src'));
+			// alert($('#modal-img').attr('src'));
+			$('#modal-img').attr('src',$('#modal-img').data('src'));
+		}
+	});
+
+	// var a = $('a');
+	// a.on('click',function(e){
+	// 	e.preventDefault();
+	// 	e.stopPropagation();
+	// 	var $this = $(this),
+	// 		par = $this.parent().parent(),
+	// 		src = $this.attr('href');
+	// 	setTimeout(function(){
+	// 		$this.addClass('spinner');
+	// 		par.find('div').addClass('no-b');
+	// 	}, 10);
+	// 	setTimeout(function(){
+	// 		// par.addClass('done');
+	// 		$this.removeClass('spinner');
+	// 		par.find('div').removeClass('no-b');
+	// 	}, 250);
+	// 	setTimeout(function(){
+	// 		openInNewTab(src);
+	// 	}, 150);
+	// })
 });
