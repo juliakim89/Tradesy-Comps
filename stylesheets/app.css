@@ -507,25 +507,33 @@ h2 .del {
 	position: relative;
 	overflow: hidden;
 }
+.r a {
+	text-align: right;
+}
 .menu a {
 	display: block;
-	padding: .5em 1.5em;
+	padding: .5em 1em;
 	position: relative;
 	z-index: 1;
 }
-.menu span + span a {
-	box-shadow: 0 1px 0 #efefef inset;
+.menu a:active {
+	background: #efefef;
+	opacity: .75;
+	text-decoration: none;
+}
+.menu span + span {
+	box-shadow: 0 1px 0 rgba(0,0,0,0.125) inset;
 }
 .menu em {
 	cursor: pointer;
 	display: block;
-	height: 2.75em;
+	height: 3em;
 	font-size: .85em;
 	font-style: normal;
 	overflow: hidden;
-	padding-top: .65em;
+	padding-top: .8em;
 	position: absolute;
-	top: .5em;
+	top: 0;
 	right: 0;
 	text-align: center;
 	width: 3em;
@@ -539,6 +547,20 @@ h2 .del {
 }
 .sub-nav {
 	display: none;
+}
+.open .sub-nav {
+	border-left: 8px solid #ddd;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.125) inset;
+	display: block;
+}
+.open .sub-nav span + span {
+	box-shadow: 0 1px 0 rgba(0,0,0,0.125) inset;
+}
+.open em {
+	padding-top: .9em;
+}
+.open em:after {
+	content: "\25B2";
 }
 
 .t, .d, .sm-m {

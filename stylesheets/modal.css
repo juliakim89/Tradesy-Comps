@@ -355,7 +355,7 @@ nav a {
 	float: right;
 	width: 52.5%;
 }
-[data-template] img {
+[data-template] .show {
 	display: block;
 }
 
