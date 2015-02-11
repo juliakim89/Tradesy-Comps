@@ -142,7 +142,7 @@ hr {
 
 header {
 	background: #040407;
-	border-bottom: 2px solid #efefef;
+	/*border-bottom: 2px solid #efefef;*/
 	padding: .5em;
 	position: relative;
 }
@@ -287,7 +287,12 @@ nav a {
 	width: 25%;
 }
 .tabs a {
-	padding: .35em;
+	display: block;
+	font-size: .75em;
+	height: 100%;
+	line-height: 1.2;
+	min-height: 3em;
+	padding: .75em .35em;
 	text-align: center;
 	width: 100%;
 }
@@ -310,6 +315,91 @@ nav a {
 nav.open {
 	display: block;
 }
+
+
+.promo {
+	background: #111;
+	color: white;
+	display: table;
+	overflow: hidden;
+	position: relative;
+	height: 250px;
+	width: 100%;
+}
+.promo > div {
+	display: table-cell;
+	height: 100%;
+	line-height: 1;
+	padding: 0 1em;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+}
+.promo h1 {
+	/*font-family: 'calluna-regular', serif;*/
+	/*letter-spacing: 2.5px;*/
+	color: white;
+	margin: 0 0 .5em;
+	position: relative;
+	/*text-transform: uppercase;*/
+	z-index: 2;
+}
+.promo img {
+	left: 0;
+	min-height: 250px;
+	max-width: 100%;
+	opacity: .5;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+.promo .btn {
+	position: relative;
+	z-index: 2;
+}
+.template {
+	padding: 2em 0;
+}
+.template h3 {
+	text-align: center;
+}
+.i-tpt {
+	display: inline-block;
+	float: left;
+	padding: 1em 1em 0;
+	width: 50%;
+}
+.i-tpt:nth-child(2n+1) {
+	padding-left: .5em;
+}
+.i-tpt:nth-child(2n+2) {
+	padding-right: .5em;
+}
+.i-tpt + .i-tpt + .i-tpt {
+	padding-top: 1.5em;
+}
+.i-tpt:last-child {
+	float: none;
+}
+.i-tpt div {
+	background: white url(https://images.tradesy.com/images/home_placeholder_550x250.jpg) no-repeat center center;
+	background-size: 200%;
+	box-shadow: 0 0 0 1px #efefef;
+	height: 8em;
+	margin-bottom: .75em;
+}
+.i-tpt span {
+	background: #999;
+	display: block;
+	height: 1em;
+	margin-bottom: .5em;
+}
+.i-tpt span + span {
+	height: .5em;
+	margin: auto;
+	width: 60%;
+}
+
 
 .i-b {
 	display: inline-block;
@@ -545,7 +635,7 @@ h2 .del {
 .r a {
 	display: inline-block;
 	float: right;
-	margin-bottom: 1rem;
+	/*margin-bottom: 1rem;*/
 	text-align: right;
 }
 /*.r a:before {
@@ -742,6 +832,51 @@ h2 .del {
 h1 {
 	font-size: 1.5em;
 	margin-bottom: 0;
+}
+
+}
+
+@media screen and (min-width: 40em){
+
+/*body {
+	padding: 2em;
+}*/
+.promo {
+	height: 300px;
+}
+.promo h1, .items h2 {
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+}
+.item + .item {
+	margin-left: 1em;
+}
+/*.item {
+	width: 33%;
+}*/
+
+}
+@media screen and (min-width: 50em){
+
+.promo {
+	height: 400px;
+}
+
+}
+@media screen and (min-width: 55em){
+
+/*.item {
+	width: 25%;
+}*/
+
+}
+@media screen and (max-width: 20em){
+
+.promo h1 {
+	font-size: 1.5em;
+}
+.item {
+	width: 100%;
 }
 
 }
