@@ -499,6 +499,34 @@ h2 .del {
 	margin: 0;
 }
 
+.product-sub-details {
+	position: relative;
+}
+.product-sub-details h3:after {
+	content: "\25BC";
+	color: #949d99;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 1;
+	padding: 0 .5rem;
+	position: absolute;
+	right: 0;
+	top: .25rem;
+}
+.product-sub-details h3:active {
+	opacity: .65;
+}
+.product-sub-details p {
+	display: none;
+}
+.product-sub-details .open {
+	display: block;
+	padding-top: 1rem;
+}
+.product-sub-details .active:after {
+	content: "\25B2";
+}
+
 .menu {
 	padding: 0 0 5em;
 }
@@ -507,19 +535,28 @@ h2 .del {
 	position: relative;
 	overflow: hidden;
 }
-.r a {
-	text-align: right;
-}
 .menu a {
 	display: block;
 	padding: .5em 1em;
 	position: relative;
+	text-decoration: none;
 	z-index: 1;
 }
+.r a {
+	display: inline-block;
+	float: right;
+	margin-bottom: 1rem;
+	text-align: right;
+}
+/*.r a:before {
+	content: "\25B2";
+	position: relative;
+	left: -.25rem;
+	top: 1px;
+}*/
 .menu a:active {
 	background: #efefef;
 	opacity: .75;
-	text-decoration: none;
 }
 .menu span + span {
 	box-shadow: 0 1px 0 rgba(0,0,0,0.125) inset;
@@ -528,19 +565,19 @@ h2 .del {
 	cursor: pointer;
 	display: block;
 	height: 3em;
-	font-size: .85em;
+	font-size: 15px;
 	font-style: normal;
 	overflow: hidden;
 	padding-top: .8em;
 	position: absolute;
-	top: 0;
+	top: -1px;
 	right: 0;
 	text-align: center;
 	width: 3em;
 	z-index: 2;
 }
 .menu em:active {
-	background: #efefef;
+	opacity: .65;
 }
 .menu em:after {
 	content: "\25BC";
@@ -548,18 +585,18 @@ h2 .del {
 .sub-nav {
 	display: none;
 }
-.open .sub-nav {
+.sub-nav.open  {
 	border-left: 8px solid #ddd;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.125) inset;
 	display: block;
 }
-.open .sub-nav span + span {
+.sub-nav.open  span + span {
 	box-shadow: 0 1px 0 rgba(0,0,0,0.125) inset;
 }
-.open em {
-	padding-top: .9em;
+.menu .active {
+	top: -2px;
 }
-.open em:after {
+.menu .active:after {
 	content: "\25B2";
 }
 
