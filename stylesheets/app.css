@@ -317,7 +317,7 @@ nav.open {
 }
 
 
-.promo {
+.promo, .profile {
 	background: #111;
 	color: white;
 	display: table;
@@ -326,7 +326,7 @@ nav.open {
 	height: 250px;
 	width: 100%;
 }
-.promo > div {
+.promo > div, .profile > div {
 	display: table-cell;
 	height: 100%;
 	line-height: 1;
@@ -335,7 +335,7 @@ nav.open {
 	text-align: center;
 	vertical-align: middle;
 }
-.promo h1 {
+.promo h1, .profile h1 {
 	/*font-family: 'calluna-regular', serif;*/
 	/*letter-spacing: 2.5px;*/
 	color: white;
@@ -344,7 +344,7 @@ nav.open {
 	/*text-transform: uppercase;*/
 	z-index: 2;
 }
-.promo img {
+.promo img, .profile .hero {
 	left: 0;
 	min-height: 250px;
 	max-width: 100%;
@@ -382,8 +382,9 @@ nav.open {
 	float: none;
 }
 .i-tpt div {
-	background: white url(https://images.tradesy.com/images/home_placeholder_550x250.jpg) no-repeat center center;
-	background-size: 200%;
+	background: #efefef;
+	/*background: white url(https://images.tradesy.com/images/home_placeholder_550x250.jpg) no-repeat center center;*/
+	/*background-size: 200%;*/
 	box-shadow: 0 0 0 1px #efefef;
 	height: 8em;
 	margin-bottom: .75em;
@@ -694,6 +695,62 @@ h2 .del {
 	display: none;
 }
 
+.profile {
+	background: #4E0069;
+}
+/*.profile > div {
+	padding-bottom: 1rem;
+	vertical-align: bottom;
+}*/
+.profile div div {
+	position: relative;
+	z-index: 2;
+}
+.profile .hero {
+	opacity: .25;
+}
+.profile span {
+	background: #D596EB;
+	border-radius: 4px;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+	display: block;
+	margin: 0 auto 1rem;
+	max-width: 70px;
+	overflow: hidden;
+	/*padding: 3px;*/
+}
+.profile span img {
+	border-radius: 3px;
+	display: block;
+	margin: 0;
+	max-width: 100%;
+}
+.profile small {
+	/*color: #D596EB;*/
+	display: block;
+	font-size: 15px;
+	/*opacity: .75;*/
+}
+.profile small + small {
+	font-size: 13px;
+	line-height: 1.3;
+	margin-top: .75rem;
+}
+.profile small a {
+	display: inline-block;
+	margin: 0 .15rem;
+}
+.profile-links {
+	background: #111;
+	font-size: .75rem;
+	padding: 0 1rem;
+	text-align: center;
+}
+.profile-links a {
+	display: inline-block;
+	padding: 1rem;
+}
+
 @media screen and (min-width: 50em){
 
 .m {
@@ -844,7 +901,7 @@ h1 {
 .promo {
 	height: 300px;
 }
-.promo h1, .items h2 {
+.promo h1, .items h2, .profile h1 {
 	letter-spacing: 2.5px;
 	text-transform: uppercase;
 }
