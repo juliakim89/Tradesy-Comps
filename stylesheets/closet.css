@@ -1,0 +1,204 @@
+/*@font-face{font-family:'proxima-nova-semi';src:url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot");src:url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot?#iefix") format("embedded-opentype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff2") format("woff2"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff") format("woff"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.ttf") format("truetype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.svg#proxima-nova-semi") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'proxima-nova-regular';src:url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot");src:url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot?#iefix") format("embedded-opentype"),url("/css/fonts/proxima-nova/regular/webfont.woff2") format("woff2"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.woff") format("woff"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.ttf") format("truetype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.svg#proxima-nova-regular") format("svg");font-weight:normal;font-style:normal}*/
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,.desk-nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}.cf:before,.cf:after{content:" ";display:table}.cf:after{clear:both}.cf{*zoom:1}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after, .clr {
+    clear: both;
+}
+
+html, body {
+	background: white;
+	color: #949d99;
+	font: normal 100%/1.5 sans-serif;
+	height: auto;
+	min-height: 100%;
+	width: 100%;
+}
+body {
+	padding-bottom: 4rem;
+}
+h1, h2, h3, h4 {
+	color: #040407;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0 0 .5rem;
+}
+.width {
+	max-width: 1000px;
+	margin: auto;
+	padding: 1em;
+}
+
+header {
+	background: #040407;
+	margin-bottom: 2rem;
+	padding: .5em;
+	position: relative;
+}
+header img {
+	display: block;
+	margin: auto;
+	max-width: 150px;
+}
+
+.rack + .rack {
+	margin-top: 3rem;
+}
+.rack h2 {
+	margin-bottom: 2rem;
+}
+.product {
+	/*box-shadow: 0 0 0 2px #efefef;*/
+	display: inline-block;
+	width: 25%;
+	float: left;
+	padding: 1rem;
+	position: relative;
+	text-align: center;
+}
+/*.product + .product {
+	margin-left: 2rem;
+}*/
+.product * {
+	position: relative;
+	z-index: 1;
+}
+.product h3, .product p {
+	margin: 0;
+}
+.product h4 {
+	margin-top: .5rem;
+}
+.product h4 span {
+	color: #aeaeae;
+	margin-left: .25rem;
+	position: relative;
+}
+.product h4 span:before {
+	background: #aeaeae;
+	content: "";
+	display: block;
+	height: 2px;
+	line-height: 0;
+	margin: 0 -7%;
+	position: absolute;
+	top: 40%;
+	right: 0;
+	width: 100%;
+	z-index: 2;
+}
+.product img {
+	display: block;
+	margin: 0 auto 1rem;
+	max-height: 200px;
+	max-width: 200px;
+}
+.product a {
+	text-decoration: none;
+}
+.product a h3 {
+	/*border-bottom: 1px solid currentColor;*/
+	color: #111;
+	display: inline-block;
+}
+.product a h4 {
+	color: #888;
+}
+.product sup {
+	position: relative;
+	left: -.1rem;
+	top: -.175rem;
+}
+
+.product .tag {
+	background: #111;
+	border-radius: 2px;
+	color: white;
+	display: inline-block;
+	font-size: .75rem;
+	line-height: 1;
+	position: absolute;
+	top: .5rem;
+	left: .5rem;
+	padding: .5rem .5rem .35rem;
+	width: auto;
+	z-index: 2;
+}
+.product .brand {
+	background: white;
+	color: #111;
+}
+.product .want {
+	cursor: pointer;
+	display: none;
+	left: auto;
+	right: .5rem;
+	z-index: 2;
+}
+.product .savings {
+	background: none;
+	color: #7dccad;
+	left: auto;
+	right: .5rem;
+}
+.product .sold {
+	background: #ee7873;
+	color: white;
+	left: auto;
+	right: .5rem;
+}
+
+.product:hover {
+	box-shadow: 0 0 0 2px #efefef;
+}
+.product:hover .brand, .product:hover .savings {
+	display: none;
+}
+.product:hover .want {
+	display: inherit;
+}
+
+/*** v2 ***/
+.v2 h4 {
+	margin-bottom: .125rem;
+}
+.v2 .sale, .v2 .sold {
+	padding: .25rem .2rem .125rem;
+	position: relative;
+	top: -.2rem;
+	left: -.125rem;
+}
+.v2 .sale {
+	background: #7dccad;
+	color: white;
+}
+.v2 .brand, .v2 .savings {
+	padding: 0;
+	position: static;
+}
+.v2 .tag + .tag {
+	margin-left: .5rem;
+}
+.v2:hover .brand, .v2:hover .savings {
+	display: inline-block;
+	opacity: 1;
+}
+
+/*** v3 ***/
+.v3 .sold {
+	padding: .5rem .5rem .35rem;
+	position: absolute;
+	top: .5rem;
+	left: auto;
+	right: .5rem;
+}
