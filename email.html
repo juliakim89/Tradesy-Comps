@@ -11,7 +11,7 @@
 
 		<style type="text/css">
 
-		@font-face{font-family:'proxima-nova-semi';src:url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot");src:url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot?#iefix") format("embedded-opentype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff2") format("woff2"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff") format("woff"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.ttf") format("truetype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.svg#proxima-nova-semi") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'proxima-nova-regular';src:url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot");src:url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot?#iefix") format("embedded-opentype"),url("/css/fonts/proxima-nova/regular/webfont.woff2") format("woff2"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.woff") format("woff"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.ttf") format("truetype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.svg#proxima-nova-regular") format("svg");font-weight:normal;font-style:normal}
+		/*@font-face{font-family:'proxima-nova-semi';src:url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot");src:url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot?#iefix") format("embedded-opentype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff2") format("woff2"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff") format("woff"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.ttf") format("truetype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.svg#proxima-nova-semi") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'proxima-nova-regular';src:url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot");src:url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot?#iefix") format("embedded-opentype"),url("/css/fonts/proxima-nova/regular/webfont.woff2") format("woff2"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.woff") format("woff"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.ttf") format("truetype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.svg#proxima-nova-regular") format("svg");font-weight:normal;font-style:normal}*/
 
 		body, div, table {
 			-webkit-box-sizing: border-box;
@@ -32,17 +32,25 @@
 			display: block;
 			font-family: 'proxima-nova-semi', sans-serif;
 			font-size: 22px;
-			letter-spacing: 2.5px;
-			text-transform: uppercase;
+			/*letter-spacing: 2.5px;*/
+			/*text-transform: uppercase;*/
+		}
+		.h2 {
+			color: #040407;
+			display: block;
+			font-family: 'proxima-nova-semi', sans-serif;
+			font-size: 17px;
+			/*letter-spacing: 2.5px;*/
+			/*text-transform: uppercase;*/
 		}
 		.lg .h1 {
-			font-size: 30px;
-			line-height: 36px;
+			font-size: 25px;
+			line-height: 31px;
 		}
-		b, strong {
+		b, b {
 			color: #040407;
-			font-family: 'proxima-nova-semi', sans-serif;
-			font-weight: normal;
+			/*font-family: 'proxima-nova-semi', sans-serif;*/
+			/*font-weight: normal;*/
 		}
 		.subtle {
 			color: #ccc;
@@ -59,29 +67,29 @@
 		}
 		a {
 			color: #ee7874;
-			font-family: 'proxima-nova-semi', sans-serif;
+			/*font-family: 'proxima-nova-semi', sans-serif;*/
+			font-weight: bold;
 		}
 		a.btn {
 			background: #ee7874;
-			border-radius: 4px;
+			/*border-radius: 4px;*/
 			color: white;
 			display: inline-block;
-			font-size: 20px;
+			font-size: 15px;
 			font-weight: normal;		
-			mso-hide:all;
-			padding: 15px 20px;
-			text-decoration: none;
-			mso-hide:all;			
+			mso-hide: all;
+			padding: 10px 15px;
+			text-decoration: none;		
 		}
 		#wrapper {
 			/*background: #f8f8f8*/
 			background: white;
-			border: 1px solid #111111;
+			border: 1px solid #ddd;
 			/*box-shadow: 0 0 0 1px rgba(0,0,0,0.1);*/
-			border-radius: 4px;
+			/*border-radius: 4px;*/
 		}
 		body {
-			background: #efefef;
+			background: #f7f7f7;
 			padding: 0 0 20px;
 		}
 		.pad {
@@ -105,6 +113,10 @@
 		center a {
 			color: #111111;
 		}
+		.left {
+			display: block;
+			text-align: left;
+		}
 		.top {
 			background: #54302f;
 			padding: 10px;
@@ -123,8 +135,12 @@
 		hr {
 			background: white;
 			border: 0;
-			height: 10px;
+			height: 20px;
 			margin: 0;
+		}
+		.line {
+			background: #dddddd;
+			height: 2px;
 		}
 		@media screen and (max-width: 600px) {
 
@@ -149,9 +165,9 @@
 			.c, center {
 				text-align: left !important;
 			}
-			.logo {
+			/*.logo {
 				margin: 0 !important;
-			}
+			}*/
 			.mobile-wrap {
 				padding: 0 15px !important;
 			}
@@ -163,7 +179,7 @@
 		</style>
 	</head>
 
-	<body marginwidth="0" marginheight="0" bgcolor="#efefef" leftmargin="0" topmargin="0" offset="0">
+	<body marginwidth="0" marginheight="0" bgcolor="#f7f7f7" leftmargin="0" topmargin="0" offset="0">
 
 		<!-- customize Gmail / iOS content begin -->
 		<table width="100%" cellspacing="0" cellpadding="0"><tr><td style="font-size: 0;height: 0;display:none;">
@@ -179,7 +195,7 @@
 			<a href="">Web<span class="hide"> version</span></a>
 		</center> -->
 
-		<table width="100%" cellspacing="0" cellpadding="0"><tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+		<!-- <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table> -->
  
 		<!--[if (gte mso 9)|(IE)]>
 			<table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td>
@@ -187,32 +203,97 @@
 
 		<div class="mobile-wrap">
 
-			<a href="https://www.tradesy.com/?utm_source=welcome_email_1&utm_medium=email&utm_campaign=first_touch">
-				<img src="images/logo.gif" alt="Tradesy: buy &amp; sell clothes online" height="40" class="logo" />
-			</a>
-
 			<table width="100%" cellspacing="0" cellpadding="0"><tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
 
-			<table style="margin:auto;max-width:600px;" id="wrapper" cellpadding="0" cellspacing="0"><tr><td>
+			<table style="margin:auto;max-width:550px;" id="wrapper" cellpadding="0" cellspacing="0"><tr><td>
 
-				<table width="100%" cellpadding="0" cellspacing="0" class="_hide"><tr><td height="5" style="font-size: 1px; line-height: 1px;" bgcolor="#111111">&nbsp;</td></tr></table>
+				<table width="100%" cellpadding="0" cellspacing="0" class="_hide"><tr><td height="50" style="font-size: 1px; line-height: 1px;" bgcolor="#111111">
+					<a href="https://www.tradesy.com/?utm_source=welcome_email_1&utm_medium=email&utm_campaign=first_touch"><img src="images/logo.gif" alt="Tradesy: buy &amp; sell clothes online" height="30" class="logo" /></a>
+				</td></tr></table>
 
 				<table class="content" width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
 					<tr>
 						<td class="body pad lg c">
 							
 							<span class="h1">
-								{firstName}, thanks for joining!
+								Congratulations On Your Purchase!
 							</span>
 							<hr />
-							As a thank you from the Tradesy family, here&rsquo;s a <b>$25 welcome gift</b>.
-							<br /><br />
-							<a href="https://www.tradesy.com/?utm_source=welcome_email_1&utm_medium=email&utm_campaign=first_touch" class="btn">
-								Shop now
-							</a>
-							<br /><br />
-							Use code <b><u>GIFT25</u></b> at checkout.
-							<i>Hurry, this expires {expDate}!</i>
+							<hr class="line" />
+							<hr />
+
+							<span class="left">
+								Hi <b>{buyer_first_name}</b>,
+								<br /><br />
+								Congratulations, you've purchased <b>{item_names}</b> on Tradesy from <b>{seller_display_name}</b>.
+								<br /><br />
+								Your order number is: <b>{order_id}-{seller_id}A</b>
+								<br />
+								{if tradesy_balance} Your new Tradesy account balance is <a href="">${tradesy_balance}</a>{/if}
+								<br /><br />
+								{if shipping}
+								<br />
+								<span class="h2">Here's what happens next:</span>
+								1. {seller_display_name} will confirm that they will be able to ship the item.
+								<br />
+								2. {seller_display_name} will ship your order{if item_count > 1}s{/if}, and you’ll receive an email from us with a tracking number.
+								<br />
+								3. You'll receive your Tradesy order!
+								<br /><br />
+								{seller_display_name} should ship your order{if item_count > 1}s{/if} within 10 days (usually sooner).
+								<br />
+								Contact us if you have any questions or concerns.
+								<br /><br />
+								{else}
+								<br />
+								<span class="h2">Here's what happens next:</span>
+								1. Your seller will ship your item as soon as possible.
+								<br />
+								2. You'll receive an email from us with a tracking number.
+								<br />
+								3. You'll receive your Tradesy purchase!
+								<br /><br />
+								Your item{if item_count > 1}s{/if} should ship within 5 days, (usually sooner). 
+								Contact us if you have any questions or concerns.
+								<br /><br />
+								{/if}
+								<hr />
+								<hr class="line" />
+								<hr />
+								<span class="h1">Order details</span>
+								<hr />
+								Order #: <b>{order_id}-{seller_id}A</b><br />
+								Placed on: <b>{order_date}</b><br />
+								{if credit_amount > 0}
+								<br />
+								Display Price: <b>${number(total_price,2)}</b><br />
+								Tradesy Cash Amount: <b>-${number(credit_amount,2)}</b><br />
+								{total_price = total_price-credit_amount}
+								{/if}
+								<br />
+								Total Price: <b>${number(total_price,2)}</b>
+								<br /><br />
+								<a href="http://www.tradesy.com/your-purchases" class="btn">Track your purchases</a>
+								<hr />
+								<hr class="line" />
+								<hr />
+								<span class="h2">Item details</span>
+								{foreach item_list as item}
+								<br />
+								Item Name: <b>{item.item_name}</b><br />
+								Sale Price: <b>${item.buyer_price}</b>
+								<br />
+								{/foreach}
+								<hr />
+								<hr class="line" />
+								<hr />
+								Thanks for shopping on Tradesy! You didn't just get a great deal -- you also supported the growth of the Tradesy community, which is pretty cool (at least we think so). Have questions or feedback? You can contact us anytime at (310) 912-7966, or <a href="#">team@tradesy.com</a>.
+								<hr />
+								<hr />
+								XOXO
+								<br />
+								<b>Team Tradesy</b>
+							</span>
 
 						</td>
 					</tr>
