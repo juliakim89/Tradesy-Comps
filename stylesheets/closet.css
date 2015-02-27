@@ -339,7 +339,7 @@ figure:active img {
 	position: relative;
 	z-index: 4;
 }
-.strength em {
+.strength em, .s2 .strength-details {
 	background: #888;
 	color: white;
 	display: none;
@@ -355,6 +355,9 @@ figure:active img {
 	color: #7dccad;
 }
 .strong em {
+	background: #7dccad;
+}
+.s2 em.strong {
 	background: #7dccad;
 }
 .weak {
@@ -387,7 +390,7 @@ figure:active img {
 .s1:hover {
 	box-shadow: 0 0 0 1px #ccc;
 }
-.s1:hover .strength em {
+.s1:hover .strength em, .s2:hover .strength-details {
 	display: block;
 }
 
@@ -427,4 +430,28 @@ figure:active img {
 }
 .empty:active em, .empty:active em:before {
 	opacity: .5;
+}
+
+.s2 {
+	padding-top: 1rem;
+	padding-bottom: 1.25rem;
+}
+.s2 .analytics {
+	position: static;
+	margin-bottom: .75rem;
+}
+.s2 .analytics .tag {
+	background: none;
+	padding: 0;
+}
+.s2 .analytics .tag + .tag {
+	margin-left: .5rem;
+}
+.s2 hr {
+	margin: 1rem -2rem;
+}
+.s2 .strength-details {
+	left: 0;
+	top: 0;
+	margin: .4rem .4rem 0;
 }
