@@ -209,6 +209,9 @@ header img {
 .product:hover .want, .has-sold:hover .brand, .product:hover .cart {
 	display: inline-block;
 }
+.has-sold:hover .brand {
+	display: inline-block !important;
+}
 
 /*** btn ***/
 /*.btn {
