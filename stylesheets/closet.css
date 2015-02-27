@@ -74,10 +74,11 @@ header img {
 	color: #ee7873;
 	display: inline-block;
 	float: right;
+	font-family: 'proxima-nova-semi', sans-serif;
 	font-size: .75rem;
 	letter-spacing: 1px;
 	padding-top: .5rem;
-	text-transform: none;
+	text-transform: uppercase;
 	text-decoration: none;
 }
 .rack h2:after {
@@ -91,7 +92,7 @@ header img {
 	display: inline-block;
 	width: 25%;
 	float: left;
-	padding: 1rem 2rem;
+	/*padding: 1rem 2rem;*/
 	position: relative;
 	text-align: center;
 }
@@ -131,13 +132,28 @@ header img {
 	width: 100%;
 	z-index: 2;
 }
+.product figure, figure div {
+	display: table;
+	height: 200px;
+	max-height: 200px;
+	width: 200px;
+}
+figure div {
+	display: table-cell;
+	vertical-align: bottom;
+}
+.product figure {
+	margin-bottom: 1rem;
+}
 .product img {
 	display: block;
-	margin: 0 auto 1rem;
+	margin: 0 auto;
 	max-height: 200px;
 	max-width: 200px;
 }
 .product a {
+	display: block;
+	padding: 1rem 2rem;
 	text-decoration: none;
 }
 .product a h3 {
@@ -183,6 +199,11 @@ header img {
 	right: .5rem;
 	z-index: 2;
 }
+.product .wanted {
+	background: none;
+	color: #888;
+	display: inline-block;
+}
 .want:active {
 	opacity: .5;
 }
@@ -221,11 +242,11 @@ header img {
 figure:active img {
 	opacity: .75;
 }
-.product:hover .brand, .product.v1:hover .brand, .product:hover .savings {
-	display: none;
-}
 .product:hover .want, .has-sold:hover .brand, .product:hover .cart {
 	display: inline-block;
+}
+.product:hover .brand, .product.v1:hover .brand, .product:hover .savings, .product:hover .wanted {
+	display: none;
 }
 .has-sold:hover .brand {
 	display: inline-block !important;
@@ -266,8 +287,17 @@ figure:active img {
 	background: #7dccad;
 	color: white;
 }
-.v2 .brand, .v2 .savings {
+.v2 .brand {
 	padding: 0;
+	position: static;
+}
+.v2 .savings {
+	position: static;
+}
+.v2 .savings.pill {
+	background: #7dccad;
+	color: white;
+	padding: .25rem;
 	position: static;
 }
 .v2 .tag + .tag {
@@ -454,6 +484,14 @@ figure:active img {
 	left: 0;
 	top: 0;
 	margin: .4rem .4rem 0;
+}
+
+@media screen and (min-width: 75rem){
+
+.width {
+	max-width: 1100px;
+}
+
 }
 
 @media screen and (max-width: 60rem){
