@@ -57,6 +57,7 @@ header img {
 .rack h2 {
 	letter-spacing: 2.5px;
 	margin-bottom: 2rem;
+	text-transform: uppercase;
 }
 .rack h2 a {
 	border-bottom: 1px solid currentColor;
@@ -64,8 +65,9 @@ header img {
 	display: inline-block;
 	float: right;
 	font-size: .75rem;
+	letter-spacing: 1px;
 	padding-top: .5rem;
-	text-transform: uppercase;
+	text-transform: none;
 	text-decoration: none;
 }
 .rack h2:after {
@@ -201,7 +203,7 @@ header img {
 	/*transform: scale(1.01);*/
 	z-index: 3;
 }
-.product:hover .brand, .product:hover .savings {
+.product:hover .brand, .product.v1:hover .brand, .product:hover .savings {
 	display: none;
 }
 .product:hover .want, .has-sold:hover .brand, .product:hover .cart {
