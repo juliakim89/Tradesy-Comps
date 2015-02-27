@@ -115,10 +115,10 @@ header img {
 	position: relative;
 	/*top: -.075rem;*/
 }
-.product h4 span:before {
-	content: "was ";
-}
 /*.product h4 span:before {
+	content: "was ";
+}*/
+.product h4 span:before {
 	background: #999;
 	content: "";
 	display: block;
@@ -126,11 +126,11 @@ header img {
 	line-height: 0;
 	margin: 0 -7%;
 	position: absolute;
-	top: 42%;
+	top: 49%;
 	right: 0;
 	width: 100%;
 	z-index: 2;
-}*/
+}
 .product img {
 	display: block;
 	margin: 0 auto 1rem;
