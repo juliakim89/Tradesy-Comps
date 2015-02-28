@@ -354,20 +354,25 @@ figure:active img {
 	width: 100%;
 }
 .analytics .tag {
-	background: #fef8e7;
+	/*background: #fef8e7;*/
+	background: none;
 	color: #888;
 	cursor: default;
 	display: inline-block;
+	padding: 0;
 	position: static;
 }
 .analytics .tag + .tag {
-	margin-left: .25rem;
+	margin-left: 1rem;
 }
 .strength {
 	cursor: pointer;
-	margin-top: -.25rem;
+	margin-top: -.5rem;
 	position: relative;
 	z-index: 4;
+}
+.s2 .strength {
+	margin-top: -.25rem;
 }
 .strength em, .s2 .strength-details {
 	background: #888;
@@ -375,7 +380,7 @@ figure:active img {
 	display: none;
 	font-size: .75rem;
 	font-style: normal;
-	margin: 1rem -1.5rem 0;
+	margin: 1.5rem .5rem 0;
 	padding: 1rem;
 	position: absolute;
 	top: 100%;
@@ -414,7 +419,7 @@ figure:active img {
 }
 .s1 hr {
 	height: 2px;
-	margin: .5rem -2rem 1.5rem;
+	margin: 1rem 0;
 }
 
 .s1:hover {
@@ -428,7 +433,7 @@ figure:active img {
 	background: #f3f5f9;
 }
 .empty, .empty div, .empty a {
-	height: 418px;
+	height: 430px;
 	padding: 0;
 }
 .empty div {
@@ -466,6 +471,9 @@ figure:active img {
 	padding-top: 1rem;
 	padding-bottom: 1.25rem;
 }
+.s2.empty {
+	height: 450px;
+}
 .s2 .analytics {
 	position: static;
 	margin-bottom: .75rem;
@@ -478,7 +486,7 @@ figure:active img {
 	margin-left: .5rem;
 }
 .s2 hr {
-	margin: 1rem -2rem;
+	margin: 1rem 0;
 }
 .s2 .strength-details {
 	left: 0;
