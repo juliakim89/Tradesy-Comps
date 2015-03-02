@@ -499,6 +499,115 @@ figure div {
 	margin: .4rem .4rem 0;
 }
 
+/*** brands ***/
+/*.brands {
+	overflow: hidden;
+	position: relative;
+}
+.brands .all {
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,#fff));
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: none;
+}
+.brands-wrap {
+	width: 150%;
+}*/
+.brands {
+	margin: 0 -.5rem;
+}
+div.brand {
+	display: inline-block;
+	float: left;
+	padding: 0 .5rem;
+	width: 20%;
+}
+/*.brand + .brand {
+	padding-left: .5rem;
+}*/
+/*.brand div, .brand a {
+	display: table;
+	height: 100px;
+	width: 100%;
+}*/
+div.brand a {
+	background: #111;
+	/*border: 2px solid #111;*/
+	/*border-radius: 3px;*/
+	color: white;
+	display: block;
+	font-family: 'proxima-nova-regular', sans-serif;
+	font-size: 1.25rem;
+	padding: 1.75rem 0;
+	line-height: 1;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+div.brand a:after {
+	color: rgba(255,255,255,0.5);
+	content: ' ('attr(data-num)')';
+	font-family: 'proxima-nova-regular', sans-serif;
+}
+.img {
+	padding: 0 .5rem;
+}
+.brand.img a {
+	/*background: url(http://cdn-6.famouslogos.us/images/fashion/gucci-logo.jpg) no-repeat center center;
+	background-size: contain;*/
+	border: 2px solid #111;
+	background: white;
+	/*max-height: 70px;*/
+	padding: .5rem;
+	/*text-indent: -2000%;*/
+}
+/*.img span, .img span span {
+	background: white;
+	display: table;
+	height: 85px;
+	padding: 0 1rem;
+	width: 100%;
+}
+.img span span {
+	display: table-cell;
+	padding: 0;
+	vertical-align: middle;
+}*/
+.img img {
+	display: block;
+	margin: auto;
+	max-height: 50px;
+	max-width: 100%;
+}
+.img a:after {
+	/*border-top: 1px solid #111;*/
+	color: #111;
+	content: attr(data-num)' items';
+	display: none;
+	font-size: .85rem;
+	padding: .75rem 0 0;
+}
+div.brand a:hover {
+	background: #ee7873;
+}
+div.brand a:active {
+	background: #C41008;
+}
+.brand.img a:hover {
+	background: none;
+	/*border-color: white;*/
+	box-shadow: 0 0 0 1px white, 0 0 0 3px #ddd;
+	/*transform: scale(1.075);*/
+	/*opacity: .5;*/
+}
+.img a:active {
+	/*background: none;*/
+}
+.img a:active img {
+	opacity: .75;
+}
+
 @media screen and (min-width: 75rem){
 
 .width {
