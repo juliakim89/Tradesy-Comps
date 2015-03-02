@@ -517,7 +517,7 @@ figure div {
 .brands {
 	margin: 0 -.5rem;
 }
-div.brand {
+div.brand, .brnd {
 	display: inline-block;
 	float: left;
 	padding: 0 .5rem;
@@ -534,7 +534,7 @@ div.brand {
 div.brand a {
 	background: #111;
 	/*border: 2px solid #111;*/
-	/*border-radius: 3px;*/
+	border-radius: 3px;
 	color: white;
 	display: block;
 	font-family: 'proxima-nova-regular', sans-serif;
@@ -553,13 +553,13 @@ div.brand a:after {
 .img {
 	padding: 0 .5rem;
 }
-.brand.img a {
+.brand.img a, .brnd a {
 	/*background: url(http://cdn-6.famouslogos.us/images/fashion/gucci-logo.jpg) no-repeat center center;
 	background-size: contain;*/
 	border: 2px solid #111;
 	background: white;
 	/*max-height: 70px;*/
-	padding: .5rem;
+	padding: .75rem .5rem;
 	/*text-indent: -2000%;*/
 }
 /*.img span, .img span span {
@@ -574,27 +574,39 @@ div.brand a:after {
 	padding: 0;
 	vertical-align: middle;
 }*/
-.img img {
+.img img, .brnd img {
 	display: block;
 	margin: auto;
 	max-height: 50px;
 	max-width: 100%;
 }
-.img a:after {
+.brand.img a:after {
 	/*border-top: 1px solid #111;*/
-	color: #111;
+	color: #999;
 	content: attr(data-num)' items';
 	display: none;
 	font-size: .85rem;
-	padding: .75rem 0 0;
+	padding: .5rem 0 0;
 }
 div.brand a:hover {
 	background: #ee7873;
 }
+.brand.louis-vouitton a:hover {
+	background: #522F12;
+}
+.brand.prada a:hover {
+	background: #0A2F4A;
+}
+.brand.tory-birch a:hover {
+	background: #8C2201;
+}
+.brand.evolution a:hover {
+	background: #009138;
+}
 div.brand a:active {
 	background: #C41008;
 }
-.brand.img a:hover {
+.brand.img a:hover, .brnd a:hover {
 	background: none;
 	/*border-color: white;*/
 	box-shadow: 0 0 0 1px white, 0 0 0 3px #ddd;
@@ -604,8 +616,18 @@ div.brand a:active {
 .img a:active {
 	/*background: none;*/
 }
-.img a:active img {
+.img a:active img, .brnd a:active img {
 	opacity: .75;
+	transform: scale(0.975);
+}
+
+.brnd a {
+	display: block;
+}
+.brnd small {
+	display: block;
+	padding-top: .5rem;
+	text-align: center;
 }
 
 @media screen and (min-width: 75rem){
