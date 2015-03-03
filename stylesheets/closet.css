@@ -48,6 +48,9 @@ hr {
 	/*height: 3px;*/
 	margin: 7rem 0;
 }
+.min {
+	margin: 3rem 0;
+}
 
 header {
 	background: #040407;
@@ -742,6 +745,11 @@ input[type=submit]:active {
 }
 .drops span:first-child, .drops:hover span {
 	display: block;
+}
+
+.drops:hover nav {
+	border-color: #111;
+	box-shadow: 0 0 0 1px white, 0 0 0 2px #ddd;
 }
 .drops:hover span + span {
 	border-top: 1px solid #ddd;
