@@ -48,6 +48,9 @@ hr {
 	/*height: 3px;*/
 	margin: 7rem 0;
 }
+.less {
+	margin-top: -1rem;
+}
 .min {
 	margin: 3rem 0;
 }
@@ -229,8 +232,9 @@ figure div {
 	background-size: 20px;
 	display: inline-block;
 	height: 20px;
+	opacity: .5;
 	position: relative;
-	top: 1px;
+	top: 3px;
 	width: 20px;
 }
 .product .i-added:before {
@@ -239,6 +243,7 @@ figure div {
 	position: relative;
 	top: .25rem;*/
 	background-position: 0 0;
+	opacity: 1;
 }
 .product .wanted.n:after {
 	content: attr(data-want);
@@ -247,6 +252,7 @@ figure div {
 	margin-left: .15rem;
 	position: relative;
 	top: -.15rem;
+	text-align: left;
 	width: 1rem;
 }
 .want:active {
@@ -309,10 +315,11 @@ figure div {
 }
 .product .n:hover:before {
 	background-position: 0 0;
+	opacity: 1;
 }
-.product .wanted.n:active {
-	transform: scale(.95);
-}
+/*.product .wanted.n:active {
+	transform: scale(.975);
+}*/
 .has-sold:hover .brand {
 	display: inline-block !important;
 }
