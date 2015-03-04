@@ -208,10 +208,46 @@ figure div {
 	right: .5rem;
 	z-index: 2;
 }
+.product .n {
+	top: 1rem;
+}
 .product .wanted {
 	background: none;
 	color: #888;
 	display: inline-block;
+}
+.product .wanted.n {
+	color: #888;
+	padding-top: 0;
+}
+.product .n:before {
+	/*content: "\2661";
+	font: bold 1.25rem/1 sans-serif;
+	line-height: 0;*/
+	content: "";
+	background: url(../images/heart.png) no-repeat 0 -19px;
+	background-size: 20px;
+	display: inline-block;
+	height: 20px;
+	position: relative;
+	top: 1px;
+	width: 20px;
+}
+.product .i-added:before {
+	/*content: "\2665";
+	font-size: 2rem;
+	position: relative;
+	top: .25rem;*/
+	background-position: 0 0;
+}
+.product .wanted.n:after {
+	content: attr(data-want);
+	display: inline-block;
+	/*font-family: 'proxima-nova-semi', sans-serif;*/
+	margin-left: .15rem;
+	position: relative;
+	top: -.15rem;
+	width: 1rem;
 }
 .want:active {
 	opacity: .5;
@@ -244,10 +280,13 @@ figure div {
 
 .product:hover {
 	border-color: white;
-	border-radius: 2px;
-	box-shadow: 0 0 0 2px #ccc;
+	/*border-radius: 2px;*/
+	box-shadow: 0 0 0 1px #ddd;
 	/*transform: scale(1.01);*/
 	z-index: 3;
+}
+.product:hover h3 {
+	border-bottom: 1px solid currentColor;
 }
 .product div > a:active {
 	top: 1px;
@@ -261,8 +300,29 @@ figure div {
 .product:hover .brand, .product.v1:hover .brand, .product:hover .savings, .product:hover .wanted {
 	display: none;
 }
+.product:hover .wanted.n {
+	display: inline-block;
+}
+.product .wanted.n:hover {
+	display: inline-block;
+	color: #ee7873;
+}
+.product .n:hover:before {
+	background-position: 0 0;
+}
+.product .wanted.n:active {
+	transform: scale(.95);
+}
 .has-sold:hover .brand {
 	display: inline-block !important;
+}
+
+.product .sale.ss {
+	/*transform: rotate(-45deg);*/
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	margin: 0 !important;
 }
 
 /*** btn ***/
@@ -544,12 +604,12 @@ div.brand, .brnd {
 div.brand a {
 	background: #111;
 	/*border: 2px solid #111;*/
-	/*border-radius: 3px;*/
+	border-radius: 3px;
 	color: white;
 	display: block;
 	font-family: 'proxima-nova-regular', sans-serif;
 	font-size: 1.25rem;
-	padding: 1.75rem 0;
+	padding: 1.25rem 0;
 	line-height: 1;
 	text-align: center;
 	text-decoration: none;

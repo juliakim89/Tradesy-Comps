@@ -12,7 +12,8 @@ function wantedToWant(e){
 $(function(){
   var product = $('.product'),
     product_img = $('.has-alt-img'),
-    want = product.find('span.want.action');
+    // want = product.find('span.want.action');
+    want = product.find('span.wanted');
 
     product_img.hover(function(){
       var img = $(this).find('img'),
@@ -26,28 +27,42 @@ $(function(){
     });
 
     want.on('click', function(){
-      var wanted = $(this).next('.wanted'),
-        wanted_text = wanted.text().replace('Wanted by ','');
-        parseInt(wanted_text,10);
+      // var wanted = $(this).next('.wanted'),
+      //   wanted_text = wanted.text().replace('Wanted by ','');
+      //   parseInt(wanted_text,10);
         // console.log(wanted_text, typeof wanted_text);
 
-      if($(this).text()=='Wanted'){
-        $(this).text('Removing...');
-        wantedToWant($(this));
-        wanted_text--;
-        // console.log(wanted_text, typeof wanted_text);
-        if(wanted_text===0){
-          wanted.text('');
+        var wantedNum = $(this).data('want');
+        parseInt(wantedNum,10);
+        // console.log(typeof wantedNum);
+
+        if($(this).hasClass('i-added')){
+          $(this).removeClass('i-added');
+          wantedNum = wantedNum;
         }else{
-          wanted.text('Wanted by '+ wanted_text);
+          $(this).addClass('i-added');
+          wantedNum = wantedNum + 1;
         }
-      }else{
-        $(this).text('Wanting...');
-        wantToWanted($(this));
-        wanted_text++;
-        // console.log(wanted_text, typeof wanted_text);
-        wanted.text('Wanted by '+ wanted_text);
-      }
+
+        $(this).attr('data-want',wantedNum);
+
+      // if($(this).text()=='Wanted'){
+      //   $(this).text('Removing...');
+      //   wantedToWant($(this));
+      //   wanted_text--;
+      //   if(wanted_text===0){
+      //     wanted.text('');
+      //   }else{
+      //     wanted.text('Wanted by '+ wanted_text);
+      //   }
+      // }else{
+      //   $(this).text('Wanting...');
+      //   wantToWanted($(this));
+      //   wanted_text++;
+      //   wanted.text('Wanted by '+ wanted_text);
+      // }
+
+
     });
 
 });
