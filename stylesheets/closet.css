@@ -829,6 +829,35 @@ input[type=submit]:active {
 	color: #ee7873;
 }
 
+
+/**** seller ctrls ****/
+.a2 {
+	padding: .5rem 1rem;
+	top: .5rem;
+	left: 0;
+}
+.a2 .tag {
+	display: inline-block;
+	float: left;
+	padding: 0;
+	position: static;
+}
+.a2 button.tag {
+	border: 0;
+	background: #ee7873;
+	color: white;
+	cursor: pointer;
+	float: right;
+	outline: none;
+	padding: .25rem;
+	position: relative;
+	top: -0.25rem;
+	margin-left: 0 !important;
+}
+button.tag:active {
+	background: #C41008;
+}
+
 @media screen and (min-width: 75rem){
 
 .width {
