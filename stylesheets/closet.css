@@ -121,17 +121,20 @@ header img {
 .product h4 {
 	margin-top: .5rem;
 }
-.product h4 span {
+.product h4 span, .product h3 span {
 	color: #ccc;
 	/*font-size: .75rem;*/
 	margin-left: .25rem;
 	position: relative;
 	/*top: -.075rem;*/
 }
+.product.v9:hover h3 {
+	border: 0;
+}
 /*.product h4 span:before {
 	content: "was ";
 }*/
-.product h4 span:before {
+.product h4 span:before, .product h3 span:before {
 	background: #999;
 	content: "";
 	display: block;
@@ -180,6 +183,13 @@ figure div {
 	position: relative;
 	left: -.1rem;
 	top: -.175rem;
+}
+
+.brand.pill {
+	font-family: 'proxima-nova-semi', sans-serif;
+	letter-spacing: 1.5px;
+	margin: -1rem 0 .5rem;
+	text-transform: uppercase;
 }
 
 .product .tag {
@@ -364,7 +374,8 @@ figure div {
 	left: -.125rem;
 }
 .v2 .sale {
-	background: #7dccad;
+	/*background: #7dccad;*/
+	background: #111;
 	color: white;
 }
 .v2 .brand {
@@ -832,7 +843,7 @@ input[type=submit]:active {
 
 /**** seller ctrls ****/
 .a2 {
-	padding: .5rem 1rem;
+	padding: 0 .35rem .5rem;
 	top: .5rem;
 	left: 0;
 }
@@ -841,6 +852,13 @@ input[type=submit]:active {
 	float: left;
 	padding: 0;
 	position: static;
+}
+.a2 .tag + .tag {
+	margin-left: 1.25rem;
+}
+.a2 .n {
+	position: relative;
+	top: 0;
 }
 .a2 button.tag {
 	border: 0;
