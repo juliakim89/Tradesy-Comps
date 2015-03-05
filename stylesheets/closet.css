@@ -199,6 +199,8 @@ figure div {
 	letter-spacing: 1.5px;
 	margin: -1rem 0 .5rem;
 	text-transform: uppercase;
+	/*padding: .25rem .25rem .15rem !important;
+	background: #ebebeb !important;*/
 }
 
 .product .tag {
@@ -829,43 +831,54 @@ input[type=submit]:active {
 	z-index: 3;
 }*/
 .drops nav {
+	background: white;
 	border: 1px solid #ddd;
 	border-radius: 2px;
 	min-width: 10rem;
 	position: absolute;
 }
-.drops nav:after {
-	content: "\25BC";
+.drops em {
 	position: absolute;
 	top: .65rem;
 	right: .75rem;
+	z-index: 3;
 }
-.drops span {
-	background: white;
+.drops em:active {
+	opacity: .5;
+}
+.drops em:after {
+	content: "\25BC";
+	cursor: pointer;
+	font-style: normal;
+}
+.drops span, .drops.show span span {
+	/*background: white;*/
 	display: none;
 }
-.drops a {
+.drops a, .drops span span {
+	/*border-radius: 2px 2px 0 0;*/
 	color: #111;
+	cursor: pointer;
 	display: block;
 	padding: .5rem .75rem;
 	text-decoration: none;
 }
-.drops span:first-child, .drops:hover span {
+.drops span:first-child, .drops.show span {
 	display: block;
 }
 
 .drops:hover nav {
 	border-color: #111;
-	box-shadow: 0 0 0 1px white, 0 0 0 2px #ddd;
+	/*box-shadow: 0 0 0 2px rgba(0,0,0,0.125);*/
 }
-.drops:hover span + span {
+.drops.show span + span + span {
 	border-top: 1px solid #ddd;
 }
-.drops:hover nav:after {
+.drops.show em:after {
 	content: "\25B2";
 }
 .drops a:hover {
-	background: #efefef;
+	/*background: #efefef;*/
 	color: #ee7873;
 }
 
