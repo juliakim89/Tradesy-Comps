@@ -118,6 +118,12 @@ header img {
 .product h3, .product p {
 	margin: 0;
 }
+.product h3, .elp h4 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+}
 .product h4 {
 	margin-top: .5rem;
 }
@@ -172,9 +178,12 @@ figure div {
 	text-decoration: none;
 }
 .product a h3 {
-	/*border-bottom: 1px solid currentColor;*/
+	border-bottom: 1px solid white;
 	color: #111;
 	display: inline-block;
+}
+.no-b .product a h3 {
+	border: 0;
 }
 .product a h4 {
 	color: #888;
