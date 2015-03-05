@@ -247,6 +247,26 @@ figure div {
 	top: 3px;
 	width: 20px;
 }
+.product .vw:before {
+	background: url(../images/view.png) no-repeat 0 -19px;
+	background-size: 20px;
+	display: inline-block;
+	height: 20px;
+	opacity: .5;
+	position: relative;
+	top: 3px;
+	width: 20px;
+}
+.product .shr:before {
+	background: url(../images/share.png) no-repeat 0 -19px;
+	background-size: 20px;
+	display: inline-block;
+	height: 20px;
+	opacity: .5;
+	position: relative;
+	top: 2px;
+	width: 20px;
+}
 .product .i-added:before {
 	/*content: "\2665";
 	font-size: 2rem;
@@ -844,8 +864,8 @@ input[type=submit]:active {
 /**** seller ctrls ****/
 .a2 {
 	padding: 0 .35rem .5rem;
-	top: .5rem;
-	left: 0;
+	top: .75rem;
+	left: .25rem;
 }
 .a2 .tag {
 	display: inline-block;
@@ -869,8 +889,9 @@ input[type=submit]:active {
 	outline: none;
 	padding: .25rem;
 	position: relative;
-	top: -0.25rem;
-	margin-left: 0 !important;
+	top: 0.25rem;
+	margin-right: 1.25rem;
+	/*margin-left: 0 !important;*/
 }
 button.tag:active {
 	background: #C41008;

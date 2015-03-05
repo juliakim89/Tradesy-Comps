@@ -32,6 +32,10 @@ $(function(){
       //   parseInt(wanted_text,10);
         // console.log(wanted_text, typeof wanted_text);
 
+        if($(this).hasClass('no-inc')){
+          return;
+        }
+
         var wantedNum = $(this).data('want');
         parseInt(wantedNum,10);
         // console.log(typeof wantedNum);
