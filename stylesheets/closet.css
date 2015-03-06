@@ -42,6 +42,9 @@ strong, h1, h2, h3, h4 {
 	margin: auto;
 	padding: 1em;
 }
+a {
+	color: #ee7873;
+}
 hr {
 	background: none;
 	border: 0;
@@ -53,6 +56,12 @@ hr {
 }
 .min {
 	margin: 3rem 0;
+}
+.text-right {
+	text-align: right;
+}
+h4 {
+	margin-bottom: 1.5rem;
 }
 
 header {
@@ -71,6 +80,9 @@ header img {
 	height: 500px;
 	margin-bottom: 2rem;
 	position: relative;
+}
+.closet-head.mn {
+	height: 300px;
 }
 .url {
 	background: #fef8e7;
@@ -169,9 +181,65 @@ header img {
 	position: relative;
 	text-align: center;
 }
+
+/*** filter list ***/
+.filter-list {
+	background: #efefef;
+	display: table;
+	height: 355px;
+	padding: 1rem;
+	text-align: left;
+}
+.filter-list div {
+	display: table-cell;
+	height: 325px;
+	vertical-align: middle;
+}
+.product.filter-list:hover {
+	box-shadow: none;
+}
+.filter-list h5 {
+	font-size: 1.25rem;
+	font-weight: normal;
+	margin: 0 0 .5rem;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+.product.filter-list a {
+	padding: 0;
+	position: relative;
+}
+.product.filter-list span + p {
+	margin-top: 1rem;
+}
+.filter-list a {
+	display: block;
+}
+.filter-list a:after {
+	border: 1px solid #888;
+	content: "";
+	display: inline-block;
+	height: 14px;
+	/*margin-left: 10px;*/
+	position: absolute;
+	right: 0;
+	top: .35rem;
+	width: 14px;
+}
+.rd a:after {
+	border-radius: 100%;
+}
+.filter-list .shown a:after {
+	background: white url(../images/cls.png) no-repeat center center;
+	background-size: 10px;
+}
+
 .product + .product {
 	border-left: 0;
 }
+/*.sub .product:nth-child(n+5) {
+	margin-top: 1rem;
+}*/
 .product * {
 	position: relative;
 	z-index: 1;
@@ -469,6 +537,16 @@ figure div {
 	/*background: #7dccad;*/
 	background: #111;
 	color: white;
+}
+.on-sale.product a h4 {
+	color: #111;
+	font-family: 'proxima-nova-semi', sans-serif;
+}
+.red .sale {
+	background: #ee7873;
+}
+.on-sale.red a h4 {
+	color: #ee7873;
 }
 .v2 .brand {
 	padding: 0;
@@ -877,12 +955,75 @@ input[type=submit]:active {
 	opacity: .5;
 }
 
+/*** filters ***/
+.filters {
+	float: left;
+	padding-top: 4px;
+}
+.filters .tag {
+	border-radius: 2px;
+	cursor: pointer;
+	display: inline-block;
+	padding: .5rem .75rem;
+}
+.filters .tag + .tag {
+	margin-left: .5rem;
+}
+.filters .applied + .add {
+	margin-left: 1rem;
+}
+.filters button {
+	border: 0;
+}
+.applied {
+	background: #efefef;
+}
+.add {
+	background: #111;
+	color: white;
+}
+.filters .tag:after {
+	background: url(../images/cls.png) no-repeat 0 0;
+	background-size: 10px;
+	content: "";
+	display: inline-block;
+	height: 10px;
+	margin-left: 10px;
+	opacity: .75;
+	width: 10px;
+}
+.filters .add:after {
+	background: url(../images/add.png) no-repeat 0 0;
+	background-size: 10px;
+	opacity: 1;
+}
+.filters .show:after {
+	background: url(../images/menu.png) no-repeat 0 0;
+	background-size: 15px;
+	position: relative;
+	top: -2px;
+	width: 15px;
+	opacity: 1;
+}
+/*.filters + .drops, .filters + .drops + .drops, .filters + .drops + .drops + .drops {
+	margin-left: 1rem;
+	top: -1rem;
+}*/
+
+/*** drop downs ***/
+/*.filter-toggles {
+	height: 3rem;
+	margin: -1rem 0 2rem;
+}*/
 .drops {
 	display: inline-block;
 	min-width: 10rem;
 	position: relative;
 	top: 3px;
 	z-index: 3;
+}
+.drops.right {
+	float: right;
 }
 .drops + .drops {
 	margin-left: .5rem;

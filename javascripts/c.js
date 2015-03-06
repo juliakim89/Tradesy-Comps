@@ -14,8 +14,10 @@ $(function(){
     product_img = $('.has-alt-img'),
     // want = product.find('span.want.action');
     want = product.find('span.wanted'),
-    drops = $('.drops nav'),
-    dropsClose = $('.drops em');
+    drops = $('.drops nav')
+    dropLinks = drops.find('a'),
+    dropsClose = $('.drops em'),
+    filters = $('#filters');
 
   product_img.hover(function(){
     var img = $(this).find('img'),
@@ -71,12 +73,20 @@ $(function(){
 
   });
 
-  drops.on('click', function(e) {
+  drops.on('click', function() {
     drops.parent().parent().removeClass('show');
     if(!$(this).parent().parent().hasClass('show')){
       $(this).parent().parent().addClass('show');
     }
   });
+
+  // dropLinks.on('click', function(e) {
+  //   if(!!filters.length){
+  //     filters.append('<button class="tag applied">'+$(this).text()+'</button>');
+  //     $(this).parent().parent().parent().parent().removeClass('show');
+  //     e.stopPropagation();
+  //   }
+  // });
 
   dropsClose.on('click', function() {
     if(!!$(this).parent().parent().hasClass('show')){
