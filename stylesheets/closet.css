@@ -68,9 +68,70 @@ header img {
 
 .closet-head {
 	background: #ddd;
-	height: 300px;
+	height: 500px;
 	margin-bottom: 2rem;
+	position: relative;
 }
+.url {
+	background: #fef8e7;
+	padding: 1.25rem;
+	text-align: center;
+}
+.url * {
+	line-height: 1;
+	margin: 0;
+}
+.url h2 {
+	font-size: 1.25rem;
+	padding-bottom: .25rem;
+}
+.url p {
+	color: #888;
+	padding-bottom: .5rem;
+}
+.url strong {
+	color: #111;
+	/*font-family: 'proxima-nova-semi', sans-serif;*/
+	text-transform: uppercase;
+}
+.url code {
+	background: #111;
+	border: 0;
+	border-radius: 3px;
+	color: white;
+	display: inline-block;
+	font-size: .85rem;
+	font-family: 'proxima-nova-regular', sans-serif;
+	padding: .5rem;
+	text-align: center;
+	width: auto;
+}
+.url code + a {
+	color: #ee7873;
+	display: inline-block;
+	font-size: .85rem;
+	padding: .75rem;
+}
+.seller-edit {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+.seller-edit span {
+	display: inline-block;
+}
+.seller-edit a {
+	background: #ee7873;
+	color: white; 
+	display: block;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+}
+
+
+
 
 .rack + .rack {
 	margin-top: 3rem;
