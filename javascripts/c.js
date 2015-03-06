@@ -74,8 +74,6 @@ $(function(){
   drops.on('click', function(e) {
     drops.parent().parent().removeClass('show');
     if(!$(this).parent().parent().hasClass('show')){
-      e.preventDefault();
-      e.stopPropagation();
       $(this).parent().parent().addClass('show');
     }
   });
@@ -88,5 +86,12 @@ $(function(){
       $(this).parent().parent().addClass('show');
     }
   });
+
+  // hide drops if click is anywhere outside a .drops container
+  $(document).on('click', function(e) {
+    if(!$(e.target).closest('.drops').length){
+      drops.parent().parent().removeClass('show');
+    }
+  })
 
 });
