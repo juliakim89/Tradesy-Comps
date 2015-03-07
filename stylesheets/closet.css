@@ -169,6 +169,19 @@ header img {
 	content: ' ('attr(data-num)')';
 	opacity: .5;
 }
+.rack h2 button {
+	float: right;
+	background: none;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 1rem;
+	line-height: 1;
+	padding: .5rem;
+}
+.rack h2 button:active {
+	background: #efefef;
+}
 .product {
 	/*box-shadow: 0 0 0 1px #efefef inset;*/
 	background: white;
@@ -185,14 +198,17 @@ header img {
 /*** filter list ***/
 .filter-list {
 	background: #efefef;
-	display: table;
+	display: none;
 	height: 355px;
 	padding: 1rem;
 	text-align: left;
 }
+.filter-list.view {
+	display: table;
+}
 .filter-list div {
 	display: table-cell;
-	height: 325px;
+	height: 318px;
 	vertical-align: middle;
 }
 .product.filter-list:hover {
@@ -228,6 +244,9 @@ header img {
 }
 .rd a:after {
 	border-radius: 100%;
+}
+.no a:after {
+	display: none;
 }
 .filter-list .shown a:after {
 	background: white url(../images/cls.png) no-repeat center center;

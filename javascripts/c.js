@@ -17,7 +17,9 @@ $(function(){
     drops = $('.drops nav')
     dropLinks = drops.find('a'),
     dropsClose = $('.drops em'),
-    filters = $('#filters');
+    filters = $('#filters'),
+    toggleFilters = $('#filterssss'),
+    filterList = $('#filter-list');
 
   product_img.hover(function(){
     var img = $(this).find('img'),
@@ -102,6 +104,16 @@ $(function(){
     if(!$(e.target).closest('.drops').length){
       drops.parent().parent().removeClass('show');
     }
-  })
+  });
+
+  toggleFilters.on('click', function() {
+    if($(this).hasClass('showing')){
+      filterList.removeClass('view');
+      $(this).removeClass('showing').text('Show filters');
+    }else{
+      filterList.addClass('view');
+      $(this).addClass('showing').text('Hide filters');
+    }
+  });
 
 });
