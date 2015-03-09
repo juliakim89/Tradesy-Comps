@@ -1034,6 +1034,9 @@ input[type=submit]:active {
 	height: 3rem;
 	margin: -1rem 0 2rem;
 }*/
+.filter-toggles {
+	padding: 2rem 0;
+}
 .drops {
 	display: inline-block;
 	min-width: 10rem;
