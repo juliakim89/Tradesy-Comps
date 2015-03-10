@@ -77,6 +77,8 @@ header img {
 
 .closet-head {
 	background: #ddd;
+	/*background: url(../images/default-back.png) no-repeat center center;
+	background-size: cover;*/
 	height: 500px;
 	margin-bottom: 2rem;
 	position: relative;
@@ -254,9 +256,15 @@ header img {
 	padding: .5rem .75rem;
 }
 .sm .tag {
-	border-radius: 0;
-	font-size: .85rem;
+	/*border-radius: 0;*/
+	/*font-size: .85rem;*/
 	padding: .25rem .35rem .175rem;
+}
+.lg + .lg {
+	margin-top: .75rem;
+}
+.lg + .l {
+	margin: .5rem 0 .25rem;
 }
 .filter-list .tag:after {
 	content: "/ " attr(data-num);
@@ -268,10 +276,16 @@ header img {
 .filter-list .spn {
 	background: none;
 	color: #111;
-	display: none;
+	cursor: default;
+	/*display: none;*/
 	padding: .5rem .25rem .5rem 0;
 	margin: .15rem 0;
-	width: 4rem;
+	width: 5rem;
+}
+.filter-list .tag.spn:active, .filter-list .tag.spn:focus {
+	background: white;
+	box-shadow: none;
+	color: #111;
 }
 .tag {
 	background: none;
@@ -280,7 +294,11 @@ header img {
 	box-shadow: 0 0 0 1px #ddd inset;
 	cursor: pointer;
 	display: inline-block;
+	outline: none;
 	padding: .5rem .75rem;
+}
+.ckb:active {
+	background: #efefef;
 }
 div.tag {
 	color: #111;
@@ -292,14 +310,22 @@ div.tag {
 }
 .filter-list .spn:after {
 	content: ":";
+	display: inline;
+	padding: 0;
 	opacity: 1;
+}
+.fleft {
+	float: left;
+}
+.fleft + .fleft {
+	padding-left: 4rem;
 }
 .filter-list .tag + .tag {
 	margin-left: .25rem;
 }
-.filter-list div + div {
+/*.filter-list div + div {
 	margin-top: 1rem;
-}
+}*/
 .product.filter-list a {
 	padding: 0;
 	position: relative;
@@ -1096,8 +1122,8 @@ input[type=submit]:active {
 	background: #efefef;
 }
 .add {
-	background: #111;
-	color: white;
+	background: #ddd;
+	/*color: white;*/
 }
 .add[disabled] {
 	background: none !important;
@@ -1110,6 +1136,18 @@ span.cls {
 	top: 0;
 	right: 0;
 }
+span.cls:before {
+	color: #111;
+	content: "Close";
+	font-size: .75rem;
+	opacity: .75;
+	position: relative;
+	top: -2px;
+	left: 4px;
+}
+span.cls:active {
+	opacity: .75;
+}
 .filters .tag:after, span.cls:after, .atv:after {
 	background: url(../images/cls.png) no-repeat 0 0;
 	background-size: 10px;
@@ -1120,13 +1158,36 @@ span.cls {
 	opacity: .75;
 	width: 10px;
 }
+.atv:after {
+	background: url(../images/cls-w.png) no-repeat 0 0;
+	background-size: 10px;
+	opacity: 1;
+	width: 2px;
+}
 /*[disabled]:before {
 	margin: 0 5px 0 0;
 }*/
 .filter-list .atv {
-	background: white;
-	color: #888;
+	background: #111;
+	color: white;
 }
+.filter-list .tag:active/*, .filter-list .tag:focus*/ {
+	background: #ccc;
+}
+.filter-list .tag:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #ccc;
+}
+.filter-list .atv:active {
+	background: #111;
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #888;
+	color: rgba(255,255,255,0.5);
+}
+.filter-list .atv:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #888;
+}
+/*.filter-list .tag:focus {
+	color: white;
+}*/
 .filter-list .atv:after {
 	content: "";
 }
@@ -1341,7 +1402,7 @@ span.cls {
 	margin-right: 1.25rem;
 	/*margin-left: 0 !important;*/
 }
-button.tag:active {
+.product button.tag:active {
 	background: #C41008;
 }
 
