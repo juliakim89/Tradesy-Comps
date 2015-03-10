@@ -153,6 +153,9 @@ header img {
 	margin-bottom: 2rem;
 	text-transform: uppercase;
 }
+.rack .left {
+	float: left;
+}
 .rack h2 a {
 	border-bottom: 1px solid currentColor;
 	color: #ee7873;
@@ -198,28 +201,76 @@ header img {
 /*** filter list ***/
 .filter-list {
 	background: #efefef;
+	border-radius: 3px;
+	box-shadow: 0 0 0 1px #ddd inset;
 	display: none;
-	height: 355px;
-	padding: 1rem;
+	/*height: 355px;*/
+	padding: 2rem;
+	margin-top: 2rem;
 	text-align: left;
 }
 .filter-list.view {
-	display: table;
+	/*display: table;*/
+	display: block;
+	margin-bottom: -3rem;
 }
-.filter-list div {
+/*.filter-list div {
 	display: table-cell;
 	height: 318px;
 	vertical-align: middle;
-}
+}*/
 .product.filter-list:hover {
 	box-shadow: none;
 }
 .filter-list h5 {
 	font-size: 1.25rem;
 	font-weight: normal;
-	margin: 0 0 .5rem;
+	margin: 0 0 .75rem;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
+}
+.filter-list p {
+	color: #111;
+	margin: .25rem 0;
+}
+.filter-list .tag {
+	border: 0;
+	border-radius: 2px;
+	box-shadow: none;
+	padding: .5rem .75rem;
+}
+.filter-list .tag:after {
+	content: " (" attr(data-num) ")";
+	opacity: .5;
+}
+.filter-list .spn {
+	background: none;
+	color: #111;
+	padding: .5rem .25rem .5rem 0;
+	width: 4rem;
+}
+.tag {
+	background: none;
+	border: 0;
+	border-radius: 2px;
+	box-shadow: 0 0 0 1px #ddd inset;
+	cursor: pointer;
+	display: inline-block;
+	padding: .5rem .75rem;
+}
+.tag.right {
+	float: right;
+	margin-left: 1rem;
+}
+.filter-list .spn:after {
+	content: ":";
+	opacity: 1;
+}
+.filter-list .tag + .tag {
+	margin-left: .25rem;
+}
+.filter-list div + div {
+	margin-top: 1rem;
 }
 .product.filter-list a {
 	padding: 0;
@@ -355,6 +406,7 @@ figure div {
 	cursor: default;
 	background: #111;
 	border-radius: 2px;
+	box-shadow: none;
 	color: white;
 	display: inline-block;
 	font-size: .75rem;
@@ -1001,6 +1053,10 @@ input[type=submit]:active {
 	background: #111;
 	color: white;
 }
+.add[disabled] {
+	background: rgba(0,0,0,0.125);
+	color: #888;
+}
 .filters .tag:after {
 	background: url(../images/cls.png) no-repeat 0 0;
 	background-size: 10px;
@@ -1016,10 +1072,14 @@ input[type=submit]:active {
 	background-size: 10px;
 	opacity: 1;
 }
-.filters .show:after {
+.tag.show:after {
 	background: url(../images/menu.png) no-repeat 0 0;
 	background-size: 15px;
+	content: "";
+	display: inline-block;
 	position: relative;
+	height: 10px;
+	margin-left: 10px;
 	top: -2px;
 	width: 15px;
 	opacity: 1;
@@ -1039,13 +1099,17 @@ input[type=submit]:active {
 }
 .drops {
 	display: inline-block;
-	min-width: 10rem;
+	/*min-width: 10rem;*/
 	position: relative;
-	top: 3px;
+	/*top: 3px;*/
 	z-index: 3;
 }
 .drops.right {
 	float: right;
+	/*right: 7.25rem;*/
+}
+.more-right {
+	right: 11rem;
 }
 .drops + .drops {
 	margin-left: .5rem;
@@ -1054,16 +1118,16 @@ input[type=submit]:active {
 	position: absolute;
 	z-index: 3;
 }*/
-.drops nav {
+.drops.show nav {
 	background: white;
-	border: 1px solid #ddd;
 	border-radius: 2px;
-	min-width: 10rem;
+	box-shadow: 0 0 0 1px #ddd inset;
+	/*min-width: 10rem;*/
 	position: absolute;
 }
 .drops em {
 	position: absolute;
-	top: .65rem;
+	top: .6rem;
 	right: .75rem;
 	z-index: 3;
 }
@@ -1084,11 +1148,16 @@ input[type=submit]:active {
 	color: #111;
 	cursor: pointer;
 	display: block;
-	padding: .5rem .75rem;
+	padding: .425rem .5rem;
 	text-decoration: none;
 }
 .drops span:first-child, .drops.show span {
 	display: block;
+}
+.drops span:first-child {
+	background: white;
+	border-radius: 2px;
+	box-shadow: 0 0 0 1px #ddd inset;
 }
 
 .drops:hover nav {
