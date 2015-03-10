@@ -116,9 +116,15 @@ $(function(){
   // });
 
   filterListPills.on('click', function() {
-    if((!!filters.length) && (!$(this).hasClass('atv'))){
-      filters.append('<button class="tag applied">'+$(this).text()+'</button>');
-      $(this).addClass('atv').prop('disabled',true);
+    // if((!!filters.length) && (!$(this).hasClass('atv'))){
+    //   filters.append('<button class="tag applied">'+$(this).text()+'</button>');
+    //   $(this).addClass('atv').prop('disabled',true);
+    // }
+    if(!$(this).hasClass('atv')){
+      // filters.append('<button class="tag applied">'+$(this).text()+'</button>');
+      $(this).addClass('atv');
+    }else{
+      $(this).removeClass('atv');
     }
   });
 

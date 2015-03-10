@@ -217,7 +217,7 @@ header img {
 	border-bottom: 2px solid #ddd;
 	display: none;
 	/*height: 355px;*/
-	padding: 2rem 0;
+	padding: 0 0 2rem;
 	position: relative;
 	/*margin-top: 2rem;*/
 	text-align: left;
@@ -1098,10 +1098,10 @@ input[type=submit]:active {
 span.cls {
 	cursor: pointer;
 	position: absolute;
-	top: 2rem;
+	top: 0;
 	right: 0;
 }
-.filters .tag:after, span.cls:after {
+.filters .tag:after, span.cls:after, .atv:after {
 	background: url(../images/cls.png) no-repeat 0 0;
 	background-size: 10px;
 	content: "";
@@ -1110,6 +1110,16 @@ span.cls {
 	margin-left: 10px;
 	opacity: .75;
 	width: 10px;
+}
+/*[disabled]:before {
+	margin: 0 5px 0 0;
+}*/
+.filter-list .atv {
+	background: white;
+	color: #888;
+}
+.filter-list .atv:after {
+	content: "";
 }
 .filters .add:after {
 	background: url(../images/add.png) no-repeat 0 0;
