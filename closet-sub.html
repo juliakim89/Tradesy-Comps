@@ -22,21 +22,24 @@
 
 			<div class="width cf">
 
-				<h4 class="_text-right">
-					<a href="closet.html">{storename} Home</a>
-					 /
-					Bags
-				</h4>
+				<div class="meta cf">
+				
+					<form>
+						<fieldset>
+							<label for="closet-search">
+								<span>Enter a search in {storename}</span>
+								<input type="search" id="closet-search" placeholder="Search for bags, clothing, etc." />
+								<input type="submit" value="Search" />
+							</label>
+						</fieldset>
+					</form>
 
-				<form>
-					<fieldset>
-						<label for="closet-search">
-							<span>Enter a search in {storename}</span>
-							<input type="search" id="closet-search" placeholder="Search for bags, clothing, etc." />
-							<input type="submit" value="Search" />
-						</label>
-					</fieldset>
-				</form>
+					<div class="breadcrumbs">
+						<a href="closet.html">{storename} Home</a>
+						<span>Bags</span>
+					</div>
+
+				</div>
 
 				<div class="sub-view-details cf">
 					<div class="filters" id="filters">
@@ -171,7 +174,7 @@
 							<span class="tag spn">Styles</span>
 							<button class="tag bags add" data-num="4">Tops</button>
 							<button class="tag bags add" data-num="2">Sweaters</button>
-							<button class="tag bags add" disabled data-num="1">Totes</button>
+							<button class="tag bags add atv" disabled data-num="1">Totes</button>
 							<button class="tag bags add" data-num="1">Shorts</button>
 						</div>
 						<div>
@@ -187,7 +190,7 @@
 
 			</div>
 
-			<hr class="min" />
+			<!-- <hr class="min" /> -->
 
 			<div class="racks width" id="like1">
 
@@ -218,6 +221,23 @@
 							<em></em>
 						</div>
 					</div> -->
+					<div class="tag right has-drop">
+						<span>Sort listings by</span>
+						<nav>
+							<span>
+								<a href="#">Price: Low to high</a>
+							</span>
+							<span>
+								<a href="#">Price: High to low</a>
+							</span>
+							<span>
+								<a href="#">Most favorited</a>
+							</span>
+							<span>
+								<a href="#">Recently listed</a>
+							</span>
+						</nav>
+					</div>
 					<button class="tag right show" id="filterssss">Show filters</button>
 					<!-- <span class="tag right">
 						<div class="drops right">

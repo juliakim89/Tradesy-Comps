@@ -17,9 +17,16 @@ $(function(){
     drops = $('.drops nav')
     dropLinks = drops.find('a'),
     dropsClose = $('.drops em'),
+
+    hasDrops = $('.has-drop'),
+    hasDropsOpen = hasDrops.find('span:first'),
+    hasDropLinks = hasDrops.find('a'),
+    hasDropsClose = hasDrops.find('em'),
+
     filters = $('#filters'),
     toggleFilters = $('#filterssss'),
-    filterList = $('#filter-list');
+    filterList = $('#filter-list'),
+    filterListPills = filterList.find('button');
 
   product_img.hover(function(){
     var img = $(this).find('img'),
@@ -82,6 +89,24 @@ $(function(){
     }
   });
 
+  hasDropsOpen.on('click', function() {
+    // hasDrops.removeClass('showing');
+    if(!!$(this).parent().hasClass('showing')){
+      $(this).parent().removeClass('showing');
+    }else{
+      $(this).parent().addClass('showing');
+    }
+  });
+
+  // hasDropsClose.on('click', function() {
+  //   if(!!$(this).parent().hasClass('showing')){
+  //     $(this).parent().removeClass('showing');
+  //   }else{
+  //     hasDrops.parent().removeClass('showing');
+  //     $(this).parent().addClass('showing');
+  //   }
+  // });
+
   // dropLinks.on('click', function(e) {
   //   if(!!filters.length){
   //     filters.append('<button class="tag applied">'+$(this).text()+'</button>');
@@ -89,6 +114,13 @@ $(function(){
   //     e.stopPropagation();
   //   }
   // });
+
+  filterListPills.on('click', function() {
+    if((!!filters.length) && (!$(this).hasClass('atv'))){
+      filters.append('<button class="tag applied">'+$(this).text()+'</button>');
+      $(this).addClass('atv').prop('disabled',true);
+    }
+  });
 
   dropsClose.on('click', function() {
     if(!!$(this).parent().parent().hasClass('show')){
@@ -103,6 +135,9 @@ $(function(){
   $(document).on('click', function(e) {
     if(!$(e.target).closest('.drops').length){
       drops.parent().parent().removeClass('show');
+    }
+    if(!$(e.target).closest('.has-drop').length){
+      $('.has-drop').removeClass('showing');
     }
   });
 
