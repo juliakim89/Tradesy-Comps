@@ -219,7 +219,7 @@ header img {
 	/*height: 355px;*/
 	padding: 0 0 2rem;
 	position: relative;
-	/*margin-top: 2rem;*/
+	margin-bottom: 1rem;
 	text-align: left;
 }
 .filter-list.view {
