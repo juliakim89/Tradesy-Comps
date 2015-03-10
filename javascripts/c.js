@@ -151,4 +151,9 @@ $(function(){
     }
   });
 
+  $('#filter-cls').on('click', function() {
+    filterList.removeClass('view');
+    toggleFilters.removeClass('showing').text('Show filters');
+  });
+
 });

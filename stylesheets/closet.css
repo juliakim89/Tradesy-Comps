@@ -197,16 +197,29 @@ header img {
 	position: relative;
 	text-align: center;
 }
+.three {
+	text-align: center;
+}
+.three .product {
+	float: none;
+	padding: 1rem 2rem;
+	width: 33%;
+}
+.three figure {
+	margin: auto;
+}
 
 /*** filter list ***/
 .filter-list {
-	background: #efefef;
-	border-radius: 3px;
-	box-shadow: 0 0 0 1px #ddd inset;
+	/*background: #efefef;*/
+	/*border-radius: 3px;*/
+	/*box-shadow: 0 0 0 1px #ddd inset;*/
+	border-bottom: 2px solid #ddd;
 	display: none;
 	/*height: 355px;*/
-	padding: 2rem;
-	margin-top: 2rem;
+	padding: 2rem 0;
+	position: relative;
+	/*margin-top: 2rem;*/
 	text-align: left;
 }
 .filter-list.view {
@@ -237,6 +250,7 @@ header img {
 	border: 0;
 	border-radius: 2px;
 	box-shadow: none;
+	margin: .15rem;
 	padding: .5rem .75rem;
 }
 .filter-list .tag:after {
@@ -247,6 +261,7 @@ header img {
 	background: none;
 	color: #111;
 	padding: .5rem .25rem .5rem 0;
+	margin: .15rem 0;
 	width: 4rem;
 }
 .tag {
@@ -1076,10 +1091,17 @@ input[type=submit]:active {
 	color: white;
 }
 .add[disabled] {
-	background: rgba(0,0,0,0.125);
+	background: none !important;
+	/*box-shadow: 0 0 0 1px #ddd inset;*/
 	color: #888;
 }
-.filters .tag:after {
+span.cls {
+	cursor: pointer;
+	position: absolute;
+	top: 2rem;
+	right: 0;
+}
+.filters .tag:after, span.cls:after {
 	background: url(../images/cls.png) no-repeat 0 0;
 	background-size: 10px;
 	content: "";
