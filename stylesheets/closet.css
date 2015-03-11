@@ -1220,11 +1220,11 @@ span.cls:active {
 	background-size: 10px;
 	box-shadow: none;
 }
-.atv:focus:after {
-	background: #ee7873;
-	border-radius: 100%;
-	box-shadow: 0 0 0 2px #111, 0 0 0 3px white;
-}
+/*.atv:focus:after {
+	background: url(../images/cls-w.png) no-repeat 0 0;
+	background-size: 10px;
+	box-shadow: none;
+}*/
 .atv:active:after {
 	opacity: .5;
 }
