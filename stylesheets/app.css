@@ -167,6 +167,9 @@ header {
 	position: relative;
 	top: 1px;
 }
+.search.no-r-m fieldset {
+	margin-right: 0;
+}
 .ftr {
 	margin-bottom: -.75rem;
 	padding: 1rem .25rem 0;
