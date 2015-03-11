@@ -266,6 +266,12 @@ header img {
 .lg + .l {
 	margin: .5rem 0 .25rem;
 }
+.lg + .b, .sm + .b {
+	margin: .5rem 0;
+}
+.sm + .b {
+	margin-bottom: 0;
+}
 .filter-list .tag:after {
 	content: "/ " attr(data-num);
 	display: inline-block;
