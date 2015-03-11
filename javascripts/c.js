@@ -26,7 +26,11 @@ $(function(){
     filters = $('#filters'),
     toggleFilters = $('#filterssss'),
     filterList = $('#filter-list'),
-    filterListPills = filterList.find('button');
+    filterListPills = filterList.find('button'),
+
+    sellerNav = $('#seller-nav'),
+    sellerNavHeight = sellerNav.height(),
+    sellerNavTop = sellerNav.offset().top;
 
   product_img.hover(function(){
     var img = $(this).find('img'),
@@ -160,6 +164,16 @@ $(function(){
   $('#filter-cls').on('click', function() {
     filterList.removeClass('view');
     toggleFilters.removeClass('showing').text('Show filters');
+  });
+
+  $(window).scroll(function() {
+    if($(window).scrollTop() >= sellerNavTop){
+      sellerNav.addClass('fixed');
+      $('header').css('margin-bottom',sellerNavHeight);
+    }else{
+      sellerNav.removeClass('fixed');
+      $('header').css('margin-bottom','0');
+    }
   });
 
 });

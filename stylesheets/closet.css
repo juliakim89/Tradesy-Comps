@@ -75,6 +75,42 @@ header img {
 	max-width: 150px;
 }
 
+.seller-nav {
+	background: #2a2a2a;
+	text-align: center;
+}
+.seller-nav.fixed {
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+.seller-nav a {
+	display: inline-block;
+	color: white;
+	font-size: .85rem;
+	letter-spacing: 1px;
+	padding: 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.seller-nav a:hover, .seller-nav .active a {
+	background: #111;
+}
+.seller-nav a:active {
+	background: #040407;
+	color: rgba(255,255,255,0.75);
+}
+.seller-nav .active a {
+	color: rgba(255,255,255,0.5);
+	cursor: default;
+}
+.seller-nav .active a:active {
+	background: #111;
+	color: rgba(255,255,255,0.5);
+}
+
 .closet-head {
 	background: #ddd;
 	/*background: url(../images/default-back.png) no-repeat center center;
