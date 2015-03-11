@@ -296,6 +296,9 @@ header img {
 	/*font-size: .85rem;*/
 	padding: .25rem .35rem .175rem;
 }
+.sm .atv:after {
+	margin-right: 5px;
+}
 .lg + .lg {
 	margin-top: .75rem;
 }
@@ -1201,8 +1204,11 @@ span.cls:active {
 	width: 10px;
 }
 .atv:after {
-	background: url(../images/cls-w.png) no-repeat 0 0;
-	background-size: 10px;
+	/*background: url(../images/cls-w.png) no-repeat 0 0;*/
+	/*background-size: 10px;*/
+	background: white;
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px #111, 0 0 0 3px white;
 	opacity: 1;
 	width: 2px;
 }
