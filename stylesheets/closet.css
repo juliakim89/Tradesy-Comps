@@ -1235,9 +1235,9 @@ span.cls:active {
 	border-radius: 2px;
 	border: 1px solid #ddd;
 	display: none;
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 	position: absolute;
-	top: 100%;
+	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 10;
