@@ -166,6 +166,14 @@ header {
 	padding: .5em .5em .5em 2em;
 	position: relative;
 	top: 1px;
+	z-index: 10;
+	transition: margin .25s ease-in-out;
+}
+.search.two fieldset {
+	margin-right: 5.75rem;
+}
+.search.focusd fieldset {
+	margin-right: 0;
 }
 .search.no-r-m fieldset {
 	margin-right: 0;
@@ -215,14 +223,29 @@ header {
 	outline: 1px dotted #ee7873;
 }
 
-.bag {
-	background: url(../images/bag.png) no-repeat center center;
-	background-size: 34px;
+.user-ind {
 	height: 2em;
 	position: absolute;
 	right: 1em;
-	top: 1.05em;
+	top: 1.2em;
 	width: 2em;
+}
+.user-ind + .user-ind {
+	right: 3.75em;
+}
+.user-ind + .user-ind + .user-ind {
+
+}
+.bag, .msg, .notes {
+	background: url(../images/bag.png) no-repeat center center;
+	background-size: 34px;
+}
+.msg {
+	background-image: url(../images/msg.png);
+}
+.notes {
+	background: url(../images/note.png) no-repeat center center;
+	background-size: 34px;
 }
 .bag-items {
 	background: #ee7873;

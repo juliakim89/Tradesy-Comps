@@ -37,6 +37,14 @@ $(function(){
 	// 	}
 	// });
 
+	$('#search').on('focus', function() {
+		$(this).parent().parent().addClass('focusd');
+	});
+
+	$('#search').on('blur', function() {
+		$(this).parent().parent().removeClass('focusd');
+	});
+
 	var product_details = $('.product-sub-details'),
 	    product_trigger = product_details.find('h3'),
 	    product_content = product_details.find('p'),
