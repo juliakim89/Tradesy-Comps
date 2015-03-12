@@ -241,12 +241,26 @@ header {
 .user-ind + .user-ind + .user-ind {
 	right: 6.5em;
 }
-.bag, .msg, .notes {
+.user-ind:active {
+	opacity: .5;
+}
+.bag, .msg, .notes, .usr, .gear {
 	background: url(../images/bag.png) no-repeat center center;
 	background-size: 34px;
 }
 .msg {
 	background-image: url(../images/msg.png);
+}
+/*.usr {
+	background-image: url(../images/user.png);
+}*/
+.usr {
+	background-image: url(../images/more.png);
+}
+.gear {
+	background-image: url(../images/gear.png);
+	position: relative;
+	top: 10px;
 }
 .notes {
 	background: url(../images/note.png) no-repeat center center;
@@ -259,14 +273,44 @@ header {
 	display: inline-block;
 	font-size: 13px;
 	height: 20px;
-	left: -4px;
+	right: -14px;
 	line-height: 1;
 	padding-top: 4px;
 	position: relative;
 	text-align: center;
-	top: -4px;
+	top: -8px;
 	width: 20px;
 }
+.zero {
+	background: #888;
+}
+.user-actions {
+	background: #2a2a2a;
+	display: none;
+	text-align: center;
+}
+.user-actions.show {
+	display: block;
+}
+.user-actions a {
+	display: inline-block;
+	/*float: left;*/
+	padding: 1rem 1.5rem;
+	position: relative;
+	/*width: 50%;*/
+	width: auto;
+}
+.user-actions a:active {
+	opacity: .5;
+}
+.user-actions a + a {
+	margin-left: 1rem;
+}
+/*.user-actions .bag-items {
+	position: absolute;
+	right: 20%;
+	top: 14px;
+}*/
 
 .user {
 	position: absolute;

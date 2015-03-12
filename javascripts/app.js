@@ -37,6 +37,17 @@ $(function(){
 	// 	}
 	// });
 
+	$('#more-user-actions').on('click', function() {
+		if($('#user-actions').hasClass('show')){
+			$('#user-actions').removeClass('show');
+		}else{
+			$('#user-actions').addClass('show');
+			setTimeout(function() {
+				$('#more-user-actions').find('span').fadeOut(250).remove();
+			}, 500);
+		}
+	});
+
 	$('#search').on('focus', function() {
 		$(this).parent().parent().addClass('focusd');
 	});
