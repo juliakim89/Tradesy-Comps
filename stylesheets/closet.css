@@ -186,10 +186,22 @@ header img {
 .rack + .rack {
 	margin-top: 3rem;
 }
-.rack h2 {
+.racks h1, .rack h2 {
 	letter-spacing: 2.5px;
 	margin-bottom: 2rem;
 	text-transform: uppercase;
+}
+.racks h1 {
+	text-align: center;
+}
+.racks h1:after {
+	background: #111;
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 2rem auto;
+	max-width: 3rem;
+	width: 50%;
 }
 .rack .left {
 	float: left;
@@ -721,7 +733,7 @@ figure div {
 .red .sale {
 	background: #ee7873;
 }
-.on-sale.red a h4 {
+.on-sale.red a h4, .on-sale.red.h3 a h3 {
 	color: #ee7873;
 }
 .v2 .brand {
