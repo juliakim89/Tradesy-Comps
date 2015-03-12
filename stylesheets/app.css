@@ -172,6 +172,9 @@ header {
 .search.two fieldset {
 	margin-right: 5.75rem;
 }
+.search.three fieldset {
+	margin-right: 8.5rem;
+}
 .search.focusd fieldset {
 	margin-right: 0;
 }
@@ -207,16 +210,18 @@ header {
 	box-shadow: 0 0 0 2px #ddd inset;
 }
 .search .btn {
-	background: none;
+	background: url(../images/search.png) no-repeat 0 0;
+	background-size: 16px;
 	border: 0;
 	border-radius: 0;
 	box-shadow: none;
-	color: #999;
-	font-size: 1rem;
-	padding: .5em;
+	height: 16px;
+	text-indent: -9999px;
+	padding: 0;
 	position: absolute;
-	right: .5em;
-	top: .6em;
+	right: .85em;
+	top: .825em;
+	width: 16px;
 }
 .search .btn:active {
 	opacity: .5;
@@ -234,7 +239,7 @@ header {
 	right: 3.75em;
 }
 .user-ind + .user-ind + .user-ind {
-
+	right: 6.5em;
 }
 .bag, .msg, .notes {
 	background: url(../images/bag.png) no-repeat center center;
