@@ -112,7 +112,8 @@ header img {
 }
 
 .closet-head {
-	background: #ddd;
+	/*background: #ddd;*/
+	background: url(https://s3.amazonaws.com/f.cl.ly/items/0w3L0M2s0G020P3z2T0X/default-back-green.png) repeat-x center center;
 	/*background: url(../images/default-back.png) no-repeat center center;
 	background-size: cover;*/
 	height: 500px;

@@ -37,6 +37,14 @@ $(function(){
 	// 	}
 	// });
 
+	$('#search-toggle').on('click', function() {
+		// if($('form').hasClass('hide')){
+			$('#search-form').removeClass('hide');
+			$(this).addClass('hide');
+			$('#search').focus();
+		// }
+	});
+
 	$('#more-user-actions').on('click', function() {
 		if($('#user-actions').hasClass('show')){
 			$('#user-actions').removeClass('show');

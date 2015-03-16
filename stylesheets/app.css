@@ -103,7 +103,7 @@ h1, h2, h3 {
 	margin-top: 2em;
 }
 .hide {
-	display: none;
+	display: none !important;
 }
 .no-pad {
 	padding: 0 !important;
@@ -148,7 +148,7 @@ header {
 }
 .logo {
 	float: left;
-	margin: 0;
+	margin: 0 0 .475rem;
 	padding: .55em 0 0 .5em;
 }
 .logo a {
@@ -235,25 +235,34 @@ header {
 	top: 1.2em;
 	width: 2em;
 }
+/*.srch {
+	display: block;
+	float: left;
+	height: 2em;
+	position: relative;
+	top: .65rem;
+	left: .75rem;
+	width: 2em;
+}*/
 .user-ind + .user-ind {
 	right: 3.75em;
 }
 .user-ind + .user-ind + .user-ind {
 	right: 6.5em;
 }
-.user-ind:active {
+.user-ind:active, .srch:active {
 	opacity: .5;
 }
-.bag, .msg, .notes, .usr, .gear {
+.bag, .msg, .notes, .usr, .gear, .srch {
 	background: url(../images/bag.png) no-repeat center center;
 	background-size: 34px;
 }
 .msg {
 	background-image: url(../images/msg.png);
 }
-/*.usr {
-	background-image: url(../images/user.png);
-}*/
+.srch {
+	background-image: url(../images/search-w.png);
+}
 .usr {
 	background-image: url(../images/more.png);
 }
