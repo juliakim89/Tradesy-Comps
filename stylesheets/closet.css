@@ -116,7 +116,7 @@ header img {
 
 .closet-head {
 	/*background: #ddd;*/
-	background: url(https://s3.amazonaws.com/f.cl.ly/items/0w3L0M2s0G020P3z2T0X/default-back-green.png) repeat-x center center;
+	background: url(https://s3.amazonaws.com/f.cl.ly/items/2j293a2t0t0Z271C2d28/default-back-green.png) repeat center center;
 	/*background: url(../images/default-back.png) no-repeat center center;
 	background-size: cover;*/
 	height: 500px;
@@ -733,7 +733,7 @@ figure div {
 	background: #111;
 	color: white;
 }
-.on-sale.product a h4 {
+.on-sale.product a h4, .on-sale.red.h3 a h3 {
 	color: #111;
 	font-family: 'proxima-nova-semi', sans-serif;
 }
@@ -742,6 +742,10 @@ figure div {
 }
 .on-sale.red a h4, .on-sale.red.h3 a h3 {
 	color: #ee7873;
+}
+.on-sale.red.h3 a h4 {
+	color: #888;
+	font-family: 'proxima-nova-regular', sans-serif;
 }
 .v2 .brand {
 	padding: 0;
