@@ -473,6 +473,12 @@ div.tag {
 	width: 100%;
 	z-index: 2;
 }
+.product h3 .sale {
+	position: static;
+}
+.product .sale:before {
+	display: none;
+}
 .product figure, figure div {
 	display: table;
 	height: 200px;
