@@ -69,6 +69,9 @@ header {
 	padding: .5em;
 	position: relative;
 }
+.mar-b {
+	margin-bottom: 2rem;
+}
 header img {
 	display: block;
 	margin: auto;
