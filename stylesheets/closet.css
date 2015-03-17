@@ -454,6 +454,14 @@ div.tag {
 	position: relative;
 	/*top: -.075rem;*/
 }
+.product h4 .size {
+	color: #888;
+	font-family: 'proxima-nova-regular', sans-serif;
+	padding-left: .5rem;
+}
+.product h4 .size:before {
+	display: none;
+}
 .product.v9:hover h3 {
 	border: 0;
 }
@@ -473,12 +481,12 @@ div.tag {
 	width: 100%;
 	z-index: 2;
 }
-.product h3 .sale {
+/*.product h3 .sale {
 	position: static;
 }
 .product .sale:before {
 	display: none;
-}
+}*/
 .product figure, figure div {
 	display: table;
 	height: 200px;
@@ -564,6 +572,10 @@ figure div {
 }
 .product .n {
 	top: 1rem;
+}
+.product .n.bot {
+	top: auto;
+	bottom: 1rem;
 }
 .product .wanted {
 	background: none;
@@ -652,7 +664,10 @@ figure div {
 	background: #C41008;	
 }
 .brand, .size {
-	font-family: 'calluna-regular',serif;
+	/*font-family: 'calluna-regular',serif;*/
+}
+.product .brand, .product .size {
+	font-size: 1rem;
 }
 
 .product:hover {
