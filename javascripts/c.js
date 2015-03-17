@@ -175,15 +175,25 @@ $(function(){
   $('#toggle-chg').on('click', function() {
     if($(this).text()=='Close'){
       $(this).text('Edit Profile');
-      $('.chg').removeClass('s');
+      $('#editProfile').addClass('hide');
       $('.closet-wrapper').removeClass('out');
-      $('body').removeClass('out');
+      // $('body').removeClass('out');
     }else{
       $(this).text('Close');
-      $('.chg').addClass('s');
+      $('#editProfile').removeClass('hide');
       $('.closet-wrapper').addClass('out');
-      $('body').addClass('out');
+      // $('body').addClass('out');
+      $('html,body').animate({
+        scrollTop: $('#editProfile').offset().top - 100
+      }, 500);
     }
+    return false;
+  });
+
+  $('.hhh').on('click', function() {
+    $('#editProfile').addClass('hide');
+    $('#toggle-chg').text('Edit Profile');
+    $('.closet-wrapper').removeClass('out');
     return false;
   });
 

@@ -198,14 +198,15 @@ header img {
 	left: 0;
 }
 .chg {
-	background: rgba(0,0,0,0.75);
-	color: white;
+	/*background: rgba(0,0,0,0.75);*/
+	background: #ddd;
+	/*color: white;*/
+	color: #111;
 	cursor: pointer;
 	border-radius: 3px;
 	/*box-shadow: 0 0 0 1px rgba(0,0,0,0.1) inset;*/
 	display: none;
 	font-size: .85rem;
-	padding: .5rem 1rem;
 	padding: .35rem .5rem;
 	position: absolute;
 	z-index: 2;
@@ -219,7 +220,7 @@ header img {
 .chg:hover {
 	/*box-shadow: 0 0 0 1px rgba(0,0,0,0.25) inset;*/
 }
-.chg:active {
+.chg:active, .fb:active {
 	opacity: .5;
 }
 .seller-actions .bk {
@@ -227,8 +228,27 @@ header img {
 	top: 1rem;
 }
 .pf {
-	left: -7.5rem;
-	top: 2rem;
+	left: 5rem;
+	top: 1rem;
+}
+.fb {
+	display: inline-block;
+	width: auto;
+	position: absolute;
+	right: 5rem;
+	top: 2.75rem;
+	background: #3b5998;
+	color: white;
+	border-radius: 3px;
+	font-size: .85rem;
+	padding: .35rem .5rem;
+}
+.pf.ri {
+	float: right;
+	position: relative;
+	top: .9rem;
+	left: auto;
+	right: 1rem;
 }
 .title .tt {
 	top: -2.5rem;
@@ -743,9 +763,9 @@ figure div {
 .brand, .size {
 	/*font-family: 'calluna-regular',serif;*/
 }
-.product .brand, .product .size {
+/*.product .brand, .product .size {
 	font-size: 1rem;
-}
+}*/
 
 .product:hover {
 	border-color: white;
@@ -1265,6 +1285,120 @@ input[type=submit]:focus {
 }
 input[type=submit]:active {
 	opacity: .5;
+}
+
+/*** profile form ***/
+.profile-form {
+	position: static;
+	padding-bottom: 3rem;
+}
+.profile-form.hide {
+	display: none;
+}
+.profile-form.width {
+	max-width: 650px;
+}
+.profile-form small {
+	display: block;
+	padding-top: .5rem;
+	opacity: .65;
+}
+.profile-form label.error .s {
+	border-color: red;
+}
+.profile-form label.error span {
+	color: red;
+}
+.profile-form small.error {
+	color: red;
+	opacity: 1;
+}
+.profile-form h3 {
+	float: left;
+	margin: 0;
+	padding: 0 3rem 0 0;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+}
+.profile-form fieldset {
+	float: none;
+	/*width: 30%;*/
+}
+/*.profile-form fieldset + fieldset {
+	margin-left: 14.5rem;
+}*/
+.profile-form label {
+	cursor: pointer;
+	display: block;
+	position: relative;
+}
+.profile-form label + label {
+	margin-top: 1.5rem;
+}
+.profile-form span {
+	display: block;
+	margin-bottom: .25rem;
+}
+.profile-form .s {
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	outline: none;
+	padding: .5rem;
+	width: 100%;
+}
+.profile-form textarea.s {
+	min-height: 150px;
+}
+.profile-form .s:focus {
+	border-color: #111;
+}
+.profile-form label:active .s {
+	border-color: #ddd;
+}
+.file {
+	position: absolute;
+	left: -99999px;
+}
+.profile-img {
+	background: url(https://pbs.twimg.com/profile_images/473111708735524864/kb0NFxZk_400x400.jpeg) no-repeat 0 0;
+	background-size: contain;
+	border-radius: 100%;
+	height: 60px;
+	position: relative;
+	width: 60px;
+}
+.hero-pic {
+	  background: url(https://s3.amazonaws.com/f.cl.ly/items/2j293a2t0t0Z271C2d28/default-back-green.png) repeat center center;
+	border-radius: 3px;
+	height: 60px;
+}
+.profile-form .r:after {
+	content: " *";
+	color: red;
+} 
+.profile-form .btn {
+	background: #ee7873;
+	border: 0;
+	border-radius: 3px;
+	color: white;
+	display: inline-block;
+	margin-top: 2rem;
+	padding: .5rem 1rem;
+}
+.profile-form .hhh {
+	background: #ddd;
+	color: #333;
+	margin-left: .5rem;
+}
+.profile-form hr {
+	background: #ddd;
+	height: 2px;
+	margin: 2rem 0;
+}
+.profile-form h4 {
+	font-size: 1.15rem;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
 }
 
 /*** filters ***/
