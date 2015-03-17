@@ -211,6 +211,10 @@ header img {
 	position: absolute;
 	z-index: 2;
 }
+.closet-head .chg {
+	background: rgba(0,0,0,0.75);
+	color: white;
+}
 .chg.s {
 	display: inline-block;
 	opacity: 1;
@@ -226,6 +230,10 @@ header img {
 .seller-actions .bk {
 	right: 1rem;
 	top: 1rem;
+}
+.closet-head .pf {
+	left: -8.25rem;
+	top: 2rem;
 }
 .pf {
 	left: 5rem;
@@ -268,7 +276,8 @@ header img {
 	z-index: 3;
 }
 .profile .img {
-	background: #111;
+	background: url(https://pbs.twimg.com/profile_images/473111708735524864/kb0NFxZk_400x400.jpeg) no-repeat 0 0;
+	background-size: contain;
 	border-radius: 100%;
 	height: 100px;
 	margin: auto;

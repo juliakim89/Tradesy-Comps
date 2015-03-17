@@ -151,7 +151,7 @@ $(function(){
     }
     if(!$(e.target).closest('#closet-head').length){
       $('.chg').removeClass('s');
-      $('#toggle-chg').text('Edit Profile');
+      $('#toggle-chg').text('Change Profile Images');
       $('.closet-wrapper').removeClass('out');
       $('body').removeClass('out');
     }
@@ -174,28 +174,32 @@ $(function(){
 
   $('#toggle-chg').on('click', function() {
     if($(this).text()=='Close'){
-      $(this).text('Edit Profile');
-      $('#editProfile').addClass('hide');
+      $(this).text('Change Profile Images');
+      $('.chg').removeClass('s');
+      // $('#editProfile').addClass('hide');
       $('.closet-wrapper').removeClass('out');
       // $('body').removeClass('out');
     }else{
       $(this).text('Close');
-      $('#editProfile').removeClass('hide');
-      $('.closet-wrapper').addClass('out');
+      setTimeout(function(){
+        $('.chg').addClass('s');
+        $('.closet-wrapper').addClass('out');
+      }, 125);
+      // $('#editProfile').removeClass('hide');
       // $('body').addClass('out');
-      $('html,body').animate({
-        scrollTop: $('#editProfile').offset().top - 100
-      }, 500);
+      // $('html,body').animate({
+      //   scrollTop: $('#editProfile').offset().top - 100
+      // }, 500);
     }
     return false;
   });
 
-  $('.hhh').on('click', function() {
-    $('#editProfile').addClass('hide');
-    $('#toggle-chg').text('Edit Profile');
-    $('.closet-wrapper').removeClass('out');
-    return false;
-  });
+  // $('.hhh').on('click', function() {
+  //   $('#editProfile').addClass('hide');
+  //   $('#toggle-chg').text('Edit Profile');
+  //   $('.closet-wrapper').removeClass('out');
+  //   return false;
+  // });
 
   $(window).scroll(function() {
     if($(window).scrollTop() >= sellerNavTop){
