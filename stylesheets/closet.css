@@ -370,7 +370,8 @@ body.out {
 	margin-top: 3rem;
 }
 .racks h1, .rack h2 {
-	letter-spacing: 2.5px;
+	font-family: 'proxima-nova-semi', sans-serif;
+	letter-spacing: 2px;
 	margin-bottom: 2rem;
 	text-transform: uppercase;
 }
@@ -385,6 +386,10 @@ body.out {
 	margin: 2rem auto;
 	max-width: 3rem;
 	width: 50%;
+}
+
+.rack h2 {
+	font-size : 1.2rem;
 }
 .rack .left {
 	float: left;
@@ -1189,21 +1194,21 @@ div.brand, .brnd {
 	width: 100%;
 }*/
 div.brand a {
-	background: #111;
-	/*border: 2px solid #111;*/
+	border: 1px solid #ccc;
 	border-radius: 3px;
-	color: white;
+	color: black;
 	display: block;
 	font-family: 'proxima-nova-regular', sans-serif;
-	font-size: 1.25rem;
-	padding: 1.25rem 0;
+	font-size: 1rem;
+	padding: .7rem 0;
+	margin-bottom : 1rem;
 	line-height: 1;
 	text-align: center;
 	text-decoration: none;
 	vertical-align: middle;
 }
 div.brand a:after {
-	color: rgba(255,255,255,0.5);
+	color: #888;
 	content: ' ('attr(data-num)')';
 	font-family: 'proxima-nova-regular', sans-serif;
 }
@@ -1253,7 +1258,8 @@ div.brand a:after {
 	padding: .5rem 0 0;
 }
 div.brand a:hover {
-	background: #ee7873;
+	background: #111;
+	color : white;
 }
 .brand.louis-vouitton a:hover {
 	background: #522F12;
