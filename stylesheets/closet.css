@@ -83,9 +83,6 @@ h4 {
 .btn.black {
 	background : #111;
 }
-.btn.black.active {
-	opacity : .3;
-}
 .btn + .btn {
 	margin-left: .75rem;
 }
@@ -2048,6 +2045,20 @@ span.cls:active {
 .user-follow a, .user-follow p {
 	display : inline-block;
 	margin-top : 10px;
+}
+
+.user-follow .btn.active {
+	border : 1px solid black;
+	background : transparent;
+	color : black;
+}
+
+.user-follow .btn.active:after {
+	font-family : 'tradesy-icons';
+	content: "\e049";
+	position : relative;
+	top : 2px;
+	left : 5px;
 }
 
 

@@ -8,6 +8,7 @@
 		<title dir="ltr">Tradesy Product Page Comp</title>
 
 		<link href="stylesheets/closet.css" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/icons.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<header class="cf">
@@ -58,11 +59,11 @@
 							200
 							<small>items</small>
 						</a>
-						<a href="##">
-							55
+						<a href="/closet-following-list.html">
+							0
 							<small>Following</small>
 						</a>
-						<a href="###" class="active">
+						<a href="/closet-followers-list.html" class="active">
 							25
 							<small>followers</small>
 						</a>
@@ -106,7 +107,6 @@
 					<p>Santa Monica, CA</p>
 				</div>
 				<div class="user-follow">
-					<p>0 items</p>
 					<a href="#" class="btn black">Follow</a>
 				</div>
 			</div>
@@ -121,7 +121,7 @@
 				</div>
 				<div class="user-follow">
 					<p>15 items</p>
-					<a href="#" class="btn black active">Following</a>
+					<a href="#" class="btn black">Follow</a>
 				</div>
 			</div>
 
@@ -147,6 +147,10 @@
 				$(this).toggleClass('admin');
 			    $('#closet-header').toggleClass('default');
 			  });
+
+			$('.user-follow .btn').on('click', function(){
+				$(this).toggleClass('active');
+			});
 
 			$('#toggle-chg').on('click', function() {
 			    if($(this).text()=='Close'){
