@@ -57,7 +57,7 @@
 					<nav>
 						<a href="/closet-index.html" class="active">
 							200
-							<small>items</small>
+							<small>Items</small>
 						</a>
 						<a href="/closet-following-list.html">
 							0
@@ -65,11 +65,11 @@
 						</a>
 						<a href="/closet-followers-list.html">
 							25
-							<small>followers</small>
+							<small>Followers</small>
 						</a>
 						<a href="###">
 							25
-							<small>wants</small>
+							<small>Wants</small>
 						</a>
 					</nav>
 				</div>
@@ -80,19 +80,109 @@
 
 		<div class="width">
 			<form>
-					<fieldset>
-						<label for="closet-search">
-							<span>Enter a search in {storename}</span>
-							<input type="search" id="closet-search" placeholder="Search for bags, clothing, etc." />
-							<input type="submit" value="Search" />
-						</label>
-					</fieldset>
-				</form>
+				<fieldset>
+					<label for="closet-search">
+						<!-- <span>Enter a search in {storename}</span> -->
+						<input type="search" id="closet-search" placeholder="Search for bags, clothing, etc." />
+						<input type="submit" value="Search" />
+						<span class="icon-search-strong"></span>
+					</label>
+				</fieldset>
+			</form>
+			<form class="select">
+					<select>
+						<option value="date">By Date (Newest to Oldest)</option>
+						<option value="date">By Date (Oldest to Newest)</option>
+						<option value="price">By Price (Lowest to Highest)</option>
+						<option value="price">By Price (Highest to Lowest)</option>
+					</select>
+			</form>
 		</div>
 
 		<hr class="min">
 
 		<div class="racks index width" id="like1">
+
+			<div class="rack no-b cf">
+				<h2 data-num="3">
+					Featured
+					<!-- <a href="##">Shop all</a> -->
+				</h2>
+				<div class="product s on-sale" id="prod_id2">
+					<a href="##">
+						<figure><div>
+							<img src="https://item4.tradesy.com/r/c56ccf44cf4d876a867bbe87a264452dabe90a0fe364f0de4ecebe89385932a4/720/960/bags/prada/totes/prada-leather-tote-bag-orange-2051648.jpg" alt="product name image" />
+						</div></figure>
+						<div class="details">
+							<span class="tag brand-name">Prada</span>
+							<h3>Orange Tote Bag</h3>
+							<h4>
+								<sup>$</sup>1,950
+								<span><sup>$</sup>2,680</span>
+							</h4>
+						</div>
+					</a>
+					<span class="tag want wanted n" data-want="60"></span>
+					<span class="tag sale ss">10% off</span>
+				</div>
+				<div class="product" id="prod_id2">
+					<a href="##">
+						<figure><div>
+							<img src="https://item3.tradesy.com/r/3a52089dca063619f64a3cfc9528f5cf4890ef5331804651e22b02adfb5fff8e/720/960/shoes/christian-louboutin/75/christian-louboutin-fluorescent-yellow-pumps-2009082.jpg" alt="product name image" />
+						</div></figure>
+						<div class="details">
+							<span class="tag brand-name">Christian Louboutin</span>
+							<h3>Pigalle Fluorescent Yellow, Size 37.5 Pumps</h3>
+							<h4>
+								<sup>$</sup>565
+								<!-- <span><sup>$</sup>1,210</span> -->
+								<sup class="size">Size : 7.5</sup>
+							</h4>
+						</div>
+					</a>
+					<span class="tag want n" data-want="280"></span>
+					<span class="tag sale hide ss">10% off</span>
+				</div>
+				<div class="product" id="prod_id2">
+					<a href="##">
+						<figure><div>
+							<img src="https://item2.tradesy.com/r/546a004b512bd6a36853c9daa7b89349383c074b552aad9039a0bf1bcee82e29/720/960/bags/hermes/totes/hermes-tote-bag-tricolor-1564246.jpg" alt="product name image" />
+						</div></figure>
+						<div class="details">
+							<span class="tag brand-name">Hermes</span>
+							<h3>Birkin Hac Togo 36 Tricolor Tote Bag</h3>
+							<h4>
+								<sup>$</sup>14,075
+								<span><sup>$</sup>20,000</span>
+							</h4>
+						</div>
+					</a>
+					<span class="tag want n" data-want="160"></span>
+					<span class="tag sale hide ss">10% off</span>
+				</div>
+				<div class="product" id="prod_id2">
+					<a href="##">
+						<figure><div>
+							<img src="https://item3.tradesy.com/r/574b437f5f3d8eeb27fe74cbb3578b2322ef58fcf29d93ea4a7f223b4d6a0922/720/960/accessories/louis-vuitton/wallets/louis-vuitton-louis-vuitton-wallet-2077037.jpg" alt="product name image" />
+						</div></figure>
+						<div class="details">
+							<span class="tag brand-name">Louis Vuitton</span>
+							<h3>Monogram Wallet</h3>
+							<h4>
+								<sup>$</sup>193.50
+								<span><sup>$</sup>450</span>
+							</h4>
+						</div>
+					</a>
+					<span class="tag want n" data-want="160"></span>
+					<span class="tag sale hide ss">10% off</span>
+				</div>
+				<div class="empty-set hide">
+					You&rsquo;ve got no featured listings right now.
+				</div>
+			</div>
+
+			<hr class="divider">
 
 			<div class="rack cf">
 				<h2 data-num="43">
@@ -139,71 +229,7 @@
 				</div>
 			</div>
 
-			<hr class="min">
-
-			<div class="rack no-b cf">
-				<h2 data-num="3">
-					Featured
-					<!-- <a href="##">Shop all</a> -->
-				</h2>
-				<div class="product s f on-sale" id="prod_id2">
-					<a href="##">
-						<figure><div>
-							<img src="https://item4.tradesy.com/r/c56ccf44cf4d876a867bbe87a264452dabe90a0fe364f0de4ecebe89385932a4/720/960/bags/prada/totes/prada-leather-tote-bag-orange-2051648.jpg" alt="product name image" />
-						</div></figure>
-						<div class="details">
-							<span class="tag brand-name">Prada</span>
-							<h3>Orange Tote Bag</h3>
-							<h4>
-								<sup>$</sup>1,950
-								<span><sup>$</sup>2,680</span>
-							</h4>
-						</div>
-					</a>
-					<span class="tag want wanted n" data-want="60"></span>
-					<span class="tag sale ss">10% off</span>
-				</div>
-				<div class="product f" id="prod_id2">
-					<a href="##">
-						<figure><div>
-							<img src="https://item3.tradesy.com/r/3a52089dca063619f64a3cfc9528f5cf4890ef5331804651e22b02adfb5fff8e/720/960/shoes/christian-louboutin/75/christian-louboutin-fluorescent-yellow-pumps-2009082.jpg" alt="product name image" />
-						</div></figure>
-						<div class="details">
-							<span class="tag brand-name">Christian Louboutin</span>
-							<h3>Pigalle Fluorescent Yellow, Size 37.5 Pumps</h3>
-							<h4>
-								<sup>$</sup>565
-								<!-- <span><sup>$</sup>1,210</span> -->
-								<sup class="size">Size : 7.5</sup>
-							</h4>
-						</div>
-					</a>
-					<span class="tag want n" data-want="280"></span>
-					<span class="tag sale hide ss">10% off</span>
-				</div>
-				<div class="product f" id="prod_id2">
-					<a href="##">
-						<figure><div>
-							<img src="https://item2.tradesy.com/r/546a004b512bd6a36853c9daa7b89349383c074b552aad9039a0bf1bcee82e29/720/960/bags/hermes/totes/hermes-tote-bag-tricolor-1564246.jpg" alt="product name image" />
-						</div></figure>
-						<div class="details">
-							<span class="tag brand-name">Hermes</span>
-							<h3>Birkin Hac Togo 36 Tricolor Tote Bag</h3>
-							<h4>
-								<sup>$</sup>14,075
-								<span><sup>$</sup>20,000</span>
-							</h4>
-						</div>
-					</a>
-					<span class="tag want n" data-want="160"></span>
-					<span class="tag sale hide ss">10% off</span>
-				</div>
-				<div class="empty-set hide">
-					You&rsquo;ve got no featured listings right now.
-				</div>
-			</div>
-
-			<hr class="divider">
+			<hr>
 
 			<div class="rack no-b cf">
 				<h2 data-num="6">

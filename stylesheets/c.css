@@ -174,7 +174,6 @@ header img {
 }
 form {
 	margin-top: 1rem !important;
-
 }
 form, fieldset {
 	border: 0;
@@ -185,15 +184,19 @@ form, fieldset {
 fieldset {
 	float: left;
 }
-label span {
-	display: none;
+form.select {
+	float: right;
 }
+/*label span {
+	display: none;
+}*/
 input[type=search] {
 	border: 1px solid #ddd;
-	border-radius: 2px;
+	border-radius: 0px;
 	min-width: 20rem;
 	outline: none;
 	padding: .5rem;
+	font-size : .9rem;
 }
 input[type=search]:focus {
 	border-color: #111;
