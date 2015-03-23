@@ -193,10 +193,14 @@ form.select {
 input[type=search] {
 	border: 1px solid #ddd;
 	border-radius: 0px;
-	min-width: 20rem;
+	min-width: 25rem;
 	outline: none;
 	padding: .5rem;
 	font-size : .9rem;
+}
+input[type=search]:after {
+	font-family : 'tradesy-icons';
+	content: "\e00c";
 }
 input[type=search]:focus {
 	border-color: #111;
@@ -832,6 +836,14 @@ figure div {
 	right: 0;
 	bottom: .5rem;
 }
+#profile-follow.active {
+	background : black;
+}
+#profile-follow.active:after {
+	font-family : 'tradesy-icons';
+	content: "\e049";
+	margin-left:10px;
+}
 .profile-social {
 	position: absolute;
 	top: 1rem;
@@ -896,7 +908,7 @@ figure div {
 	padding-top: 1rem;
 }
 .closet-sub nav a {
-	color: #ddd;
+	color: #bbb;
 	display: inline-block;
 	font-size: 1.75rem;
 	line-height: 1;

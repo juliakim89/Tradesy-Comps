@@ -59,6 +59,10 @@ $(function(){
     $('#modal-wrap').addClass('hide');
   });
 
+  $('#profile-follow').on('click', function(){
+    $(this).toggleClass('active');
+  });
+
   // var brands_hidden = $('#brands .hide'),
   //  brands_hidden_num = brands_hidden.length,
   //  b = 0;
