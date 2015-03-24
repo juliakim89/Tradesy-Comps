@@ -95,6 +95,29 @@ $(function(){
     return false;
   });
 
+  $('.filter-more').on('click', function() {
+    if($(this).hasClass('show')){
+      $('#filter-list button.show').each(function(i) {
+        var that = this;
+        setTimeout(function() {
+          $(that).fadeIn().removeClass('show');
+          $(that).fadeIn().addClass('hide');
+        });
+      });
+      $('.filter-more').removeClass('show').text('...');
+    } else {
+      $(this).addClass('show').text('Hide');
+      $('#filter-list .hide').each(function(i) {
+        var that = this;
+        setTimeout(function() {
+          $(that).fadeIn().removeClass('hide');
+          $(that).fadeIn().addClass('show');
+        }, 100 * i);
+      });
+    }
+    return false;
+  });
+
   $('body').on('click', '.feature-this', function() {
     var featured = $('#featured'),
         featured_num = featured.find('.product').length,
@@ -174,3 +197,119 @@ $(function(){
   }
 
 });
+
+$(function(){
+    var product = $('.product'),
+      product_img = $('.has-alt-img'),
+      // want = product.find('span.want.action');
+      want = product.find('span.wanted'),
+      drops = $('.drops nav')
+      dropLinks = drops.find('a'),
+      dropsClose = $('.drops em'),
+
+      hasDrops = $('.has-drop'),
+      hasDropsOpen = hasDrops.find('span:first'),
+      hasDropLinks = hasDrops.find('a'),
+      hasDropsClose = hasDrops.find('em'),
+
+      filters = $('#filters'),
+      toggleFilters = $('#filterssss'),
+      filterList = $('#filter-list'),
+      filterListPills = filterList.find('button'),
+
+      // sellerNav = $('#seller-nav'),
+      // sellerNavHeight = sellerNav.height(),
+      // sellerNavTop = sellerNav.offset().top;
+
+    drops.on('click', function() {
+      drops.parent().parent().removeClass('show');
+      if(!$(this).parent().parent().hasClass('show')){
+        $(this).parent().parent().addClass('show');
+      }
+    });
+
+    hasDropsOpen.on('click', function() {
+      // hasDrops.removeClass('showing');
+      if(!!$(this).parent().hasClass('showing')){
+        $(this).parent().removeClass('showing');
+      }else{
+        $(this).parent().addClass('showing');
+      }
+    });
+
+    filterListPills.on('click', function() {
+      // if((!!filters.length) && (!$(this).hasClass('atv'))){
+      //   filters.append('<button class="tag applied">'+$(this).text()+'</button>');
+      //   $(this).addClass('atv').prop('disabled',true);
+      // }
+      if(!$(this).hasClass('atv')){
+        // filters.append('<button class="tag applied">'+$(this).text()+'</button>');
+        $(this).addClass('atv');
+      }else{
+        $(this).removeClass('atv');
+      }
+    });
+
+     dropsClose.on('click', function() {
+      if(!!$(this).parent().parent().hasClass('show')){
+        $(this).parent().parent().removeClass('show');
+      }else{
+        drops.parent().parent().removeClass('show');
+        $(this).parent().parent().addClass('show');
+      }
+    });
+
+    // hide drops if click is anywhere outside a .drops container
+    $(document).on('click', function(e) {
+      if(!$(e.target).closest('.drops').length){
+        drops.parent().parent().removeClass('show');
+      }
+      if(!$(e.target).closest('.has-drop').length){
+        $('.has-drop').removeClass('showing');
+      }
+      if(!$(e.target).closest('#closet-head').length){
+        $('.chg').removeClass('s');
+        $('#toggle-chg').text('Change Profile Images');
+        $('.closet-wrapper').removeClass('out');
+        $('body').removeClass('out');
+      }
+    });
+
+    toggleFilters.on('click', function() {
+      if($(this).hasClass('showing')){
+        filterList.removeClass('view');
+        $(this).removeClass('showing').text('Show filters');
+      }else{
+        filterList.addClass('view');
+        $(this).addClass('showing').text('Hide filters');
+      }
+    });
+
+    $('#filter-cls').on('click', function() {
+      filterList.removeClass('view');
+      toggleFilters.removeClass('showing').text('Show filters');
+    });
+
+    $('#toggle-chg').on('click', function() {
+      if($(this).text()=='Close'){
+        $(this).text('Change Profile Images');
+        $('.chg').removeClass('s');
+        // $('#editProfile').addClass('hide');
+        $('.closet-wrapper').removeClass('out');
+        // $('body').removeClass('out');
+      }else{
+        $(this).text('Close');
+        setTimeout(function(){
+          $('.chg').addClass('s');
+          $('.closet-wrapper').addClass('out');
+        }, 125);
+        // $('#editProfile').removeClass('hide');
+        // $('body').addClass('out');
+        // $('html,body').animate({
+        //   scrollTop: $('#editProfile').offset().top - 100
+        // }, 500);
+      }
+      return false;
+    });
+
+  });
