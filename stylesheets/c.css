@@ -1084,6 +1084,16 @@ form, fieldset {
 .product.filter-list:hover {
 	box-shadow: none;
 }
+.filter-list .pills-title, .pills {
+	float : left;
+	display: inline-block;
+}
+.filter-list .pills-title {
+	width : 10%;
+}
+.filter-list .pills {
+	width : 90%;
+}
 .filter-list h5 {
 	font-size: 1.25rem;
 	font-weight: normal;
@@ -1099,7 +1109,7 @@ form, fieldset {
 	box-shadow: none;
 }
 .filter-list button {
-	border-radius: 2px;
+	border-radius: 3px;
 	margin: .4rem .2rem;
 	padding: .5rem .75rem;
 	border : 1px solid #bbb;
@@ -1108,7 +1118,7 @@ form, fieldset {
 .filter-list .filter-more {
 	display : inline-block;
 	color : black;
-	border-radius: 2px;
+	border-radius: 3px;
 	margin: .4rem .2rem;
 	padding: .5rem .75rem;
 	line-height: 1;
@@ -1142,11 +1152,18 @@ form, fieldset {
 	margin-bottom: 0;
 }
 .filter-list .tag:after {
-	content: "/ " attr(data-num);
+	content: " " attr(data-num);
 	display: inline-block;
+	font-size : 80%;
 	padding-left: .5rem;
 	/*content: " " attr(data-num) " listing";*/
-	opacity: .5;
+	opacity: .4;
+}
+.filter-list button.atv:after {
+	font-family :'tradesy-icons';
+	content: "\e049";
+	font-size : 60%;
+	margin-left: 3px;
 }
 .filter-list .atv:after {
 	opacity: 1;
