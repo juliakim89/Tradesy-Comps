@@ -112,7 +112,7 @@ $(function(){
         setTimeout(function() {
           $(that).fadeIn().removeClass('hide');
           $(that).fadeIn().addClass('show');
-        }, 100 * i);
+        }, 10 * i);
       });
     }
     return false;
