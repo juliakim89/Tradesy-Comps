@@ -173,7 +173,8 @@ header img {
 	padding-bottom: 1rem;
 }
 form {
-	margin-top: 1rem !important;
+	margin-left : 10px;
+	float: right;
 }
 form, fieldset {
 	border: 0;
@@ -193,7 +194,7 @@ form.select {
 input[type=search] {
 	border: 1px solid #ddd;
 	border-radius: 0px;
-	min-width: 25rem;
+	min-width: 17rem;
 	outline: none;
 	padding: .5rem;
 	font-size : .9rem;
@@ -213,6 +214,7 @@ input[type=submit] {
 	position: absolute;
 	top: .5rem;
 	right: .5rem;
+	color : transparent;
 }
 input[type=submit]:focus {
 	outline: 1px dotted #ee7873;
@@ -220,9 +222,22 @@ input[type=submit]:focus {
 input[type=submit]:active {
 	opacity: .5;
 }
+form .icon-search-strong {
+	position : absolute;
+	right : 10px;
+	top : 5px;
+	color : black;
+}
+form .icon-search-strong:before {
+	font-family: 'tradesy-icons';
+	content: "\e00c";
+}
 
 
 /***** rack header ****/
+.racks.subs {
+	margin-top : 1rem;
+}
 .racks h1, .rack h2 {
 	letter-spacing: 2.5px;
 	margin-bottom: 2rem;
@@ -1238,6 +1253,21 @@ div.tag {
 
 #filterssss {
 	height : 36px;
+	background : black;
+	color : white;
+}
+
+#filterssss:after {
+	content: "+";
+	margin-left: 10px;
+	position : relative;
+	top : 0;
+	font-size : 1.2rem;
+	line-height: 1rem;
+}
+
+#filterssss.showing:after {
+	content: "-";
 }
 
 .has-drop {
