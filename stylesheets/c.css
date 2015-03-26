@@ -1572,6 +1572,10 @@ div.tag {
 	vertical-align: top;
 }
 
+#closet-footer .user-profile {
+	margin-bottom : 1rem;
+}
+
 #closet-footer .user-profile div {
 	margin-left : 1rem;
 }
@@ -1598,17 +1602,35 @@ div.tag {
 #closet-footer .user-bio {
 	width : 60%;
 	display : inline-block;
-	padding-right : 2rem;
+	padding-left : 1rem;
 }
 
 #closet-footer .user-shop-links {
-	width : 18%;
+	width : 25%;
 	display : inline-block;
+}
+
+#closet-footer h3 {
+	font-family: 'proxima-nova-semi';
+	margin-bottom : 5px;
+}
+
+#closet-footer h6 {
+	font-family: 'proxima-nova-semi';
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size : .8rem;
+	margin : 1rem 0 0;
+	padding : 0;
+	color : #111;
 }
 
 #closet-footer .user-shop-links ul {
 	margin-left : 0;
+	margin-right : 1rem;
 	padding : 0;
+	display : inline-block;
+	width : 60%;
 }
 
 #closet-footer .user-shop-links li {
@@ -1620,6 +1642,10 @@ div.tag {
 	color : #666;
 	line-height: 2rem;
 	border-bottom : 1px solid #eee;
+}
+
+#closet-footer .user-shop-links a:hover, #closet-footer .user-links a:hover {
+	color : #ee7873;
 }
 
 #closet-footer .user-shop-links a:after {
