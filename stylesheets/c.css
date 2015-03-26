@@ -148,7 +148,7 @@ header img {
 }
 .seller-nav a {
 	display: inline-block;
-	color: white;
+	color: #888;
 	font-size: .85rem;
 	letter-spacing: 1px;
 	padding: 1rem;
@@ -156,22 +156,26 @@ header img {
 	text-transform: uppercase;
 }
 .seller-nav a:hover, .seller-nav .active a {
-	background: #111;
+	/*background: #111;*/
 }
 .seller-nav a:active {
-	background: #040407;
-	color: rgba(255,255,255,0.75);
+	/*background: #040407;*/
+	color: white;
 }
 .seller-nav .active a {
-	color: rgba(255,255,255,0.5);
+	color: white;
 	cursor: default;
 }
 .seller-nav .active a:active {
-	background: #111;
-	color: rgba(255,255,255,0.5);
+	/*background: #111;*/
+	color: white;
 }
 
 /*** search form ***/
+#closet-search-container {
+	display: block;
+	margin-bottom : 1rem;
+}
 .meta {
 	padding-bottom: 1rem;
 }
@@ -759,7 +763,7 @@ figure div {
 	/*background: #111 url(https://s3.amazonaws.com/f.cl.ly/items/2j293a2t0t0Z271C2d28/default-back-green.png) repeat center center;*/
 	/*background: #111 url(https://assets.bezar.com/store/lookbook_images/attachments/000/000/084/full/1.jpg) no-repeat;*/
 	/*background: url(https://assets.bezar.com/store/lookbook_images/attachments/000/000/084/full/1.jpg) no-repeat;*/
-	background : #333;
+	background : #2a2a2a;
 	background-size: cover;
 	margin: 0 auto 1rem;
 	max-width: 1500px;
