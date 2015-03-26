@@ -8,6 +8,7 @@
 		<title dir="ltr">Tradesy Product Page Comp</title>
 
 		<link href="stylesheets/c.css" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/icons.css" rel="stylesheet" type="text/css" />
 		<script>document.addEventListener('touchstart', function() {},false);</script>
 	</head>
 	<body>
@@ -29,8 +30,8 @@
 						<h1>Tradesy&rsquo;s Secret Closet</h1>
 						<h2>
 							Penny Lane
-							<span>Santa Monica, CA</span>
-							<span><a href="">www.tradesy.com</a></span>
+							<i class="icon-pin"></i><span>Santa Monica, CA</span>
+							<i class="icon-globe"></i><span><a href="">www.tradesy.com</a></span>
 						</h2>
 					</div>
 					<div class="profile-actions" id="profile-actions">
@@ -42,9 +43,9 @@
 						<button class="btn">Edit Profile</button>
 					</div>
 					<div class="profile-social">
-						<a href=""></a>
-						<a href=""></a>
-						<a href=""></a>
+						<a href=""><span class="icon-facebook"></span></a>
+						<a href=""><span class="icon-twitter"></span></a>
+						<a href=""><span class="icon-google"></span></a>
 					</div>
 				</div>
 			</div>
@@ -52,7 +53,7 @@
 			<div class="closet-sub">
 				<div class="width">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facilis natus, nemo in, mollitia et, fuga impedit <a href="">&hellip;more</a>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facilis natus, nemo in, mollitia et, fuga impedit <a href="#closet-footer">&hellip;more</a>
 					</p>
 					<nav>
 						<a href="/closet-index.html" class="active">
@@ -638,6 +639,23 @@
 				</form>
 			</div>
 		</div>
+
+		<section id="closet-footer">
+			<div class="width">
+				<h3>About Tradesy's Secret Closet</h3>
+				<h5>@pennylane</h5>
+				<div class="user-bio">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta velit tortor, ac vestibulum diam hendrerit non. Nam ac dapibus nisi. In quis consequat elit, at luctus nunc. Aenean iaculis, lectus a consectetur semper, nunc nisl semper massa, nec imperdiet nibh felis nec quam. Suspendisse sem purus, feugiat sit amet faucibus eget, malesuada nec felis. Aliquam sed ultricies quam. Ut a justo elementum orci luctus vehicula. Praesent scelerisque lectus nec justo bibendum, non blandit velit luctus. Vivamus cursus suscipit nunc ut tincidunt. Donec consectetur urna id magna dignissim, id vulputate magna consectetur. Quisque tempor pharetra convallis. Nam dapibus nulla a nulla suscipit elementum.</p>
+				</div>
+				<div class="user-links">
+					<a href="#"><span class="icon-facebook"></span> Penny Lane</a>
+					<a href="#"><span class="icon-twitter"></span> @pennylane</a>
+					<a href="#"><span class="icon-google"></span> Penny Lane</a>
+				</div>
+			</div>
+		</section>
+
+		<footer></footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="javascripts/cc.js"></script>

@@ -725,3 +725,9 @@
 .icon-chain-link:before {
   content: "\e0e6";
 }
+.icon-pin:before {
+  content: "\e0e4";
+}
+.icon-globe:before {
+  content: "\e0e5";
+}

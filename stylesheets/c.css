@@ -53,7 +53,7 @@ hr {
 	background: none;
 	border: 0;
 	/*height: 3px;*/
-	margin: 7rem 0;
+	margin: 3rem 0;
 }
 hr.divider {
 	border-bottom : 1px solid #ccc;
@@ -83,6 +83,9 @@ h4 {
 	padding: .5rem 1rem;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+.btn.black {
+	background : #111;
 }
 .btn + .btn {
 	margin-left: .75rem;
@@ -859,6 +862,11 @@ figure div {
 	content: "\e049";
 	margin-left:10px;
 }
+.profile-embed {
+	position : absolute;
+	left: 0;
+	top : 1rem;
+}
 .profile-social {
 	position: absolute;
 	top: 1rem;
@@ -866,21 +874,20 @@ figure div {
 }
 .profile-social a {
 	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid white;
+	width : 30px;
+	height : 30px;
+	text-decoration: none
+}
+.profile-social span {
+	color : white;
+	position : relative;
+	top : 5px;
+	left: 5px;
 }
 .profile-social a + a {
 	margin-left: 1rem;
-}
-.profile-social a:before {
-	/*background: rgba(255,255,255,0.25);*/
-	box-shadow: 0 0 0 1px white;
-	border-radius: 100%;
-	color: white;
-	content: "t";
-	display: inline-block;
-	height: 1.75rem;
-	padding-top: .25rem;
-	text-align: center;
-	width: 2rem;
 }
 .profile-social a:hover:before {
 	box-shadow: 0 0 0 1px white, 0 0 0 3px white;
@@ -1124,17 +1131,17 @@ form, fieldset {
 	box-shadow: none;
 }
 .filter-list button {
-	border-radius: 3px;
-	margin: .4rem .2rem;
-	padding: .5rem .75rem;
+	border-radius: 15px;
+	margin: .4rem .1rem;
+	padding: .5rem .8rem;
 	border : 1px solid #bbb;
 	line-height: 1;
 }
 .filter-list .filter-more {
 	display : inline-block;
 	color : black;
-	border-radius: 3px;
-	margin: .4rem .2rem;
+	border-radius: 30px;
+	margin: .4rem .1rem;
 	padding: .5rem .75rem;
 	line-height: 1;
 	border : 1px solid #eee;
@@ -1149,7 +1156,7 @@ form, fieldset {
 .sm button {
 	/*border-radius: 0;*/
 	font-size: .85rem;
-	padding: .4rem .4rem .3rem;
+	padding: .4rem .7rem .3rem;
 }
 .sm .atv:after {
 	margin-right: 5px;
@@ -1267,7 +1274,7 @@ div.tag {
 }
 
 #filterssss.showing:after {
-	content: "-";
+	content: "x";
 }
 
 .has-drop {
@@ -1418,6 +1425,169 @@ div.tag {
 	color: #ee7873;
 }
 
+
+/* Closet Followers */
+
+.user-follow-stats {
+	max-width : 800px;
+	margin : 0 auto 50px;
+	display : block;
+}
+
+.user-details {
+	max-width : 800px;
+	margin : 15px auto;
+	display : block;
+	border : 1px solid #eee;
+	padding : 1rem;
+}
+
+.user-details .user-profile {
+	margin-right : 30px;
+}
+
+.user-details .user-profile img {
+	border-radius: 100%;
+	display: block;
+	max-width: 50px;
+}
+
+.user-details .user-display {
+	padding : 0;
+	vertical-align: top;
+}
+
+.user-details > div {
+	display : inline-block;
+}
+
+.user-details h4 {
+	font-family : 'proxima-nova-semi'; 
+	text-transform: uppercase;
+	letter-spacing : 1px;
+	margin : .2rem 0;
+}
+
+.user-details p {
+	margin : 0;
+	color : black;
+}
+
+.user-details p span {
+	color : #888;
+}
+
+.user-display p:last-child {
+	font-family : 'calluna-regular';
+	font-size : 13px;
+}
+
+.user-details figure, .user-display {
+	display : inline-block;
+}
+
+.user-content {
+	float : right;
+}
+
+.user-items {
+	display : inline-block;
+	vertical-align: top;
+}
+
+.user-follow {
+	margin-top : .5rem;
+}
+
+.user-items figure {
+	margin : 0 .5rem;
+	border : 1px solid #eee;
+	padding : .5rem;
+	height : 65px;
+	vertical-align: top;
+}
+
+.user-items figure img {
+	max-width : 50px;
+	max-height : 50px;
+}
+
+.user-item-count {
+	display : inline-block;
+	text-align: center;
+	margin-right : .5rem;
+	vertical-align: top;
+}
+
+.user-item-count > a {
+	font-size : 0.9rem;
+	color : #888;
+	padding-bottom: 1rem;
+	text-decoration: none;
+}
+
+.user-item-count > a:hover {
+	color : #ee7873;
+}
+
+.user-item-count > a span {
+	position : relative;
+	top : 2px;
+}
+
+.user-follow .btn.active {
+	border : 1px solid black;
+	background : transparent;
+	color : black;
+}
+
+.user-follow .btn.active:after {
+	font-family : 'tradesy-icons';
+	content: "\e049";
+	position : relative;
+	top : 2px;
+	left : 5px;
+}
+
+/*Footer*/
+
+#closet-footer {
+	margin-top : 4rem;
+	height : 22rem;
+	padding-top : 3rem;
+	border-top : 1px solid #eee;
+}
+
+#closet-footer div {
+}
+
+#closet-footer p {
+	color : black;
+	font-family : 'calluna-regular';
+}
+
+#closet-footer .user-bio {
+	width : 70%;
+	float: left;
+}
+
+#closet-footer .user-links {
+	width : 20%;
+	float : right;
+}
+
+#closet-footer .user-links a {
+	display : block;
+	text-decoration: none;
+	color : black;
+}
+
+footer {
+	background : black;
+	height : 20rem;
+	margin-top : 2rem;
+	margin-bottom : -4rem;
+}
 
 
 /***** tablet & up ****/
