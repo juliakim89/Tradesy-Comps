@@ -674,6 +674,7 @@ figure div {
 	text-align: center;
 	text-decoration: none;
 	vertical-align: middle;
+	opacity: .9;
 }
 .brand.empty a {
 	color: #ee7873;
@@ -694,8 +695,9 @@ figure div {
 
 }
 .brand a:hover {
+	opacity: 1;
 	/*background: #efefef;*/
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #111;
+	/*box-shadow: 0 0 0 2px white, 0 0 0 3px #111;*/
 }
 .brand a:active {
 	/*background: #111;
@@ -759,7 +761,7 @@ figure div {
 	background: url(https://assets.bezar.com/store/lookbook_images/attachments/000/000/084/full/1.jpg) no-repeat;
 	/*background : #f3f5f9;*/
 	background-size: cover;
-	margin: auto;
+	margin: 0 auto 1rem;
 	max-width: 1500px;
 	position: relative;
 	border-bottom: 1px solid #ddd;
@@ -1446,7 +1448,7 @@ div.tag {
 }
 
 .user-details .user-profile {
-	margin-right : 30px;
+	margin-right : 1rem;
 }
 
 .user-details .user-profile img {
@@ -1556,12 +1558,32 @@ div.tag {
 
 #closet-footer {
 	margin-top : 4rem;
-	height : 22rem;
-	padding-top : 3rem;
+	height : 28rem;
+	padding-top : 2rem;
 	border-top : 1px solid #eee;
 }
 
+#closet-footer .user-pic, #closet-footer .user-profile div {
+	display : inline-block;
+	vertical-align: top;
+}
+
+#closet-footer .user-profile div {
+	margin-left : 1rem;
+}
+
+#closet-footer .user-profile div p {
+	font-family: 'proxima-nova-regular';
+	margin : 0;
+}
+
+#closet-footer .user-pic img {
+	width : 50px;
+	height : 50px;
+}
+
 #closet-footer div {
+	vertical-align: top;
 }
 
 #closet-footer p {
@@ -1570,16 +1592,52 @@ div.tag {
 }
 
 #closet-footer .user-bio {
-	width : 70%;
-	float: left;
+	width : 60%;
+	display : inline-block;
+	padding-right : 2rem;
 }
 
+#closet-footer .user-shop-links {
+	width : 18%;
+	display : inline-block;
+}
+
+#closet-footer .user-shop-links ul {
+	margin-left : 0;
+	padding : 0;
+}
+
+#closet-footer .user-shop-links li {
+	display : block;
+	list-style-type: none;
+}
+
+#closet-footer .user-shop-links a {
+	color : #666;
+	line-height: 2rem;
+	border-bottom : 1px solid #eee;
+}
+
+#closet-footer .user-shop-links a:after {
+	content: ' 'attr(data-num);
+	font-family: 'proxima-nova-regular', sans-serif;
+	font-size : 80%;
+	opacity: .4;
+	margin-left : .5rem;
+} 
+
 #closet-footer .user-links {
-	width : 20%;
-	float : right;
+	margin-top : 2rem;
 }
 
 #closet-footer .user-links a {
+	display inline-block;
+	margin-right : 1rem;
+	text-decoration: none;
+	color : #666;
+}
+
+#closet-footer .user-shop-links a {
 	display : block;
 	text-decoration: none;
 	color : black;
