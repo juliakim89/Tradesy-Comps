@@ -690,6 +690,8 @@ figure div {
 	content: ' 'attr(data-num);
 	font-family: 'proxima-nova-regular', sans-serif;
 	opacity: .5;
+	margin-left : .5rem;
+
 }
 .brand a:hover {
 	/*background: #efefef;*/
@@ -755,6 +757,7 @@ figure div {
 	/*background: #111 url(https://s3.amazonaws.com/f.cl.ly/items/2j293a2t0t0Z271C2d28/default-back-green.png) repeat center center;*/
 	/*background: #111 url(https://assets.bezar.com/store/lookbook_images/attachments/000/000/084/full/1.jpg) no-repeat;*/
 	background: url(https://assets.bezar.com/store/lookbook_images/attachments/000/000/084/full/1.jpg) no-repeat;
+	/*background : #f3f5f9;*/
 	background-size: cover;
 	margin: auto;
 	max-width: 1500px;
@@ -1042,7 +1045,7 @@ form, fieldset {
 	color: #999;
 }
 .hero-pic {
-	 background: url(https://s3.amazonaws.com/f.cl.ly/items/2j293a2t0t0Z271C2d28/default-back-green.png) repeat center center;
+	background: url(https://s3.amazonaws.com/f.cl.ly/items/2j293a2t0t0Z271C2d28/default-back-green.png) repeat center center;
 	border-radius: 3px;
 	height: 60px;
 }
