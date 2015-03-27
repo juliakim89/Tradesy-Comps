@@ -785,8 +785,9 @@ figure div {
 	/*background: #111 url(https://s3.amazonaws.com/f.cl.ly/items/2j293a2t0t0Z271C2d28/default-back-green.png) repeat center center;*/
 	/*background: #111 url(https://assets.bezar.com/store/lookbook_images/attachments/000/000/084/full/1.jpg) no-repeat;*/
 	/*background: url(https://assets.bezar.com/store/lookbook_images/attachments/000/000/084/full/1.jpg) no-repeat;*/
-	background : #2a2a2a;
-	background-size: cover;
+	background: url(https://c3.staticflickr.com/7/6141/5934934832_416fd16315.jpg) repeat;
+	/*background-color : #2a2a2a;*/
+	/*background-size: cover;*/
 	margin: 0 auto 1rem;
 	max-width: 1500px;
 	position: relative;

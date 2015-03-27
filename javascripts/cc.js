@@ -60,7 +60,7 @@ $(function(){
   });
 
   $('#profile-follow').on('click', function(){
-    $(this).toggleClass('active');
+    $(this).toggleClass('active').text('following');
   });
 
   // var brands_hidden = $('#brands .hide'),
