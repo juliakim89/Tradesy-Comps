@@ -785,9 +785,11 @@ figure div {
 	/*background: #111 url(https://s3.amazonaws.com/f.cl.ly/items/2j293a2t0t0Z271C2d28/default-back-green.png) repeat center center;*/
 	/*background: #111 url(https://assets.bezar.com/store/lookbook_images/attachments/000/000/084/full/1.jpg) no-repeat;*/
 	/*background: url(https://assets.bezar.com/store/lookbook_images/attachments/000/000/084/full/1.jpg) no-repeat;*/
-	background: url(https://c3.staticflickr.com/7/6141/5934934832_416fd16315.jpg) repeat;
+	/*background: url(http://hdwyn.com/wallpaper_gray/gray_material_fabric_background_texture_hd-wallpaper-48598.jpg) repeat;*/
+	/*background: url(http://www.ronaldtomas.com/wp-content/uploads/2014/06/silk-black.jpg) repeat;*/
+	background: url(http://juliakim89.github.io/Tradesy-Comps/images/background.jpg) no-repeat top center;
 	/*background-color : #2a2a2a;*/
-	/*background-size: cover;*/
+	background-size: cover;
 	margin: 0 auto 1rem;
 	max-width: 1500px;
 	position: relative;
