@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "tradesy-icons";
-  src:url("fonts/tradesy-icons.eot");
-  src:url("fonts/tradesy-icons.eot?#iefix") format("embedded-opentype"),
-    url("fonts/tradesy-icons.woff") format("woff"),
-    url("fonts/tradesy-icons.ttf") format("truetype"),
-    url("fonts/tradesy-icons.svg#tradesy-icons") format("svg");
+  src:url("http://juliakim89.github.io/Tradesy-Comps/fonts/tradesy-icons.eot");
+  src:url("http://juliakim89.github.io/Tradesy-Comps/fonts/tradesy-icons.eot?#iefix") format("embedded-opentype"),
+    url("http://juliakim89.github.io/Tradesy-Comps/fonts/tradesy-icons.woff") format("woff"),
+    url("http://juliakim89.github.io/Tradesy-Comps/fonts/tradesy-icons.ttf") format("truetype"),
+    url("http://juliakim89.github.io/Tradesy-Comps/fonts/tradesy-icons.svg#tradesy-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 
