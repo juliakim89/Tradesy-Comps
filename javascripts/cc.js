@@ -104,7 +104,7 @@ $(function(){
           $(that).fadeIn().addClass('hide');
         });
       });
-      $('.filter-more').removeClass('show').text('...');
+      $('.filter-more').removeClass('show').text('Show 132 More');
     } else {
       $(this).addClass('show').text('Hide');
       $('#filter-list .hide').each(function(i) {

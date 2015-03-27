@@ -1175,16 +1175,14 @@ form, fieldset {
 	border : 1px solid #bbb;
 	line-height: 1;
 }
+.filter-list .filter-more-container {
+	margin-left : .5rem;
+	padding : .5rem 0 1rem;
+}
 .filter-list .filter-more {
-	display : inline-block;
-	color : black;
-	border-radius: 30px;
-	margin: .4rem .1rem;
-	padding: .5rem .75rem;
-	line-height: 1;
-	/*border : 1px solid #eee;*/
-	background: #ccc;
-	letter-spacing: 2px;
+	font-size : .9rem;
+	color : #888;
+	border-bottom : 1px solid #ccc;
 	cursor: pointer;
 }
 .filter-list button.atv {
@@ -1298,6 +1296,8 @@ div.tag {
 /*Sort by*/
 #filter-toggle {
 	padding : 0 1rem;
+	margin-top : -1rem;
+	margin-bottom : 2rem;
 }
 
 #filterssss {
@@ -1336,7 +1336,7 @@ div.tag {
 	display: none;
 	/*margin-top: 10px;*/
 	position: absolute;
-	top: 0;
+	top: 35px;
 	left: 0;
 	width: 100%;
 	z-index: 10;
