@@ -787,7 +787,7 @@ figure div {
 	/*background: url(https://assets.bezar.com/store/lookbook_images/attachments/000/000/084/full/1.jpg) no-repeat;*/
 	/*background: url(http://hdwyn.com/wallpaper_gray/gray_material_fabric_background_texture_hd-wallpaper-48598.jpg) repeat;*/
 	/*background: url(http://www.ronaldtomas.com/wp-content/uploads/2014/06/silk-black.jpg) repeat;*/
-	background: url(http://juliakim89.github.io/Tradesy-Comps/images/background.jpg) no-repeat top center;
+	background: url(http://juliakim89.github.io/Tradesy-Comps/images/background.jpg) no-repeat center center;
 	/*background-color : #2a2a2a;*/
 	background-size: cover;
 	margin: 0 auto 1rem;
@@ -1129,7 +1129,7 @@ form, fieldset {
 	border-bottom: 1px solid #efefef;
 	display: none;
 	/*height: 355px;*/
-	padding: 2rem 0 2rem;
+	padding: 2rem 0 1rem;
 	position: relative;
 	text-align: left;
 }
@@ -1155,6 +1155,7 @@ form, fieldset {
 }
 .filter-list .pills {
 	width : 90%;
+	margin-bottom : .5rem;
 }
 .filter-list h5 {
 	font-size: 1.25rem;
@@ -1195,6 +1196,24 @@ form, fieldset {
  .filter-list button:hover {
  	border : 1px solid black;
  }
+
+.hide-filters {
+	padding-top : 1rem;
+	text-align: center;
+}
+.hide-filters span {
+	display : inline-block;
+	position : relative;
+	-webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.hide-filters a {
+	text-decoration: none;
+	color : #888;
+}
 .sm button {
 	/*border-radius: 0;*/
 	font-size: .85rem;
