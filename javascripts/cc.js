@@ -118,6 +118,13 @@ $(function(){
     return false;
   });
 
+  $('#brand-cls').on('click', function() {
+    $('#brand-toggle').removeClass('show').text('Show all');
+    $('#brands .hide').removeClass('show');
+  });
+
+  var featureHTML = '<span class="tag featured">Featured</span>';
+
   $('body').on('click', '.feature-this', function() {
     var featured = $('#featured'),
         featured_num = featured.find('.product').length,

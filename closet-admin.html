@@ -7,7 +7,8 @@
 
 		<title dir="ltr">Tradesy Product Page Comp</title>
 
-		<link href="stylesheets/c.css" rel="stylesheet" type="text/css" />
+		<link href="Tradesy-Comps/stylesheets/admin.css" rel="stylesheet" type="text/css" />
+		<link href="Tradesy-Comps/stylesheets/icons.css" rel="stylesheet" type="text/css" />
 		<script>document.addEventListener('touchstart', function() {},false);</script>
 	</head>
 	<body>
@@ -17,15 +18,15 @@
 			</div>
 		</header>
 
-		<nav class="seller-nav" id="seller-nav">
+		<nav class="seller-nav cf" id="seller-nav">
 			<span class="active">
 				<a href="">Closet</a>
 			</span>
 			<span>
-				<a href="">Deleted Listings</a>
+				<a href="">Deleted</a>
 			</span>
 			<span>
-				<a href="">Draft Listings</a>
+				<a href="">Drafts</a>
 			</span>
 			<span>
 				<a href="">Settings</a>
@@ -38,7 +39,7 @@
 		<div class="closet-header admin" id="closet-header">
 			<div class="c-width table">
 				<div class="closet-main">
-					<span class="chg back t-up">
+					<span class="chg back t-up" id="closet-header-hero-toggle">
 						Change cover
 						<img src="images/icon-camera-24.png" alt="">
 					</span>
@@ -46,7 +47,7 @@
 						<img src="images/icon-camera-24.png" alt="">
 					</span>
 					<div class="profile-pic">
-						<img src="https://pbs.twimg.com/profile_images/473111708735524864/kb0NFxZk_400x400.jpeg" id="user" alt="" />
+						<img src="https://pbs.twimg.com/profile_images/473111708735524864/kb0NFxZk_400x400.jpeg" id="user" d-src="images/default-user.png" />
 					</div>
 					<div class="profile-details">
 						<h1>Simply Chic Jewelry Designs-by Pat McLaughlin</h1>
@@ -70,7 +71,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="img-cover"></div>
+			<!-- <div class="img-cover"></div> -->
 			<div class="closet-sub">
 				<div class="c-width">
 					<p>
@@ -82,11 +83,11 @@
 							<small>items</small>
 						</a>
 						<a href="##">
-							55
-							<small>sold</small>
+							8
+							<small>following</small>
 						</a>
 						<a href="###">
-							25
+							2
 							<small>followers</small>
 						</a>
 						<a href="###">
@@ -100,15 +101,103 @@
 
 		<div class="m-only">
 			<nav class="tabs cf">
-				<a href="#" data-num="200">Listings</a>
-				<a href="" data-num="55">Sold</a>
-				<a href="#about">About</a>
+				<a href="#" class="active">Listings</a>
+				<a href="">Followers</a>
+				<a href="">Following</a>
+				<a href="#about">Favs</a>
 			</nav>
 		</div>
 
-		<hr class="min">
+		<div class="cf _mar-t _mar-b-min closet-search-wrap" id="closet-search-wrap">
+			<form class="_left closet-search cf">
+				<fieldset>
+					<label for="closet-search">
+						<span>Search for</span>
+						<input type="search" id="closet-search" class="si" placeholder="bags, clothing, etc." />
+						<input type="submit" class="sb" value="Search" />
+					</label>
+				</fieldset>
+			</form>
+		</div>
 
-		<div class="racks index width" id="like1">
+		<div class="racks index width mar-t" id="like1">
+
+			<!-- <div class="rack cf intro ex">
+				<h2>Your new closet</h2>
+				<div class="product s ex" id="prod_id2">
+					<span class="ctls tag">
+						<nav class="product-actions">
+							<a class="unfeature-this" data-id="prod_id2">Unfeature</a>
+							<a href="###">Edit</a>
+							<a href="###">Delete</a>
+						</nav>
+					</span>
+					<a href="##">
+						<figure><div>
+							<img src="https://item4.tradesy.com/r/f6b553c8e543455e43ae18fea94fd88feaa89b055b34bb44358c0f44e31ef354/203/307/bags/louis-vuitton/shoulder-bags/louis-vuitton-perforated-leather-shoulder-bag-monogram-1702288.jpg" alt="product name image" />
+						</div></figure>
+						<div class="details">
+							<span class="tag brand-name">Louis Vuitton</span>
+							<h3>2006 Ltd Edition Perforated Mini Trocadero Shoulder Bag</h3>
+							<h4>
+								<sup>$</sup>493
+								<span><sup>$</sup>1,210</span>
+							</h4>
+						</div>
+					</a>
+					<div class="mask"></div>
+				</div>
+				<div class="product s ex" id="prod_id2">
+					<div class="analytics a2">
+						<span class="tag wanted no-inc n" data-want="1,246"></span>
+						<span class="tag wanted no-inc vw n" data-want="2,000"></span>
+						<span class="tag wanted no-inc shr n" data-want="33"></span>
+					</div>
+					<a href="##">
+						<figure><div>
+							<img src="https://item4.tradesy.com/r/f6b553c8e543455e43ae18fea94fd88feaa89b055b34bb44358c0f44e31ef354/203/307/bags/louis-vuitton/shoulder-bags/louis-vuitton-perforated-leather-shoulder-bag-monogram-1702288.jpg" alt="product name image" />
+						</div></figure>
+						<div class="details">
+							<span class="tag brand-name">Louis Vuitton</span>
+							<h3>2006 Ltd Edition Perforated Mini Trocadero Shoulder Bag</h3>
+							<h4>
+								<sup>$</sup>493
+								<span><sup>$</sup>1,210</span>
+							</h4>
+						</div>
+					</a>
+					<div class="mask"></div>
+				</div>
+				<p>There&rsquo;s so much more you can do with your closet now! You can customize it by adding a hero image, and we&rsquo;ve also optimized this for social sharing on your favorite sites. Your listings have been re-organized into smart &lsquo;Racks&rsquo; which make it easier for buyers to quickly digest what you have for sale. You can also &lsquo;Feature&rsquo; a listing by clicking the Feature link on that listing.</p>
+				<p>Lastly, we&rsquo;re also giving you insights into each listing with the addition of our micro-anaylitics.</p>
+			</div>
+
+			<hr> -->
+
+			<!-- <div class="rack no-b center note cf">
+				<h1>
+					Awesome!
+				</h1>
+				<img src="images/import.png" />
+				<div class="empty-set">
+					We&rsquo;ve started importing all your listings over.
+					<small>A <strong>Tradesy Account Manager</strong> will reach out to you soon to keep this moving.</small>
+				</div>
+			</div> -->
+
+			<hr>
+
+			<div class="rack no-b cf">
+				<h2>
+					Featured
+				</h2>
+				<div class="empty-set">
+					You&rsquo;ve got no featured listings right now.
+					<small>To &lsquo;Feature&rsquo; a listing, simply click the <strong>Feature</strong> link for that listing.</small>
+				</div>
+			</div>
+
+			<hr>
 
 			<div class="rack no-b cf" id="featured">
 				<h2 data-num="6">
@@ -116,17 +205,13 @@
 					<a href="##">Shop all</a>
 				</h2>
 				<div class="product s on-sale" id="prod_id2">
-					<span class="ctls tag">Manage</span>
-					<div class="analytics a2">
-						<span class="tag wanted no-inc n" data-want="1,246"></span>
-						<span class="tag wanted no-inc vw n" data-want="2,000"></span>
-						<span class="tag wanted no-inc shr n" data-want="33"></span>
+					<span class="ctls tag">
 						<nav class="product-actions">
 							<a class="unfeature-this" data-id="prod_id2">Unfeature</a>
 							<a href="###">Edit</a>
 							<a href="###">Delete</a>
 						</nav>
-					</div>
+					</span>
 					<a href="##">
 						<figure><div>
 							<img src="https://item4.tradesy.com/r/f6b553c8e543455e43ae18fea94fd88feaa89b055b34bb44358c0f44e31ef354/203/307/bags/louis-vuitton/shoulder-bags/louis-vuitton-perforated-leather-shoulder-bag-monogram-1702288.jpg" alt="product name image" />
@@ -140,20 +225,24 @@
 							</h4>
 						</div>
 					</a>
-					<span class="tag sale hide">10% off</span>
+					<span class="tag sale">10% off</span>
+					<div class="analytics a2">
+						<span class="tag wanted no-inc n">1,246</span>
+						<span class="tag wanted no-inc vw n">2,000</span>
+						<span class="tag wanted no-inc shr n">33</span>
+					</div>
+					<!-- <div class="analytic-details">
+						This listing has been <strong>viewed 1,246 times</strong>, <strong>wanted 2,000 times</strong> and <strong>shared 33 times</strong>; great job!
+					</div> -->
 				</div>
 				<div class="product s" id="prod_id2">
-					<span class="ctls tag">Manage</span>
-					<div class="analytics a2">
-						<span class="tag wanted no-inc n" data-want="1,246"></span>
-						<span class="tag wanted no-inc vw n" data-want="2,000"></span>
-						<span class="tag wanted no-inc shr n" data-want="33"></span>
+					<span class="ctls tag">
 						<nav class="product-actions">
 							<a class="unfeature-this" data-id="prod_id2">Unfeature</a>
 							<a href="###">Edit</a>
 							<a href="###">Delete</a>
 						</nav>
-					</div>
+					</span>
 					<a href="##">
 						<figure><div>
 							<img src="https://item4.tradesy.com/r/f6b553c8e543455e43ae18fea94fd88feaa89b055b34bb44358c0f44e31ef354/203/307/bags/louis-vuitton/shoulder-bags/louis-vuitton-perforated-leather-shoulder-bag-monogram-1702288.jpg" alt="product name image" />
@@ -167,19 +256,23 @@
 							</h4>
 						</div>
 					</a>
+					<div class="analytics a2">
+						<span class="tag wanted no-inc n">1,246</span>
+						<span class="tag wanted no-inc vw n">2,000</span>
+						<span class="tag wanted no-inc shr n">33</span>
+					</div>
+					<div class="analytic-details">
+						Misc info for the first few times?
+					</div>
 				</div>
 				<div class="product s" id="prod_id2">
-					<span class="ctls tag">Manage</span>
-					<div class="analytics a2">
-						<span class="tag wanted no-inc n" data-want="1,246"></span>
-						<span class="tag wanted no-inc vw n" data-want="2,000"></span>
-						<span class="tag wanted no-inc shr n" data-want="33"></span>
+					<span class="ctls tag">
 						<nav class="product-actions">
 							<a class="unfeature-this" data-id="prod_id2">Unfeature</a>
 							<a href="###">Edit</a>
 							<a href="###">Delete</a>
 						</nav>
-					</div>
+					</span>
 					<a href="##">
 						<figure><div>
 							<img src="https://item4.tradesy.com/r/f6b553c8e543455e43ae18fea94fd88feaa89b055b34bb44358c0f44e31ef354/203/307/bags/louis-vuitton/shoulder-bags/louis-vuitton-perforated-leather-shoulder-bag-monogram-1702288.jpg" alt="product name image" />
@@ -193,35 +286,18 @@
 							</h4>
 						</div>
 					</a>
-				</div>
-				<div class="product s" id="prod_id2">
-					<span class="ctls tag">Manage</span>
 					<div class="analytics a2">
-						<span class="tag wanted no-inc n" data-want="1,246"></span>
-						<span class="tag wanted no-inc vw n" data-want="2,000"></span>
-						<span class="tag wanted no-inc shr n" data-want="33"></span>
-						<nav class="product-actions">
-							<a class="unfeature-this" data-id="prod_id2">Unfeature</a>
-							<a href="###">Edit</a>
-							<a href="###">Delete</a>
-						</nav>
+						<span class="tag wanted no-inc n">1,246</span>
+						<span class="tag wanted no-inc vw n">2,000</span>
+						<span class="tag wanted no-inc shr n">33</span>
 					</div>
-					<a href="##">
-						<figure><div>
-							<img src="https://item4.tradesy.com/r/f6b553c8e543455e43ae18fea94fd88feaa89b055b34bb44358c0f44e31ef354/203/307/bags/louis-vuitton/shoulder-bags/louis-vuitton-perforated-leather-shoulder-bag-monogram-1702288.jpg" alt="product name image" />
-						</div></figure>
-						<div class="details">
-							<span class="tag brand-name">Louis Vuitton</span>
-							<h3>2006 Ltd Edition Perforated Mini Trocadero Shoulder Bag</h3>
-							<h4>
-								<sup>$</sup>493
-								<span><sup>$</sup>1,210</span>
-							</h4>
-						</div>
-					</a>
+					<!-- <div class="analytic-details">
+						This listing has been <strong>viewed 1,246 times</strong>, <strong>wanted 2,000 times</strong> and <strong>shared 33 times</strong>; great job!
+					</div> -->
 				</div>
 				<div class="empty-set hide">
 					You&rsquo;ve got no featured listings right now.
+					<small>To &lsquo;Feature&rsquo; a listing, simply click the <strong>Feature</strong> link for that listing.</small>
 				</div>
 			</div>
 
@@ -230,12 +306,12 @@
 				<div class="rack cf">
 					<h2 data-num="43">
 						Brands
-						<a id="brand-toggle">Show all</a>
+						<!-- <a id="brand-toggle">Show all</a> -->
 					</h2>
 					<div class="brands" id="brands">
-						<div class="brand empty">
+						<!-- <div class="brand empty">
 							<a href="###">Add new brand</a>
-						</div>
+						</div> -->
 						<div class="brand _louis-vouitton">
 							<a href="###" data-num="10">Louis Vuitton</a>
 						</div>
@@ -245,11 +321,14 @@
 						<div class="brand _tory-birch">
 							<a href="###" data-num="5">Tory Burch</a>
 						</div>
+						<!-- <div class="brand _evolution">
+							<a href="###" data-num="4">Evolution</a>
+						</div>
 						<div class="brand _evolution">
 							<a href="###" data-num="4">Evolution</a>
 						</div>
 						<div class="brand hide _evolution">
-							<a href="###" data-num="4">Evolution</a>
+							<a href="###" data-num="4">rrefe</a>
 						</div>
 						<div class="brand hide _evolution">
 							<a href="###" data-num="4">Evolution</a>
@@ -266,9 +345,9 @@
 						<div class="brand hide _evolution">
 							<a href="###" data-num="4">Evolution</a>
 						</div>
-						<div class="brand hide _evolution">
-							<a href="###" data-num="4">Evolution</a>
-						</div>
+						<div class="brand hide cls">
+							<a id="brand-cls">Hide all</a>
+						</div> -->
 					</div>
 				</div>
 
@@ -276,7 +355,7 @@
 
 			<div class="rack no-b cf" id="featured">
 				<h2 data-num="6">
-					Featured
+					Bags
 					<!-- <a href="##">Shop all</a> -->
 				</h2>
 				<div class="product empty">
@@ -287,17 +366,13 @@
 					</div>
 				</div>
 				<div class="product s" id="prod_id2222">
-					<div class="analytics a2">
-						<span class="tag wanted no-inc n" data-want="1,246"></span>
-						<span class="tag wanted no-inc vw n" data-want="2,000"></span>
-						<span class="tag wanted no-inc shr n" data-want="33"></span>
+					<span class="ctls tag">
 						<nav class="product-actions">
 							<a class="feature-this" data-id="prod_id2222">Feature</a>
 							<a href="###">Edit</a>
 							<a href="###">Delete</a>
 						</nav>
-					</div>
-					<span class="ctls tag">Manage</span>
+					</span>
 					<a href="##">
 						<figure><div>
 							<img src="https://item4.tradesy.com/r/f6b553c8e543455e43ae18fea94fd88feaa89b055b34bb44358c0f44e31ef354/203/307/bags/louis-vuitton/shoulder-bags/louis-vuitton-perforated-leather-shoulder-bag-monogram-1702288.jpg" alt="product name image" />
@@ -311,6 +386,75 @@
 							</h4>
 						</div>
 					</a>
+					<div class="analytics a2">
+						<span class="tag wanted no-inc n">1,246</span>
+						<span class="tag wanted no-inc vw n">2,000</span>
+						<span class="tag wanted no-inc shr n">33</span>
+					</div>
+					<div class="analytic-details">
+						Misc info for the <strong>first few</strong> times?
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="rack no-b cf" id="featured">
+				<h2 data-num="1">
+					Draft Listings
+					<!-- <a href="##">Shop all</a> -->
+				</h2>
+				<div class="product s" id="prod_id2222">
+					<span class="ctls tag">
+						<nav class="product-actions">
+							<a href="###">Publish</a>
+							<a href="###">Edit</a>
+						</nav>
+					</span>
+					<a href="##">
+						<figure><div>
+							<img src="https://item4.tradesy.com/r/f6b553c8e543455e43ae18fea94fd88feaa89b055b34bb44358c0f44e31ef354/203/307/bags/louis-vuitton/shoulder-bags/louis-vuitton-perforated-leather-shoulder-bag-monogram-1702288.jpg" alt="product name image" />
+						</div></figure>
+						<div class="details">
+							<span class="tag brand-name">Louis Vuitton</span>
+							<h3>2006 Ltd Edition Perforated Mini Trocadero Shoulder Bag</h3>
+							<h4>
+								<sup>$</sup>493
+								<span><sup>$</sup>1,210</span>
+							</h4>
+						</div>
+					</a>
+					<!-- <div class="analytics a2">
+						<span class="tag wanted no-inc n" data-want="1,246"></span>
+						<span class="tag wanted no-inc vw n" data-want="2,000"></span>
+						<span class="tag wanted no-inc shr n" data-want="33"></span>
+					</div> -->
+				</div>
+				<div class="product s" id="prod_id2222">
+					<span class="ctls tag">
+						<nav class="product-actions">
+							<a href="###">Publish</a>
+							<a href="###">Edit</a>
+						</nav>
+					</span>
+					<a href="##">
+						<figure><div>
+							<img src="https://item4.tradesy.com/r/f6b553c8e543455e43ae18fea94fd88feaa89b055b34bb44358c0f44e31ef354/203/307/bags/louis-vuitton/shoulder-bags/louis-vuitton-perforated-leather-shoulder-bag-monogram-1702288.jpg" alt="product name image" />
+						</div></figure>
+						<div class="details">
+							<span class="tag brand-name">Louis Vuitton</span>
+							<h3>2006 Ltd Edition Perforated Mini Trocadero Shoulder Bag</h3>
+							<h4>
+								<sup>$</sup>493
+								<span><sup>$</sup>1,210</span>
+							</h4>
+						</div>
+					</a>
+					<!-- <div class="analytics a2">
+						<span class="tag wanted no-inc n" data-want="1,246"></span>
+						<span class="tag wanted no-inc vw n" data-want="2,000"></span>
+						<span class="tag wanted no-inc shr n" data-want="33"></span>
+					</div> -->
 				</div>
 			</div>
 
@@ -335,10 +479,30 @@
 							</h4>
 						</div>
 					</a>
-					<span class="tag want wanted n" data-want="3"></span>
+					<span class="tag want" data-want="3"></span>
+					<div class="analytics a2">
+						<span class="tag wanted no-inc n">1,246</span>
+						<span class="tag wanted no-inc vw n">2,000</span>
+						<span class="tag wanted no-inc shr n">33</span>
+					</div>
 				</div>
 			</div>
 
+		</div>
+
+		<div class="width">
+			<div class="about" id="about">
+				<h3>About @penny_lane</h3>
+				<p>I'm a 27 year old Graduate Student living the life in Miami, FL. I've lived all over the country and world, I will have my ph.d one day but before then I'll continue my Love an Obsession for Fashion and continue expanding my designer & couture Vintage store I own with my mother! Check us out on Etsy.com and IG @ Vintagerevengecouture I am a Bulldog mommy, dancer, foody and a Feminist! ; )</p>
+				<h3>@penny_lane on the web</h3>
+				<p><a href="#">www.tradesy.com</a><br>
+				Twitter <a href="#">@username</a><br>
+				Instagram <a href="#">@username</a><br>
+				Facebook <a href="#">@username</a><br>
+				Pinterest <a href="#">@username</a></p>
+				<h3><a href="#">25 followers</a></h3>
+				<h3><a href="#">65 favs</a></h3>
+			</div>
 		</div>
 
 		<div class="modal-wrap hide" id="modal-wrap">
@@ -365,7 +529,7 @@
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="javascripts/cc.js"></script>
+		<script src="javascripts/admin.js"></script>
 
 	</body>
 </html>
