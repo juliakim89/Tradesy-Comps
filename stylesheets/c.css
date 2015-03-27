@@ -831,7 +831,7 @@ figure div {
 .profile-pic {
 	/*padding: .5rem;*/
 	position: absolute;
-	bottom: -4rem;
+	bottom: -5rem;
 	left: 0;
 }
 .admin .profile-pic {
@@ -842,28 +842,34 @@ figure div {
 	border-radius: 100%;
 	/*box-shadow: 0 0 0 8px white;*/
 	display: block;
-	max-width: 125px;
+	max-width: 150px;
 }
 .profile-details {
 	position: absolute;
 	bottom: 0;
-	left: 145px;
+	left: 170px;
 }
 .profile-details h1, .profile-details h2 {
 	color: white;
 }
 .profile-details h2 {
-	font-size: 1rem;
+	color : #ccc;
+	font-size: 1.2rem;
 	padding-left: 2px;
 }
 .profile-details span {
 	display: inline-block;
-	font-size: .75rem;
+	font-size: .9rem;
 	margin-left: .75rem;
 	position: relative;
+	color : #777;
+}
+.profile-details span i {
+	color : white;
 }
 .profile-details a {
-	color: white;
+	color : #777;
+	text-decoration: none;
 }
 .profile-details [loc] {
 	padding-left: 15px;
