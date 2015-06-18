@@ -1,0 +1,733 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "tradesy-icons";
+  src:url("http://juliakim89.github.io/tradesy-comps/fonts/tradesy-icons.eot");
+  src:url("http://juliakim89.github.io/tradesy-comps/fonts/tradesy-icons.eot?#iefix") format("embedded-opentype"),
+      url("http://juliakim89.github.io/tradesy-comps/fonts/tradesy-icons.woff") format("woff"),
+      url("http://juliakim89.github.io/tradesy-comps/fonts/tradesy-icons.ttf") format("truetype"),
+      url("http://juliakim89.github.io/tradesy-comps/fonts/tradesy-icons.svg#tradesy-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "tradesy-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "tradesy-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\e000";
+}
+.icon-facebook:before {
+  content: "\e001";
+}
+.icon-pinterest:before {
+  content: "\e002";
+}
+.icon-arrow-right:before {
+  content: "\e003";
+}
+.icon-arrow-left:before {
+  content: "\e004";
+}
+.icon-ios7-arrow-back:before {
+  content: "\e005";
+}
+.icon-ios7-arrow-left:before {
+  content: "\e006";
+}
+.icon-heart:before {
+  content: "\e007";
+}
+.icon-heart-outline:before {
+  content: "\e008";
+}
+.icon-ios7-arrow-forward:before {
+  content: "\e009";
+}
+.icon-refresh:before {
+  content: "\e00a";
+}
+.icon-navicon:before {
+  content: "\e00b";
+}
+.icon-search-strong:before {
+  content: "\e00c";
+}
+.icon-lock:before {
+  content: "\e00d";
+}
+.icon-pencil-2edit:before {
+  content: "\e00e";
+}
+.icon-tag:before {
+  content: "\e00f";
+}
+.icon-heart-circle:before {
+  content: "\e010";
+}
+.icon-star-bubble:before {
+  content: "\e011";
+}
+.icon-star-shield:before {
+  content: "\e012";
+}
+.icon-phone:before {
+  content: "\e016";
+}
+.icon-email:before {
+  content: "\e017";
+}
+.icon-user-female:before {
+  content: "\e018";
+}
+.icon-user-male:before {
+  content: "\e019";
+}
+.icon-bag:before {
+  content: "\e01a";
+}
+.icon-search-female:before {
+  content: "\e01b";
+}
+.icon-search-male:before {
+  content: "\e01c";
+}
+.icon-search:before {
+  content: "\e01d";
+}
+.icon-megaphone-2:before {
+  content: "\e01e";
+}
+.icon-new:before {
+  content: "\e01f";
+}
+.icon-add:before {
+  content: "\e021";
+}
+.icon-check-bubble:before {
+  content: "\e022";
+}
+.icon-cross-bubble:before {
+  content: "\e023";
+}
+.icon-gear:before {
+  content: "\e024";
+}
+.icon-dollar-bubble:before {
+  content: "\e025";
+}
+.icon-piggy:before {
+  content: "\e026";
+}
+.icon-hand-coin:before {
+  content: "\e028";
+}
+.icon-box:before {
+  content: "\e029";
+}
+.icon-receipt:before {
+  content: "\e02a";
+}
+.icon-hanger:before {
+  content: "\e02b";
+}
+.icon-shirt:before {
+  content: "\e02c";
+}
+.icon-rocket:before {
+  content: "\e02d";
+}
+.icon-check-shield:before {
+  content: "\e02e";
+}
+.icon-alert:before {
+  content: "\e02f";
+}
+.icon-shipping:before {
+  content: "\e030";
+}
+.icon-paper-airplane:before {
+  content: "\e031";
+}
+.icon-people:before {
+  content: "\e032";
+}
+.icon-ios7-checkmark-outline:before {
+  content: "\e033";
+}
+.icon-ios7-stopwatch-outline:before {
+  content: "\e034";
+}
+.icon-ios7-checkmark-empty:before {
+  content: "\e035";
+}
+.icon-lightning:before {
+  content: "\e036";
+}
+.icon-star:before {
+  content: "\e037";
+}
+.icon-printer:before {
+  content: "\e038";
+}
+.icon-ios7-circle-filled:before {
+  content: "\e039";
+}
+.icon-ios7-circle:before {
+  content: "\e03a";
+}
+.icon-arrow-down-b:before {
+  content: "\e03b";
+}
+.icon-trash:before {
+  content: "\e03c";
+}
+.icon-restore:before {
+  content: "\e03d";
+}
+.icon-remove:before {
+  content: "\e03e";
+}
+.icon-chat-bubble:before {
+  content: "\e03f";
+}
+.icon-warning-1:before {
+  content: "\e040";
+}
+.icon-warning:before {
+  content: "\e041";
+}
+.icon-info:before {
+  content: "\e042";
+}
+.icon-help:before {
+  content: "\e043";
+}
+.icon-map:before {
+  content: "\e044";
+}
+.icon-house:before {
+  content: "\e045";
+}
+.icon-ios7-plus-outline:before {
+  content: "\e046";
+}
+.icon-circle-solid:before {
+  content: "\e047";
+}
+.icon-ios7-arrow-right:before {
+  content: "\e048";
+}
+.icon-ios7-arrow-down:before {
+  content: "\e04a";
+}
+.icon-check-strong:before {
+  content: "\e049";
+}
+.icon-check-outline:before {
+  content: "\e04b";
+}
+.icon-check:before {
+  content: "\e04c";
+}
+.icon-up-arrow:before {
+  content: "\e04f";
+}
+.icon-email-solid:before {
+  content: "\e04d";
+}
+.icon-gear-solid:before {
+  content: "\e050";
+}
+.icon-alert-solid:before {
+  content: "\e051";
+}
+.icon-shop-solid:before {
+  content: "\e052";
+}
+.icon-star-solid:before {
+  content: "\e053";
+}
+.icon-hanger-solid:before {
+  content: "\e054";
+}
+.icon-new-solid:before {
+  content: "\e055";
+}
+.icon-info-solid:before {
+  content: "\e058";
+}
+.icon-help-solid:before {
+  content: "\e059";
+}
+.icon-smartphone-solid:before {
+  content: "\e056";
+}
+.icon-bag-solid:before {
+  content: "\e04e";
+}
+.icon-cancel:before {
+  content: "\e020";
+}
+.icon-accessories:before {
+  content: "\e057";
+}
+.icon-activewear:before {
+  content: "\e05a";
+}
+.icon-bottoms:before {
+  content: "\e05b";
+}
+.icon-bridal-party-dresses:before {
+  content: "\e05c";
+}
+.icon-bridal-shoes:before {
+  content: "\e05d";
+}
+.icon-wedding-decor:before {
+  content: "\e05e";
+}
+.icon-dresses:before {
+  content: "\e05f";
+}
+.icon-gifts:before {
+  content: "\e060";
+}
+.icon-groom:before {
+  content: "\e061";
+}
+.icon-handbags:before {
+  content: "\e062";
+}
+.icon-invitations:before {
+  content: "\e063";
+}
+.icon-jeans:before {
+  content: "\e064";
+}
+.icon-jewelry-accessories:before {
+  content: "\e065";
+}
+.icon-wedding-dresses:before {
+  content: "\e066";
+}
+.icon-veils:before {
+  content: "\e067";
+}
+.icon-tops:before {
+  content: "\e068";
+}
+.icon-swim:before {
+  content: "\e069";
+}
+.icon-suiting:before {
+  content: "\e06a";
+}
+.icon-shoes:before {
+  content: "\e06b";
+}
+.icon-outerwear:before {
+  content: "\e06c";
+}
+.icon-miscellaneous:before {
+  content: "\e06d";
+}
+.icon-maternity:before {
+  content: "\e06e";
+}
+.icon-close:before {
+  content: "\e06f";
+}
+.icon-large-box:before {
+  content: "\e070";
+}
+.icon-medium-box:before {
+  content: "\e071";
+}
+.icon-oversized-box:before {
+  content: "\e072";
+}
+.icon-small-box:before {
+  content: "\e073";
+}
+.icon-401k:before {
+  content: "\e074";
+}
+.icon-icon-cake:before {
+  content: "\e075";
+}
+.icon-icon-happyhour:before {
+  content: "\e076";
+}
+.icon-surfsand:before {
+  content: "\e077";
+}
+.icon-pooches:before {
+  content: "\e078";
+}
+.icon-parking:before {
+  content: "\e079";
+}
+.icon-lunch:before {
+  content: "\e07a";
+}
+.icon-healthcare:before {
+  content: "\e07b";
+}
+.icon-vacation-full:before {
+  content: "\e07c";
+}
+.icon-vacation-outline:before {
+  content: "\e07d";
+}
+.icon-happy-3:before {
+  content: "\e07e";
+}
+.icon-bubble-convo:before {
+  content: "\e081";
+}
+.icon-arrow-down-2:before {
+  content: "\e082";
+}
+.icon-happy-1:before {
+  content: "\e013";
+}
+.icon-happy-5:before {
+  content: "\e014";
+}
+.icon-relax:before {
+  content: "\e015";
+}
+.icon-happy-2:before {
+  content: "\e07f";
+}
+.icon-sad-1:before {
+  content: "\e080";
+}
+.icon-surprise-1:before {
+  content: "\e083";
+}
+.icon-mediocre-icon:before {
+  content: "\e084";
+}
+.icon-mediocre:before {
+  content: "\e085";
+}
+.icon-calendar:before {
+  content: "\e087";
+}
+.icon-flag:before {
+  content: "\e088";
+}
+.icon-share:before {
+  content: "\e089";
+}
+.icon-clip-1:before {
+  content: "\e08a";
+}
+.icon-clip-2:before {
+  content: "\e08b";
+}
+.icon-plus-solid:before {
+  content: "\e08c";
+}
+.icon-face-1:before {
+  content: "\e08d";
+}
+.icon-face-2:before {
+  content: "\e08e";
+}
+.icon-face-3:before {
+  content: "\e08f";
+}
+.icon-face-4:before {
+  content: "\e090";
+}
+.icon-face-5:before {
+  content: "\e091";
+}
+.icon-heart-bubble:before {
+  content: "\e092";
+}
+.icon-google:before {
+  content: "\e093";
+}
+.icon-facebook-outline:before {
+  content: "\e094";
+}
+.icon-google-outline:before {
+  content: "\e095";
+}
+.icon-pinterest-outline:before {
+  content: "\e096";
+}
+.icon-twitter-outline:before {
+  content: "\e097";
+}
+.icon-accessories-active:before {
+  content: "\e098";
+}
+.icon-activewear-active:before {
+  content: "\e099";
+}
+.icon-bottoms-active:before {
+  content: "\e09a";
+}
+.icon-bridal-party-dresses-active:before {
+  content: "\e09b";
+}
+.icon-bridal-shoes-active:before {
+  content: "\e09c";
+}
+.icon-decor-active:before {
+  content: "\e09d";
+}
+.icon-dresses-active:before {
+  content: "\e09e";
+}
+.icon-gifts-active:before {
+  content: "\e09f";
+}
+.icon-groom-active:before {
+  content: "\e0a0";
+}
+.icon-handbags-active:before {
+  content: "\e0a1";
+}
+.icon-invitations-active:before {
+  content: "\e0a2";
+}
+.icon-jeans-active:before {
+  content: "\e0a3";
+}
+.icon-jewelry-accessories-active:before {
+  content: "\e0a4";
+}
+.icon-maternity-active:before {
+  content: "\e0a5";
+}
+.icon-miscellaneous-active:before {
+  content: "\e0a6";
+}
+.icon-outerwear-active:before {
+  content: "\e0a7";
+}
+.icon-shoes-active:before {
+  content: "\e0a8";
+}
+.icon-suiting-active:before {
+  content: "\e0a9";
+}
+.icon-swim-active:before {
+  content: "\e0aa";
+}
+.icon-tops-active:before {
+  content: "\e0ab";
+}
+.icon-veils-active:before {
+  content: "\e0ac";
+}
+.icon-wedding-dresses-active:before {
+  content: "\e0ad";
+}
+.icon-calendar-b:before {
+  content: "\e0af";
+}
+.icon-calendar-c:before {
+  content: "\e0b0";
+}
+.icon-concierge:before {
+  content: "\e0b1";
+}
+.icon-credit-card-1:before {
+  content: "\e0b2";
+}
+.icon-customer-care:before {
+  content: "\e0b3";
+}
+.icon-pack-poly:before {
+  content: "\e0b4";
+}
+.icon-secure:before {
+  content: "\e0b5";
+}
+.icon-ship:before {
+  content: "\e0b6";
+}
+.icon-snap:before {
+  content: "\e0b7";
+}
+.icon-live-chat:before {
+  content: "\e0b8";
+}
+.icon-pack-box:before {
+  content: "\e0b9";
+}
+.icon-cash-in:before {
+  content: "\e0ba";
+}
+.icon-check-bubble-solid:before {
+  content: "\e0bb";
+}
+.icon-warning-solid:before {
+  content: "\e0bc";
+}
+.icon-dollar-bubble-solid:before {
+  content: "\e0bd";
+}
+.icon-sold:before {
+  content: "\e0be";
+}
+.icon-calendar-a:before {
+  content: "\e0ae";
+}
+.icon-reverse-transaction:before {
+  content: "\e0bf";
+}
+.icon-credit-card:before {
+  content: "\e086";
+}
+.icon-usps-mailbox:before {
+  content: "\e0c0";
+}
+.icon-dont-forget:before {
+  content: "\e0c1";
+}
+.icon-paypal:before {
+  content: "\e0c4";
+}
+.icon-mail:before {
+  content: "\e0c8";
+}
+.icon-phone-1:before {
+  content: "\e0c9";
+}
+.icon-present:before {
+  content: "\e0ca";
+}
+.icon-ebay-audience:before {
+  content: "\e0cb";
+}
+.icon-ebay-badge:before {
+  content: "\e0cc";
+}
+.icon-ebay-controls:before {
+  content: "\e0cd";
+}
+.icon-ebay-dolly:before {
+  content: "\e0ce";
+}
+.icon-ebay-dolly-tilted:before {
+  content: "\e0cf";
+}
+.icon-ebay-import:before {
+  content: "\e0d0";
+}
+.icon-ebay-magic-wand:before {
+  content: "\e0d1";
+}
+.icon-ebay-manager:before {
+  content: "\e0d2";
+}
+.icon-ebay-printer:before {
+  content: "\e0d3";
+}
+.icon-ebay-rocket:before {
+  content: "\e0d4";
+}
+.icon-ebay-register:before {
+  content: "\e0d5";
+}
+.icon-ebay-safe:before {
+  content: "\e0d6";
+}
+.icon-ebay-scissors:before {
+  content: "\e0d7";
+}
+.icon-ebay-search:before {
+  content: "\e0d8";
+}
+.icon-ebay-store:before {
+  content: "\e0d9";
+}
+.icon-ebay-vip:before {
+  content: "\e0da";
+}
+.icon-bank-notes:before {
+  content: "\e027";
+}
+.icon-tradesy-box:before {
+  content: "\e0c2";
+}
+.icon-money:before {
+  content: "\e0c3";
+}
+.icon-verified:before {
+  content: "\e0c6";
+}
+.icon-pro:before {
+  content: "\e0c5";
+}
+.icon-add-outline:before {
+  content: "\e0c7";
+}
+.icon-minus-outline:before {
+  content: "\e0db";
+}
+.icon-basket-add:before {
+  content: "\e0dc";
+}
+.icon-instagram:before {
+  content: "\e0dd";
+}
+.icon-comments:before {
+  content: "\e0de";
+}
+.icon-bubble-conversation-2:before {
+  content: "\e0df";
+}
+.icon-arrow-up-down:before {
+  content: "\e0e0";
+}
+.icon-delete-2:before {
+  content: "\e0e1";
+}
+.icon-icon-blog:before {
+  content: "\e0e2";
+}
+.icon-tote:before {
+  content: "\e0e3";
+}
+.icon-chain-link:before {
+  content: "\e0e6";
+}
+.icon-pin:before {
+  content: "\e0e4";
+}
+.icon-globe:before {
+  content: "\e0e5";
+}
