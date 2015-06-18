@@ -55,7 +55,7 @@
 // $rem-base: 16px;
 
 // Allows the use of rem-calc() or lower-bound() in your settings
-// @import 'foundation/functions';
+@import 'foundation/functions';
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
@@ -76,212 +76,125 @@ $include-html-global-classes: $include-html-classes;
 // b. Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$include-html-grid-classes: $include-html-classes;
-$include-xl-html-grid-classes: false;
+// $include-html-grid-classes: $include-html-classes;
+// $include-xl-html-grid-classes: false;
 
-$row-width: rem-calc(1200);
-$total-columns: 12;
-$column-gutter: rem-calc(20);
+// $row-width: rem-calc(1000);
+// $total-columns: 12;
+// $column-gutter: rem-calc(30);
 
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-$font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
-$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+// $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+// $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+// $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-$font-weight-normal: normal;
-$font-weight-bold: bold;
+// $font-weight-normal: normal;
+// $font-weight-bold: bold;
 
-// ----- Brand Colors
-$primary: #ee7873;
-$primary-hover: #eb5e58;
-$primary-active : #e94e47;
-$secondary: #7dccad;
-$secondary-hover:#6ab99a;
-$black: #111;
-$black-hover:#111;
-$warm-grey: #2a2a2a;
-$dark-grey: #333;
-$grey: #999;
-$grey-border: #eaeaea;
-$grey-bg: #f7f7f7;
-$green-success: #afc682;
-$green-bg: #eaf0d3;
-$orange-error: #ee9373;
-$orange-bg: #fcebe5;
+// $white       : #FFFFFF;
+// $ghost       : #FAFAFA;
+// $snow        : #F9F9F9;
+// $vapor       : #F6F6F6;
+// $white-smoke : #F5F5F5;
+// $silver      : #EFEFEF;
+// $smoke       : #EEEEEE;
+// $gainsboro   : #DDDDDD;
+// $iron        : #CCCCCC;
+// $base        : #AAAAAA;
+// $aluminum    : #999999;
+// $jumbo       : #888888;
+// $monsoon     : #777777;
+// $steel       : #666666;
+// $charcoal    : #555555;
+// $tuatara     : #444444;
+// $oil         : #333333;
+// $jet         : #222222;
+// $black       : #000000;
 
-// -- Colors
-$darkest-grey: #35383C;
-$nav-background: #35383c; 
-$dark-grey-hover: #444;
-$grey-hover: #5c5c5c;
-$grey-blue: #35383C; 
-$mid-grey: #ddd;
-$mid-hover: #d4d4d4;
-$mid-grey-d: #ccc;
-$warm-grey: #2a2a2a;
-$blue: #66A6D1;
-$blue-grey: #35383C;
-$light-grey-text: #B6B7BD;
-$light-grey: #ebebeb;
-$light-grey-hover:#d8d8d8;
-$lightest-grey: #f5f5f5;
-$lightest-grey-bg : #fbfbfb;
-$white: #fff;
-$banner-yellow: #fef8e7;
-$bright-banner-yellow: #ffffcc;
-$steel-grey: #f3f5f9;
-$border-grey: #cbcbcb;
-$transparent: transparent;
-$red: #eb5e58;
-$gold: #FACD05;
-$brown : #8b6c2d;
-$nav-border: #d1d1dd;
+// We use these as default colors throughout
+// $primary-color: #008CBA;
+// $secondary-color: #e7e7e7;
+// $alert-color: #f04124;
+// $success-color: #43AC6A;
+// $warning-color: #f08a24;
+// $info-color: #a0d3e8;
 
-// ----- Social Colors
-$fb: #3b5998;
-$twitter: #00acee;
-$pinterest: #c8232c;
-$google: #d34836;
-$instagram: #3f729b;
-$paypal: #3b7bbf;
-$gmail: #d54937;
-$yahoo: #500095;
+// We use these to control various global styles
+// $body-bg: $white;
+// $body-font-color: $jet;
+// $body-font-family: $font-family-sans-serif;
+// $body-font-weight: $font-weight-normal;
+// $body-font-style: normal;
 
-// --- Alert Colors
-$alert: #e33c35; 
-$alert-bg: #ffeded;
-$alert-bg-listing: #FFEFD1; 
-$success: #0b6207;
-$success-bg: #f1ffe7;  
-$warning: #636363;
-$warning-bg: #FFEFD5;
-$limegreen: #91C540;
-$info-bg: #E3F6F6;
+// We use this to control font-smoothing
+// $font-smoothing: antialiased;
 
-// --- Fonts
+// We use these to control text direction settings
+// $text-direction: ltr;
+// $opposite-direction: right;
+// $default-float: left;
+// $last-child-float: $opposite-direction;
 
-$font-stack-sans: 'proxima-nova-regular', Helvetica, Arial, sans-serif;
-// $font-stack-sans-bold: 'proxima-nova-semi', Helvetica, Arial, sans-serif;
-$font-stack-sans-bold: 'proxima-nova-semi', Helvetica, Arial, sans-serif;
-// $font-stack-serif: 'caluna-regular', Helvetica, Arial, sans-serif;
-$font-stack-serif: 'calluna-regular' ,serif;
-// $font-stack-serif-bold: 'caluna-bold', Helvetica, Arial, sans-serif;
-$font-stack-serif-bold: 'calluna-bold', serif;
-$font-stack-headline: $font-stack-serif;
+// We use these to make sure border radius matches unless we want it different.
+// $global-radius: 3px;
+// $global-rounded: 1000px;
 
-
-// ----- Responsive Images
-img { 
-    max-width: 100%; 
-    width: auto\9; 
-    height: auto; 
-    vertical-align: middle; 
-    border: 0; 
-    -ms-interpolation-mode: bicubic; 
-}
-
-// ----- Layout Helpers
-.fleft { float:left !important; }
-.fright { float:right !important; }
-.clearfix { *zoom: 1; }
-.clearfix:before, .clearfix:after { display: table; content: ""; line-height: 0; }
-.clearfix:after { clear: both; }
-.hide { display:none; }
-.show { display:block; }
-
-// once fonts are loaded, we're good to go here
-.font-stack-sans,
-.body-font-family,
-.header-font-family,
-.paragraph-font-family {
-    font-family : 'proxima-nova-regular', Helvetica, Arial, sans-serif;
-}
-
-.font-stack-sans-bold,
-.button-font-family {
-    font-family : 'proxima-nova-semi', Helvetica, Arial, sans-serif;
-}
-
-.font-stack-serif, .font-stack-headline {
-    font-family : 'calluna-regular', serif;
-}
-
-.font-stack-serif-bold {
-    font-family : 'calluna-bold', serif;
-}
-
-.hr {
-    margin: 20px auto;
-    border: none; 
-    border-top: 1px solid $grey-border; 
-    text-align: center; 
-}
+// We use these to control inset shadow shiny edges and depressions.
+// $shiny-edge-size: 0 1px 0;
+// $shiny-edge-color: rgba($white, .5);
+// $shiny-edge-active-color: rgba($black, .2);
 
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$small-breakpoint:  em-calc(640);
-$medium-breakpoint: em-calc(1024);
-$large-breakpoint:  em-calc(1440);
-$xlarge-breakpoint: em-calc(1920);
+// $small-breakpoint:  em-calc(640);
+// $medium-breakpoint: em-calc(1024);
+// $large-breakpoint:  em-calc(1440);
+// $xlarge-breakpoint: em-calc(1920);
 
-$small-range: (0em, 30em);
-$medium-range: (30.063em, 48em);
-$plus-range: (48.063em, 64em);
-$large-range: (64.063em, 90em);
-$xlarge-range: (90.063em, 120em);
-$xxlarge-range: (120.063em);
+// $small-range:   (0, $small-breakpoint);
+// $medium-range:  ($small-breakpoint  + em-calc(1), $medium-breakpoint);
+// $large-range:   ($medium-breakpoint + em-calc(1), $large-breakpoint);
+// $xlarge-range:  ($large-breakpoint  + em-calc(1), $xlarge-breakpoint);
+// $xxlarge-range: ($xlarge-breakpoint + em-calc(1), em-calc(99999999));
 
-$screen: "only screen";
+// $screen: "only screen";
 
-$landscape: "#{$screen} and (orientation: landscape)";
-$portrait: "#{$screen} and (orientation: portrait)";
+// $landscape: "#{$screen} and (orientation: landscape)";
+// $portrait: "#{$screen} and (orientation: portrait)";
 
-$small-up: $screen;
-$small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
+// $small-up: $screen;
+// $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
 
-$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
-$medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
+// $medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
+// $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
 
-$plus-up: "#{$screen} and (min-width:#{lower-bound($plus-range)})";
-$plus-only: "#{$screen} and (min-width:#{lower-bound($plus-range)}) and (max-width:#{upper-bound($plus-range)})";
-$plus-down: "#{$screen} and (max-width:#{lower-bound($plus-range)})";
+// $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
+// $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
 
-$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
-$large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
+// $xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
+// $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
 
-$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
-$xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
+// $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
+// $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
 
-$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
-$xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
-
-$retina: (
- "#{$screen} and (-webkit-min-device-pixel-ratio: 2)",
- "#{$screen} and (min--moz-device-pixel-ratio: 2)",
- "#{$screen} and (-o-min-device-pixel-ratio: 2/1)",
- "#{$screen} and (min-device-pixel-ratio: 2)",
- "#{$screen} and (min-resolution: 192dpi)",
- "#{$screen} and (min-resolution: 2dppx)"
-);
-
-// For header only:
-$desktop-up: "only screen and (min-width: 980px)";
-
-//Legacy Media Queries
-$break-large: "only screen and (min-width: 980px) and (max-width: 1199px)";
-$break-med: "only screen and (min-width: 768px) and (max-width: 979px)";
-$ipad: "only screen and (min-width: 768px)";
-$break-small: "only screen and (max-width: 767px)";
+// $retina: (
+//  "#{$screen} and (-webkit-min-device-pixel-ratio: 2)",
+//  "#{$screen} and (min--moz-device-pixel-ratio: 2)",
+//  "#{$screen} and (-o-min-device-pixel-ratio: 2/1)",
+//  "#{$screen} and (min-device-pixel-ratio: 2)",
+//  "#{$screen} and (min-resolution: 192dpi)",
+//  "#{$screen} and (min-resolution: 2dppx)"
+// );
 
 // Legacy
-$small: $medium-up;
-$medium: $medium-up;
-$large: $large-up;
+// $small: $medium-up;
+// $medium: $medium-up;
+// $large: $large-up;
 
 // We use this as cursors values for enabling the option of having custom cursors in the whole site's stylesheet
 // $cursor-crosshair-value: crosshair;
